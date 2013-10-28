@@ -1,6 +1,4 @@
-assets/
-protected/runtime/
-themes/classic/views/
-/themes
-/assets
-/images
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore

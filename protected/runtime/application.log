@@ -1,0 +1,23 @@
+2013/10/28 16:10:05 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\xampp\htdocs\spkpkli\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in D:\xampp\htdocs\spkpkli\framework\web\CAssetManager.php:138
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('D:\xampp\htdocs...')
+#1 D:\xampp\htdocs\spkpkli\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CClientScript.php(462): CAssetManager->publish('D:\xampp\htdocs...')
+#3 D:\xampp\htdocs\spkpkli\framework\web\CClientScript.php(499): CClientScript->getCoreScriptUrl()
+#4 D:\xampp\htdocs\spkpkli\framework\web\CClientScript.php(315): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\xampp\htdocs\spkpkli\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 D:\xampp\htdocs\spkpkli\framework\web\CController.php(351): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\xampp\htdocs\spkpkli\framework\web\CController.php(788): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\xampp\htdocs\spkpkli\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#9 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#10 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('contact')
+#14 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/spkpkli/index.php?r=site/contact
+HTTP_REFERER=http://localhost/spkpkli/index.php?r=site/page&view=about
+---

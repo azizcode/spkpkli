@@ -502,3 +502,11 @@ Stack trace:
 REQUEST_URI=/spkpkli/mahasiswa.html
 HTTP_REFERER=http://localhost/spkpkli/front
 ---
+2013/11/03 16:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('about')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/about
+---

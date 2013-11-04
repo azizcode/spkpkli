@@ -9,7 +9,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
-		<link rel="stylesheet" type="text/css" class="ui" href="<?php echo Yii::app()->request->baseUrl; ?>/packaged/css/semantic.css">
+		<link rel="stylesheet" type="text/css" class="ui" href="<?php echo Yii::app()->request->baseUrl; ?>/packaged/css/semantic.min.css">
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/packaged/javascript/semantic.min.js"></script>
 	</head>
 	<body>
@@ -31,7 +31,17 @@
 		      </div>
 		    </div>
 		    <div class="item">
-		        <div class="ui teal button">Login</div>
+				<div class="ui teal buttons">
+				  <div class="ui button">Masuk</div>
+				  <div class="ui teal floating dropdown icon button">
+					<i class="dropdown icon"></i>
+					<div class="menu">
+					  <div class="item"><i class="edit icon"></i>Edit Post</div>
+					  <div class="item"><i class="delete icon"></i>Remove Post</div>
+					  <div class="item"><i class="hide icon"></i>Hide Post</div>
+					</div>
+				  </div>
+				</div>
 		    </div>
 		  </div>
 		</div>

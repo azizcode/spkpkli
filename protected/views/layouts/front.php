@@ -6,45 +6,50 @@
 		<title>SISTEM REKOMENDASI PKLI - <?php echo CHtml::encode($this->pageTitle); ?></title>
 		<meta name="description" content="A form is a collection of user input elements" />
 		<meta name="keywords" content="rekomendasi,tempat pkli, pkli, sistem informasi,magang" />
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-  		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
-		<link rel="stylesheet" type="text/css" class="ui" href="<?php echo Yii::app()->request->baseUrl; ?>/packaged/css/semantic.min.css">
-		<script src="<?php echo Yii::app()->request->baseUrl; ?>/packaged/javascript/semantic.min.js"></script>
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-2.0.3.min.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="ui large menu">
-		  <a class="active item">
-		    <i class="home icon"></i> Home
-		  </a>
-		  <a class="item">
-		    <i class="mail icon"></i> Pengumunan
-		  </a>
-		  <a class="item">
-		    <i class="Rocket icon"></i> About
-		  </a>1
-		  <div class="right menu">
-		    <div class="item">
-		      <div class="ui icon input">
-		        <input type="text" placeholder="Search...">
-		        <i class="search link icon"></i>
-		      </div>
-		    </div>
-		    <div class="item">
-				<div class="ui teal buttons">
-				  <div class="ui button">Masuk</div>
-				  <div class="ui teal floating dropdown icon button">
-					<i class="dropdown icon"></i>
-					<div class="menu">
-					  <div class="item"><i class="edit icon"></i>Edit Post</div>
-					  <div class="item"><i class="delete icon"></i>Remove Post</div>
-					  <div class="item"><i class="hide icon"></i>Hide Post</div>
-					</div>
-				  </div>
-				</div>
-		    </div>
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">SPK PKLI</a>
 		  </div>
-		</div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="#">Pengumuman</a></li>
+			  <li><a href="#">About</a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group"><input type="text" class="form-control" placeholder="Search"></div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Masuk</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					</ul>
+				</li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
 		<?php echo $content; ?>
 		<div class="ui inverted segment">
 	 		 <p class="ui left floated header"> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved 

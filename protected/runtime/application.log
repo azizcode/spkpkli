@@ -546,3 +546,21 @@ Stack trace:
 REQUEST_URI=/spkpkli/css/print.css
 HTTP_REFERER=http://localhost/spkpkli/
 ---
+2013/11/04 06:08:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "packaged/javascript/semantic.min.js".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('packaged/javasc...')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/packaged/javascript/semantic.min.js
+HTTP_REFERER=http://localhost/spkpkli/front
+---
+2013/11/04 06:08:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "packaged/css/semantic.min.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('packaged/css/se...')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/packaged/css/semantic.min.css
+HTTP_REFERER=http://localhost/spkpkli//front
+---

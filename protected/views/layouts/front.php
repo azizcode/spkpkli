@@ -44,7 +44,7 @@
 			  	</div><!-- /.navbar-collapse -->
 		  	</div>
 		</nav>
-		<?php echo $content; ?>
+		<div class="container"><?php echo $content; ?></div>
 		<footer>
 			<div class="container">
 		 		 <div class="pull-left"> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</div>

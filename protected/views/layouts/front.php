@@ -9,10 +9,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
-		<link rel="stylesheet" type="text/css" class="ui" href="<?php echo Yii::app()->request->baseUrl; ?>/packaged/css/semantic.min.css">
 		<link rel="stylesheet" type="text/css" class="ui" href="<?php echo Yii::app()->request->baseUrl; ?>/packaged/css/semantic.css">
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/packaged/javascript/semantic.min.js"></script>
-		<script src="<?php echo Yii::app()->request->baseUrl; ?>/packaged/javascript/semantic.js"></script>
 	</head>
 	<body>
 		<div class="ui large menu">

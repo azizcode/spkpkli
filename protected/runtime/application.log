@@ -4691,498 +4691,220 @@ Stack trace:
 REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
 HTTP_REFERER=http://localhost/spkpkli/perusahaan/view
 ---
-2013/11/05 22:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+2013/11/05 23:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
 Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('home')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/home
-HTTP_REFERER=http://localhost/spkpkli/
----
-2013/11/05 22:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/main.css
-HTTP_REFERER=http://localhost/spkpkli/home
----
-2013/11/05 22:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/print.css
-HTTP_REFERER=http://localhost/spkpkli/home
----
-2013/11/05 22:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/form.css
-HTTP_REFERER=http://localhost/spkpkli/home
----
-2013/11/05 22:41:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/screen.css
-HTTP_REFERER=http://localhost/spkpkli/home
----
-2013/11/05 22:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pengumuman".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('pengumuman')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/pengumuman
-HTTP_REFERER=http://localhost/spkpkli/
----
-2013/11/05 22:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/screen.css
-HTTP_REFERER=http://localhost/spkpkli/pengumuman
----
-2013/11/05 22:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/main.css
-HTTP_REFERER=http://localhost/spkpkli/pengumuman
----
-2013/11/05 22:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/print.css
-HTTP_REFERER=http://localhost/spkpkli/pengumuman
----
-2013/11/05 22:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/form.css
-HTTP_REFERER=http://localhost/spkpkli/pengumuman
----
-2013/11/05 22:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('about')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/about
-HTTP_REFERER=http://localhost/spkpkli/
----
-2013/11/05 22:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/print.css
-HTTP_REFERER=http://localhost/spkpkli/about
----
-2013/11/05 22:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/main.css
-HTTP_REFERER=http://localhost/spkpkli/about
----
-2013/11/05 22:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/screen.css
-HTTP_REFERER=http://localhost/spkpkli/about
----
-2013/11/05 22:41:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/spkpkli/css/form.css
-HTTP_REFERER=http://localhost/spkpkli/about
----
-2013/11/05 22:54:06 [error] [php] Undefined variable: uri (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(8): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (8)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:55:36 [error] [php] Undefined variable: uri (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:56:00 [error] [php] Undefined variable: uri (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:56:39 [error] [php] Undefined index: w (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:56:40 [error] [php] Undefined index: w (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:56:40 [error] [php] Undefined index: w (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:57:22 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:57:24 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 22:57:25 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(45): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/daftar
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (45)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:01:12 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(8): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (8)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:01:55 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(8): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (8)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:02:01 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(8): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (8)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:02:09 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(8): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (8)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:05:31 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(10): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (10)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:05:32 [error] [php] Undefined index: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(10): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (10)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:05:47 [error] [php] Undefined variable: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(10): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (10)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:07:13 [error] [php] Undefined variable: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(10): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (10)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:07:41 [error] [php] Undefined variable: tgis (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:30)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(10): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (30)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (10)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:07:52 [error] [php] Undefined variable: action (D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php:36)
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(784): FrontController->renderFile()
-#1 D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(10): FrontController->render()
-#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
-#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
-#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
-#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
-#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
-#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#9 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
-REQUEST_URI=/spkpkli/
-in D:\xampp\htdocs\spkpkli\protected\views\layouts\front.php (36)
-in D:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (10)
-in D:\xampp\htdocs\spkpkli\index.php (13)
-2013/11/05 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in D:\xampp\htdocs\spkpkli\framework\web\CController.php:483
-Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('home')
-#1 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('home')
-#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/home')
-#3 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#4 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
 #5 {main}
-REQUEST_URI=/spkpkli/home
-HTTP_REFERER=http://localhost/spkpkli/about
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/input
 ---
-2013/11/05 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+2013/11/06 00:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
 Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/view
+---
+2013/11/06 00:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/view
+---
+2013/11/06 00:24:33 [error] [php] Undefined variable: instansi (C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): PerusahaanController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): PerusahaanController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): PerusahaanController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/perusahaan/input
+in C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/06 00:25:01 [error] [php] Undefined variable: instansi (C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php:97)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): PerusahaanController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): PerusahaanController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php(21): PerusahaanController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): PerusahaanController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): PerusahaanController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): PerusahaanController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): PerusahaanController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/perusahaan/input
+in C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php (97)
+in C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/06 00:26:31 [error] [php] Undefined variable: program_pkli (C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php:97)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): PerusahaanController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): PerusahaanController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php(21): PerusahaanController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): PerusahaanController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): PerusahaanController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): PerusahaanController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): PerusahaanController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/perusahaan/input
+in C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php (97)
+in C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/06 00:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/input
+---
+2013/11/06 00:34:02 [error] [exception.CException] exception 'CException' with message 'Property "PerusahaanController.user" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\protected\views\layouts\front.php(60): CComponent->__get('user')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php(21): CController->render('input', Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): PerusahaanController->actionInput()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('input')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/inpu...')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/perusahaan/input
+---
+2013/11/06 00:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perusahaan".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('perusahaan')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('perusahaan')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/perusahaa...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/
+---
+2013/11/06 00:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/spkpkli/css/screen.css
-HTTP_REFERER=http://localhost/spkpkli/home
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
 ---
-2013/11/05 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+2013/11/06 00:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
 Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/spkpkli/css/print.css
-HTTP_REFERER=http://localhost/spkpkli/home
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
 ---
-2013/11/05 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+2013/11/06 00:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
 Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/spkpkli/css/main.css
-HTTP_REFERER=http://localhost/spkpkli/home
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
 ---
-2013/11/05 23:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+2013/11/06 00:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
 Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/spkpkli/css/form.css
-HTTP_REFERER=http://localhost/spkpkli/home
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
 ---
-2013/11/05 23:21:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+2013/11/06 00:36:07 [error] [exception.CException] exception 'CException' with message 'Property "PerusahaanController.user" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
 Stack trace:
-#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
-#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
-#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#0 C:\xampp\htdocs\spkpkli\protected\views\layouts\front.php(60): CComponent->__get('user')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(784): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php(8): CController->render('index')
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): PerusahaanController->actionIndex()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/inde...')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/perusahaan/index
+---
+2013/11/06 00:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perusahaan".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('perusahaan')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('perusahaan')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/perusahaa...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/
+---
+2013/11/06 00:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
 #3 {main}
-REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
-HTTP_REFERER=http://localhost/spkpkli/
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
+---
+2013/11/06 00:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
+---
+2013/11/06 00:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
+---
+2013/11/06 00:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/
 ---

@@ -10,7 +10,15 @@ class PerusahaanController extends Controller
 
 	public function actionInput()
 	{
-		$this->render('input');
+		$program_pkli = new ProgramPkli;
+		$b_keahlian = array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
+		if(isset($_POST['ProgramPkli'])){
+			$program_pkli->Bidang_Keahlian=$_POST['ProgramPkli']['Bidang_Keahlian'];
+			$program_pkli->Jumlah_peserta=$_POST['ProgramPkli']['Jumlah_peserta'];
+			$program_pkli->Waktu_pelaksanaan=$_POST['ProgramPkli']['Waktu_pelaksanaan'];
+			$program_pkli->keterangan=$_POST['ProgramPkli']['keterangan'];
+		}
+		$this->render('input',array('program_pkli'=>$program_pkli, 'b_keahlian'=>$b_keahlian));
 	}
 
 	public function actionView()

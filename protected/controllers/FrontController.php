@@ -2,15 +2,37 @@
 
 class FrontController extends Controller
 {
-	public $layout='front';
+	public $layout	=	'front';
+	public $action	=	'home';
+	public $user;
+	
 	public function actionIndex()
 	{
+		$this->user		=	new LoginForm;	
 		$this->render('index');
+	}
+	
+	public function actionLogin()
+	{
+		if(isset($_POST['LoginForm']))
+		{
+			$model->attributes=$_POST['LoginForm'];
+			if($model->validate() && $model->login()){
+				$this->redirect('admin');
+			}	
+		}
 	}
 
 	public function actionAbout()
 	{
+		$this->action = 'about';
 		$this->render('about');
+	}
+	
+	public function actionPengumuman()
+	{
+		$this->action = 'pengumuman';
+		$this->render('pengumuman');
 	}
 	
 	public function actionMahasiswa()

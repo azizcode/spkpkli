@@ -27,19 +27,19 @@
 		  	<!-- Collect the nav links, forms, and other content for toggling -->
 		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav col-md-10 col-xs-7">
-					<li class="menu odd">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/home">
+					<li class="menu <?php if($this->action=='home'){ ?>odd<?php } ?>">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>">
 							<span class="glyphicon glyphicon-home"></span>
 							<span class="glyphicon-class">Home</span>
 						</a>
 					</li>
-					<li class="menu">
+					<li class="menu <?php if($this->action=='pengumuman'){ ?>odd<?php } ?>">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>/pengumuman">
 							<span class="glyphicon glyphicon-warning-sign"></span>
 							<span class="glyphicon-class">Pengumuman</span>
 						</a>
 					</li>
-					<li class="menu odd">
+					<li class="menu <?php if($this->action=='about'){ ?>odd<?php } ?>">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>/about">
 							<span class="glyphicon glyphicon-info-sign"></span>
 							<span class="glyphicon-class">About</span>
@@ -50,18 +50,26 @@
 						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i>Akun<b class="caret"></b>
 						</a>
 						<div class="dropdown-menu col-md-9">
+							<?php $form=$this->beginWidget('CActiveForm', array(
+								  'enableClientValidation'=>true,
+								  'clientOptions'=>array(
+								  'validateOnSubmit'=>true,
+								  'htmlOptions' => array("class"=>"form-horizontal",'role' => 'form'),
+								  ),
+								  )); ?>
 								<div class="row login">
 									<div class="col-md-4">Username</div>
-									<div class="col-md-8"><input type="text"></div>
+									<div class="col-md-8"><?php echo $form->textField($this->user,'username',array('class'=>'form-control','required'=>'required')); ?></div>
 								</div>
 								<div class="row login">
 									<div class="col-md-4">Password</div>
-									<div class="col-md-8"><input type="password"></div>
+									<div class="col-md-8"><?php echo $form->passwordField($this->user,'password',array('class'=>'form-control','required'=>'required')); ?></div>
 								</div>
 								<div class="row" style="margin-top:6px;">
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
 									<div class="col-md-6"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
 								</div>
+							<?php $this->endWidget(); ?>	
 						</div>
 					</li>	
 				</ul>

@@ -1,6 +1,14 @@
+body{
+	background-image: url("img/triangular.png");
+}
 footer {
 	padding: 5px 9px;
 	background-color: #000;
 	width: 100%;
 	color: #fff;
+}
+
+#middle{
+	background-color: #fff;
+	padding: 15px;
 }

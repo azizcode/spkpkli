@@ -4691,3 +4691,92 @@ Stack trace:
 REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
 HTTP_REFERER=http://localhost/spkpkli/perusahaan/view
 ---
+2013/11/05 23:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/input
+---
+2013/11/06 00:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/view
+---
+2013/11/06 00:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/view
+---
+2013/11/06 00:24:33 [error] [php] Undefined variable: instansi (C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): PerusahaanController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): PerusahaanController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): PerusahaanController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/perusahaan/input
+in C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/06 00:25:01 [error] [php] Undefined variable: instansi (C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php:97)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): PerusahaanController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): PerusahaanController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php(21): PerusahaanController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): PerusahaanController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): PerusahaanController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): PerusahaanController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): PerusahaanController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/perusahaan/input
+in C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php (97)
+in C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/06 00:26:31 [error] [php] Undefined variable: program_pkli (C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php:97)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): PerusahaanController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): PerusahaanController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php(21): PerusahaanController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): PerusahaanController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): PerusahaanController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): PerusahaanController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): PerusahaanController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/perusahaan/input
+in C:\xampp\htdocs\spkpkli\protected\views\perusahaan\input.php (97)
+in C:\xampp\htdocs\spkpkli\protected\controllers\PerusahaanController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/06 00:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('perusahaan/js/b...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
+HTTP_REFERER=http://localhost/spkpkli/perusahaan/input
+---

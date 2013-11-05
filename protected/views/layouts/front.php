@@ -59,22 +59,12 @@
 						</li>	
 					</ul>
 			  	</div><!-- /.navbar-collapse -->
-<<<<<<< HEAD
 		<?php echo $content; ?>
 		<div class="footer">
 		 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
 		 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
-=======
 		  	</div>
 		</nav>
-		<div id="middle" class="container"><?php echo $content; ?></div>
-		<footer>
-			<div class="container">
-		 		 <div class="pull-left"> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</div>
-		 		 <div class="pull-right"><?php echo Yii::powered(); ?></div>
-		 	</div>	 
->>>>>>> 8f8dda9a3dc2cd63f2b5924e3aaaedda64180fb1
-		</footer>
 	</div><!-- /#wrapper -->
 	</body>
 </html>

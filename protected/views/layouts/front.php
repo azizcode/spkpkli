@@ -44,7 +44,6 @@
 						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i>Akun<b class="caret"></b>
 						</a>
 						<div class="dropdown-menu col-md-9">
-							<form method="post" id="tombol">
 								<div class="row login">
 									<div class="col-md-4">Username</div>
 									<div class="col-md-8"><input type="text"></div>
@@ -55,9 +54,8 @@
 								</div>
 								<div class="row">
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
-									<div class="col-md-6"><button class="btn btn-success pull-right" onClick="daftar()">Daftar</button></div>
+									<div class="col-md-6"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
 								</div>
-							</form>	
 						</div>
 					</li>	
 				</ul>
@@ -75,11 +73,6 @@
 			    e.stopPropagation();
 			  });
 			});
-
-			function daftar(){
-				var url = "http://stackoverflow.com";    
-				$(location).attr('href',url);
-			}
 	  	</script>
 	</body>
 </html>

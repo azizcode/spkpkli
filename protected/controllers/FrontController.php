@@ -18,6 +18,13 @@ class FrontController extends Controller
 		$this->render('mahasiswa');
 	}
 
+	public function actionDaftar()
+	{
+		$instansi=new Instansi;
+		$user=new User;
+		$this->render('daftar',array('instansi'=>$instansi, 'user'=>$user));
+	}
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

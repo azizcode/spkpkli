@@ -22,3 +22,7 @@ footer {
 #tombol{
 	margin-bottom: 1px;
 }
+
+.login input {
+	width: 100%;
+}

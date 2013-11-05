@@ -52,7 +52,7 @@
 									<div class="col-md-4">Password</div>
 									<div class="col-md-8"><input type="password"></div>
 								</div>
-								<div class="row">
+								<div class="row" style="margin-top:6px;">
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
 									<div class="col-md-6"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
 								</div>

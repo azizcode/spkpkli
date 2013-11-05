@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Sistem Rekomendasi Program PKLI',
-	//'defaultController' => 'front',
+	'defaultController' => 'front',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

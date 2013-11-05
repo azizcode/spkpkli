@@ -1492,3 +1492,21 @@ Stack trace:
 REQUEST_URI=/spkpkli/css/img/triangular.png
 HTTP_REFERER=http://localhost/spkpkli/front/mahasiswa
 ---
+2013/11/05 05:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/triangular.png".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/img/triangu...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/img/triangular.png
+HTTP_REFERER=http://localhost/spkpkli/front/mahasiswa
+---
+2013/11/05 16:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/triangular.png".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/img/triangu...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/img/triangular.png
+HTTP_REFERER=http://localhost/spkpkli/front/mahasiswa
+---

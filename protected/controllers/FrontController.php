@@ -2,15 +2,40 @@
 
 class FrontController extends Controller
 {
-	public $layout='front';
+	public $layout	=	'front';
+	public $action	=	'home';
+	public $user;
+	
 	public function actionIndex()
 	{
+		$this->user		=	new LoginForm;
+		if(isset($_POST['LoginForm']))
+		{
+			$this->user->attributes=$_POST['LoginForm'];
+			if($this->user->validate() && $this->user->login()){
+				$this->redirect('admin');
+			}	
+		}
 		$this->render('index');
+	}
+	
+	public function actionLogin()
+	{
+		
 	}
 
 	public function actionAbout()
 	{
+		$this->user		=	new LoginForm;
+		$this->action = 'about';
 		$this->render('about');
+	}
+	
+	public function actionPengumuman()
+	{
+		$this->user	  =	 new LoginForm;
+		$this->action = 'pengumuman';
+		$this->render('pengumuman');
 	}
 	
 	public function actionMahasiswa()
@@ -20,7 +45,7 @@ class FrontController extends Controller
 
 	public function actionDaftar()
 	{
-		
+		$this->user	=	new LoginForm;
 		$instansi    =  new Instansi;
 		$user        =  new User;
 		$j_instansi  =  array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain');

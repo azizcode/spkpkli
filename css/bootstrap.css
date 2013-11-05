@@ -1232,7 +1232,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 2000px;
+    max-width: 1170px;
   }
   .col-lg-1,
   .col-lg-2,
@@ -3228,14 +3228,13 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
-  padding: 5px 0;
+  min-width: 300px;
+  padding: 10px 15px;
   margin: 2px 0 0;
   font-size: 14px;
   list-style: none;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -4293,7 +4292,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   
   .navbar-nav > li.dropdown {
     float: right;
-	margin-left: 665px;
   }
   
   .navbar-nav > li.odd {

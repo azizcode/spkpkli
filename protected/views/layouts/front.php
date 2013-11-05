@@ -61,11 +61,12 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
-		<div class="container" id="middle"><?php echo $content; ?></div>
+		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
 	 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
 	  	</div>
+	  </div>
 	  	<script>
 	  		$(function() {
 			  $('.dropdown-toggle').dropdown();

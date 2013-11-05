@@ -8,6 +8,16 @@ class PerusahaanController extends Controller
 		$this->render('index');
 	}
 
+	public function actionInput()
+	{
+		$this->render('input');
+	}
+
+	public function actionView()
+	{
+		$this->render('view');
+	}
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

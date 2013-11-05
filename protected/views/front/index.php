@@ -6,15 +6,15 @@
 	</ol>
 	<div class="carousel-inner">
 		<div class="item active">
-			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/1.jpg','1.jpg'); ?>
+			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/6.jpg','1.jpg'); ?>
 			<div class="carousel-caption"></div>
 		</div>
 		<div class="item">
-			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/2.jpg','2.jpg'); ?>
+			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/7.jpg','2.jpg'); ?>
 			<div class="carousel-caption"></div>
 		</div>
 		<div class="item">
-			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/3.jpg','3.jpg'); ?>
+			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/8.jpg','3.jpg'); ?>
 			<div class="carousel-caption"></div>
 		</div>
 	</div>

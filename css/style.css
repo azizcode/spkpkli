@@ -1,5 +1,5 @@
 body{
-	background-image: url("img/triangular.png");
+	background-image: url("img/binding_dark.png");
 }
 footer {
 	padding: 5px 9px;
@@ -11,4 +11,14 @@ footer {
 #middle{
 	background-color: #fff;
 	padding: 15px;
+	margin-top:7%;
+}
+
+.login{
+	color:#000;
+	padding-bottom: 5px;
+}
+
+#tombol{
+	margin-bottom: 1px;
 }

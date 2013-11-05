@@ -14,57 +14,72 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-	<div id="wrapper">
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-				<a class="navbar-brand" href="#">
-				SPK PKLI</a>
-		</div>
-
-			<div class="container">	
-			  	<!-- Collect the nav links, forms, and other content for toggling -->
-			  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="menu odd"><a href="/home">
-							<span class="glyphicon glyphicon-home"></span>
-							<span class="glyphicon-class">Home</span>
-							</a></li>
-						<li class="menu"><a href="/pengumuman">
-						<span class="glyphicon glyphicon-warning-sign"></span>
-						<span class="glyphicon-class">Pengumuman</span>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">SPK PKLI</a>
+			</div>
+		  	<!-- Collect the nav links, forms, and other content for toggling -->
+		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav col-md-10 col-xs-7">
+					<li class="menu odd"><a href="/home">
+						<span class="glyphicon glyphicon-home"></span>
+						<span class="glyphicon-class">Home</span>
 						</a></li>
-						<li class="menu odd"><a href="/about">
-						<span class="glyphicon glyphicon-info-sign"></span>
-						<span class="glyphicon-class">About</span>
-						</a></li>
-						<li class="dropdown menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="glyphicon glyphicon-user"></i>
-								John Lenon
-								<b class="caret"></b>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>	
-					</ul>
-			  	</div><!-- /.navbar-collapse -->
-		<?php echo $content; ?>
-		<div class="footer">
-		 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
-		 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
-		  	</div>
+					<li class="menu"><a href="/pengumuman">
+					<span class="glyphicon glyphicon-warning-sign"></span>
+					<span class="glyphicon-class">Pengumuman</span>
+					</a></li>
+					<li class="menu odd"><a href="/about">
+					<span class="glyphicon glyphicon-info-sign"></span>
+					<span class="glyphicon-class">About</span>
+					</a></li>
+					<li class="dropdown menu pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i>Akun<b class="caret"></b>
+						</a>
+						<div class="dropdown-menu col-md-9">
+							<form method="post" id="tombol">
+								<div class="row login">
+									<div class="col-md-4">Username</div>
+									<div class="col-md-8"><input type="text"></div>
+								</div>
+								<div class="row login">
+									<div class="col-md-4">Password</div>
+									<div class="col-md-8"><input type="password"></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
+									<div class="col-md-6"><button class="btn btn-success pull-right" onClick="daftar()">Daftar</button></div>
+								</div>
+							</form>	
+						</div>
+					</li>	
+				</ul>
+		  	</div><!-- /.navbar-collapse -->
 		</nav>
-	</div><!-- /#wrapper -->
+		<div class="container" id="middle"><?php echo $content; ?></div>
+		<div class="footer">
+	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
+	 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
+	  	</div>
+	  	<script>
+	  		$(function() {
+			  $('.dropdown-toggle').dropdown();
+			  $('.dropdown input, .dropdown label').click(function(e) {
+			    e.stopPropagation();
+			  });
+			});
+
+			function daftar(){
+				var url = "http://stackoverflow.com";    
+				$(location).attr('href',url);
+			}
+	  	</script>
 	</body>
 </html>

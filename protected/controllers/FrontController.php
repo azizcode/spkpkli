@@ -12,6 +12,11 @@ class FrontController extends Controller
 	{
 		$this->render('about');
 	}
+	
+	public function actionMahasiswa()
+	{
+		$this->render('mahasiswa');
+	}
 
 	// Uncomment the following methods and override them if needed
 	/*

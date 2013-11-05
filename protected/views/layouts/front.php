@@ -57,13 +57,18 @@
 								  'htmlOptions' => array("class"=>"form-horizontal",'role' => 'form'),
 								  ),
 								  )); ?>
+								<?php echo $form->error($this->user,'login'); ?>  
 								<div class="row login">
 									<div class="col-md-4">Username</div>
-									<div class="col-md-8"><?php echo $form->textField($this->user,'username',array('class'=>'form-control','required'=>'required')); ?></div>
+									<div class="col-md-8">
+										<?php echo $form->textField($this->user,'username',array('class'=>'form-control','required'=>'required')); ?>
+									</div>
 								</div>
 								<div class="row login">
 									<div class="col-md-4">Password</div>
-									<div class="col-md-8"><?php echo $form->passwordField($this->user,'password',array('class'=>'form-control','required'=>'required')); ?></div>
+									<div class="col-md-8">
+										<?php echo $form->passwordField($this->user,'password',array('class'=>'form-control','required'=>'required')); ?>
+									</div>
 								</div>
 								<div class="row" style="margin-top:6px;">
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>

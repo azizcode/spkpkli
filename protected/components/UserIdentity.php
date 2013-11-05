@@ -22,14 +22,13 @@ class UserIdentity extends CUserIdentity
 
 		if ($user===null) { // No user found!
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		} else if ($user->password !== $this->password ) { // Invalid password!
+		} else if ($user->password !== md5($this->password)) { // Invalid password!
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		} else { // Okay!
 		    $this->errorCode=self::ERROR_NONE;
 		    // Store the role in a session:
-		    $this->setState('nama', $user->nama);
-		    $this->setState('level', $user->level);
-			$this->_id = $user->id;
+		    $this->setState('level', $user->Level);
+			$this->_id = $user->id_user;
 		}
 		return !$this->errorCode;
     }

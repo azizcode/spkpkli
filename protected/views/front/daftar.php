@@ -7,6 +7,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="well">
+              <?php echo Yii::app()->user->getFlash('status'); ?>
               <?php $form=$this->beginWidget('CActiveForm', array(
               'enableClientValidation'=>true,
               'clientOptions'=>array(
@@ -18,34 +19,21 @@
                   <div class="form-group">
                     <?php echo $form->labelEx($instansi,'Nama_instansi',array('class'=>'col-lg-2 control-label')); ?>
                     <div class="col-lg-10">
-                      <?php echo $form->textField($instansi,'Nama_instansi',array('class'=>'form-control')); ?>
+                      <?php echo $form->textField($instansi,'Nama_instansi',array('class'=>'form-control','required'=>'required')); ?>
                     </div>
                   </div>
 
                   <div class="form-group">
                   <label for="select" class="col-lg-2 control-label">Jenis Perusahan</label>
                     <div class="col-lg-10">
-                      <select class="form-control" id="select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                      <?php echo $form->dropDownList($instansi,'Jenis_instasni', $j_instansi,array('class'=>'form-control','id' => 'select','required'=>'required')); ?>
                     </div>
                     </div>
-
-                    <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Lain-Lain</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="lain">
-                    </div>
-                  </div>
 
                    <div class="form-group">
                     <?php echo $form->labelEx($instansi,'Alamat',array('class'=>'col-lg-2 control-label')); ?>
                     <div class="col-lg-10">
-                      <?php echo $form->textField($instansi,'Alamat',array('class'=>'form-control')); ?>
+                      <?php echo $form->textArea($instansi,'Alamat',array('class'=>'form-control')); ?>
                     </div>
                   </div>
 
@@ -66,14 +54,14 @@
                    <div class="form-group">
                     <?php echo $form->labelEx($user,'password',array('class'=>'col-lg-2 control-label')); ?>
                     <div class="col-lg-10">
-                      <?php echo $form->textField($user,'password',array('class'=>'form-control')); ?>
+                      <?php echo $form->passwordField($user,'password',array('class'=>'form-control')); ?>
                     </div>
                   </div> 
 
                   <div class="form-group">
                     <label for="konfirmasi" class="col-lg-2 control-label">Konfirmasi Password</label>
                     <div class="col-lg-10">
-                      <input type="text" class="form-control" id="konfirmasi">
+                      <input type="password" class="form-control" id="konfirmasi">
                     </div>
                   </div>
                   

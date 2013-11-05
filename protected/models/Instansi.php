@@ -38,7 +38,7 @@ class Instansi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Id_instansi, Nama_instansi, Jenis_instasni, Alamat, No_tlp, email', 'required'),
+			array('Nama_instansi, Jenis_instasni, Alamat, No_tlp, email', 'required'),
 			array('Id_instansi', 'numerical', 'integerOnly'=>true),
 			array('Nama_instansi, Jenis_instasni', 'length', 'max'=>1000),
 			array('No_tlp', 'length', 'max'=>40),

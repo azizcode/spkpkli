@@ -8,6 +8,12 @@ class FrontController extends Controller
 	
 	public function actionIndex()
 	{
+		if (!Yii::app()->user->isGuest){
+			$this->redirect($this->admin.'/login');
+		} else {
+			$this->setPageTitle($this->name.' - Halaman Administrator');
+			$this->render('index');
+		}
 		$this->user		=	new LoginForm;
 		if(isset($_POST['LoginForm']))
 		{

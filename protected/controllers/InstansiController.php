@@ -1,6 +1,6 @@
 <?php
 
-class PerusahaanController extends Controller
+class InstansiController extends Controller
 {
 	public $layout='front';
 	public function actionIndex()

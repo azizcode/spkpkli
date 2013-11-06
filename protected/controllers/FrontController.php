@@ -9,25 +9,28 @@ class FrontController extends Controller
 	public function actionIndex()
 	{
 		if (!Yii::app()->user->isGuest){
-			$this->redirect($this->admin.'/login');
-		} else {
-			$this->setPageTitle($this->name.' - Halaman Administrator');
-			$this->render('index');
+			if(Yii::app()->user->level=='admin'){ $this->redirect('admin'); }
+			else if(Yii::app()->user->level=='instansi'){ $this->redirect('instansi'); }
 		}
+		$this->setPageTitle(' - Home');
 		$this->user		=	new LoginForm;
 		if(isset($_POST['LoginForm']))
 		{
 			$this->user->attributes=$_POST['LoginForm'];
 			if($this->user->validate() && $this->user->login()){
-				$this->redirect('admin');
+				$this->redirect('cek');
 			}	
 		}
 		$this->render('index');
 	}
 	
-	public function actionLogin()
+	public function actionCek()
 	{
-		
+		if (!Yii::app()->user->isGuest){
+			if(Yii::app()->user->level=='admin'){ $this->redirect('admin'); }
+			else if(Yii::app()->user->level=='instansi'){ $this->redirect('instansi'); }
+			else if(Yii::app()->user->level=='mahasiswa'){ $this->redirect('mahasiswa'); }
+		}
 	}
 
 	public function actionAbout()

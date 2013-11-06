@@ -3,8 +3,10 @@
 class InstansiController extends Controller
 {
 	public $layout='front';
+	public $identitas;
 	public function actionIndex()
 	{
+		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
 		$this->render('index');
 	}
 

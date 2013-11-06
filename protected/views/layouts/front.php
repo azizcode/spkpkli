@@ -46,11 +46,12 @@
 						</a>
 					</li>
 					<li class="dropdown menu pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i>Akun<b class="caret"></b>
-						</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php if(!empty($this->identitas)){ echo $this->identitas->Nama_instansi; }else{ echo"Akun"; } ?><b class="caret"></b>
+						</a> 
 						<div class="dropdown-menu col-md-9">
-							<?php $form=$this->beginWidget('CActiveForm', array(
+							<?php if(!empty($this->user)){ ?>
+								<?php $form=$this->beginWidget('CActiveForm', array(
 								  'enableClientValidation'=>true,
 								  'clientOptions'=>array(
 								  'validateOnSubmit'=>true,
@@ -74,7 +75,9 @@
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
 									<div class="col-md-6"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
 								</div>
-							<?php $this->endWidget(); ?>	
+							<?php $this->endWidget(); ?>
+
+							<?php } ?>	
 						</div>
 					</li>	
 				</ul>

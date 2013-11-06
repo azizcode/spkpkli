@@ -83,6 +83,18 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
+		<?php if(isset($this->admin) && $this->admin->level!='admin'){ ?>
+			<div id="wrapper">
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav side-nav">
+					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-table"></i>Slider</a></li>
+					</ul>
+				</div>
+			</div>
+		<?php } ?>
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>

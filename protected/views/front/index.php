@@ -1,3 +1,4 @@
+<div class="container" id="middle">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -54,4 +55,3 @@ Et pri etiam invidunt principes, delicata imperdiet vis no. An decore eirmod eos
 
 Eos lorem probatus ea. Vim etiam inani cu, no vis veritus maluisset. Ad unum consectetuer his. No perpetua dignissim pri.</div>
 </div>
-

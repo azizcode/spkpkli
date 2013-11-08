@@ -2,15 +2,49 @@
 
 class FrontController extends Controller
 {
-	public $layout='front';
+	public $layout	=	'front';
+	public $action	=	'home';
+	public $user;
+	
 	public function actionIndex()
 	{
+		if (!Yii::app()->user->isGuest){
+			if(Yii::app()->user->level=='admin'){ $this->redirect('admin'); }
+			else if(Yii::app()->user->level=='instansi'){ $this->redirect('instansi'); }
+		}
+		$this->setPageTitle(' - Home');
+		$this->user		=	new LoginForm;
+		if(isset($_POST['LoginForm']))
+		{
+			$this->user->attributes=$_POST['LoginForm'];
+			if($this->user->validate() && $this->user->login()){
+				$this->redirect('cek');
+			}	
+		}
 		$this->render('index');
+	}
+	
+	public function actionCek()
+	{
+		if (!Yii::app()->user->isGuest){
+			if(Yii::app()->user->level=='admin'){ $this->redirect('admin'); }
+			else if(Yii::app()->user->level=='instansi'){ $this->redirect('instansi'); }
+			else if(Yii::app()->user->level=='mahasiswa'){ $this->redirect('mahasiswa'); }
+		}
 	}
 
 	public function actionAbout()
 	{
+		$this->user		=	new LoginForm;
+		$this->action = 'about';
 		$this->render('about');
+	}
+	
+	public function actionPengumuman()
+	{
+		$this->user	  =	 new LoginForm;
+		$this->action = 'pengumuman';
+		$this->render('pengumuman');
 	}
 	
 	public function actionMahasiswa()
@@ -20,7 +54,7 @@ class FrontController extends Controller
 
 	public function actionDaftar()
 	{
-		
+		$this->user	=	new LoginForm;
 		$instansi    =  new Instansi;
 		$user        =  new User;
 		$j_instansi  =  array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain');

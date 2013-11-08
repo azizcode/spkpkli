@@ -3827,8 +3827,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
+<<<<<<< HEAD
   background-color: #080808;
   color: #fff;
+=======
+  background-color:rgb(132, 209, 200);;
+  color: rgb(225,225,225);;
+>>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 }
 
 .nav > li.disabled > a {
@@ -4644,6 +4649,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
 	list-style: none;
 	background-color: #DDD;
 	border-bottom: 1px solid #CCC;
+}
+.breadcrumb-inp {
+  padding: 8px 15px;
+  margin-bottom: -40px;
+  margin-left: -24;
+  margin-right: -25;
+  list-style: none;
+  background-color: #DDD;
+  border-bottom: 1px solid #CCC;
 }
 
 .breadcrumb > li {

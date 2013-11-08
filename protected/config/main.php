@@ -43,8 +43,10 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'rules'=>array(
-				'daftar'	   => 'front/daftar',
-				'perusahaan'	   => 'perusahaan/index',
+				'instansi'=>'instansi/index',
+				'admin'=>'admin/index',
+				'mahasiswa'=>'admin/mahasiswa',
+				'<action:\w+>'	   => 'front/<action>',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

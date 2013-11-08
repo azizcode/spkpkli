@@ -1,30 +1,30 @@
 <div class="container" id="middle">
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-	<ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	</ol>
-	<div class="carousel-inner">
-		<div class="item active">
-			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/6.jpg','1.jpg'); ?>
-			<div class="carousel-caption"></div>
-		</div>
-		<div class="item">
-			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/7.jpg','2.jpg'); ?>
-			<div class="carousel-caption"></div>
-		</div>
-		<div class="item">
-			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/8.jpg','3.jpg'); ?>
-			<div class="carousel-caption"></div>
-		</div>
-	</div>
-	<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-	</a>
-	<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span>
-	</a>
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/6.jpg','1.jpg'); ?>
+      <div class="carousel-caption"></div>
+    </div>
+    <div class="item">
+      <?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/7.jpg','2.jpg'); ?>
+      <div class="carousel-caption"></div>
+    </div>
+    <div class="item">
+      <?php echo CHtml::image(Yii::app()->request->baseUrl.'/gambar/8.jpg','3.jpg'); ?>
+      <div class="carousel-caption"></div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 </div>
 <div class="row">
   <div class="col-md-4 col-lg-4">Lorem ipsum dolor sit amet, quo dictas iracundia intellegat no, in sit petentium quaerendum. Per vide decore ex, at virtute consetetur consectetuer per. Ius ei tractatos dissentiet ullamcorper. Per id augue vocent periculis, ut est persius discere facilisis, tale autem omnes nam at.

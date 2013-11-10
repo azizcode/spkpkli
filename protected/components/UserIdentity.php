@@ -28,7 +28,7 @@ class UserIdentity extends CUserIdentity
 		    $this->errorCode=self::ERROR_NONE;
 		    // Store the role in a session:
 		    $this->setState('level', $user->Level);
-			$this->_id = $user->username;
+			$this->_id = $user->id_user;
 		}
 		return !$this->errorCode;
     }

@@ -7521,3 +7521,20 @@ REQUEST_URI=/spkpkli/css/print.css
 HTTP_REFERER=http://localhost/spkpkli/logout
 >>>>>>> 062324abe56278123816cf975bdcf696db8cd9bf
 ---
+2013/11/10 10:11:07 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(27): InstansiController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (57)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (27)
+in C:\xampp\htdocs\spkpkli\index.php (13)

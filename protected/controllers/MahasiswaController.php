@@ -2,7 +2,7 @@
 
 class MahasiswaController extends Controller
 {
-	public $layout="front";
+	public $layout="mahasiswa";
 	
 	public $identitas;
 	

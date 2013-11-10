@@ -2,7 +2,7 @@
 
 class InstansiController extends Controller
 {
-	public $layout='front';
+	public $layout='instansi';
 	public $identitas;
 	public function actionIndex()
 	{
@@ -29,6 +29,7 @@ class InstansiController extends Controller
 
 	public function actionView()
 	{
+		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
 		$this->render('view');
 	}
 

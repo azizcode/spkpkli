@@ -1,16 +1,4 @@
-<div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav side-nav">
-          <li style="
-            padding: 7;
-            color: rgb(170, 168, 168);
-              ">Navigation</li>
-          <li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-          <li class="sidebar"><a href="#"><i class="fa fa-bar-chart-o"></i>Input</a></li>
-          <li class="sidebar"><a href="#"><i class="fa fa-table"></i>View</a></li>
-          <li class="sidebar"><a href="#"><i class="fa fa-table"></i>Logout</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>    
+
   <div id="page-wrapper">
 
         <div class="row">

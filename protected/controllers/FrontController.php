@@ -10,6 +10,7 @@ class FrontController extends Controller
 	{
 		if (!Yii::app()->user->isGuest){
 			if(Yii::app()->user->level=='admin'){ $this->redirect('admin'); }
+			else if(Yii::app()->user->level=='mahasiswa'){ $this->redirect('mahasiswa'); }
 			else if(Yii::app()->user->level=='instansi'){ $this->redirect('instansi'); }
 		}
 		$this->setPageTitle(' - Home');
@@ -47,9 +48,10 @@ class FrontController extends Controller
 		$this->render('pengumuman');
 	}
 	
-	public function actionMahasiswa()
+	public function actionLogout()
 	{
-		$this->render('mahasiswa');
+		Yii::app()->user->logout();
+		$this->redirect(Yii::app()->request->baseUrl);
 	}
 
 	public function actionDaftar()

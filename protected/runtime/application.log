@@ -2887,6 +2887,50 @@ Stack trace:
 REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
 HTTP_REFERER=http://localhost/spkpkli/daftar
 ---
+<<<<<<< HEAD
+2013/11/05 05:20:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/triangular.png".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/img/triangu...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/img/triangular.png
+HTTP_REFERER=http://localhost/spkpkli/front/mahasiswa
+---
+2013/11/05 16:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/img/triangular.png".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/img/triangu...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/img/triangular.png
+HTTP_REFERER=http://localhost/spkpkli/front/mahasiswa
+---
+2013/11/05 16:51:06 [error] [exception.CException] exception 'CException' with message 'Property "Instansi.email" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('email')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('email')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Instansi), 'email')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Instansi), 'email', Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Instansi), 'email', Array)
+#5 D:\XAMPP\htdocs\spkpkli\protected\views\front\daftar.php(83): CActiveForm->textField(Object(Instansi), 'email', Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('daftar', Array, true)
+#10 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(25): CController->render('daftar', Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#16 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#17 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/spkpkli/front/daftar
+HTTP_REFERER=http://localhost/spkpkli/front/mahasiswa
+=======
 2013/11/05 14:19:46 [error] [php] Undefined variable: j_instansi (C:\xampp\htdocs\spkpkli\protected\views\front\daftar.php:28)
 Stack trace:
 #0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): FrontController->renderFile()
@@ -3701,6 +3745,103 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/spkpkli/perusahaan/js/bootstrap.js
 HTTP_REFERER=http://localhost/spkpkli/perusahaan/
+>>>>>>> ba44aaa28959e79ec1750fe8f9c22da1b367dea2
+---
+2013/11/05 17:19:58 [error] [exception.CException] exception 'CException' with message 'Property "Instansi.email" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('email')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('email')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Instansi), 'email')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Instansi), 'email', Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Instansi), 'email', Array)
+#5 D:\XAMPP\htdocs\spkpkli\protected\views\front\daftar.php(71): CActiveForm->textField(Object(Instansi), 'email', Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('daftar', Array, true)
+#10 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(45): CController->render('daftar', Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#16 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#17 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/front
+---
+2013/11/06 09:05:38 [error] [exception.CException] exception 'CException' with message 'Property "Instansi.email" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('email')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('email')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(Instansi), 'email')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(Instansi), 'email', Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(Instansi), 'email', Array)
+#5 D:\XAMPP\htdocs\spkpkli\protected\views\front\daftar.php(71): CActiveForm->textField(Object(Instansi), 'email', Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('daftar', Array, true)
+#10 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(45): CController->render('daftar', Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#16 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#17 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/07 14:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "kuisioner".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('kuisioner')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('kuisioner')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/kuisi...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+---
+2013/11/07 14:39:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/07 14:39:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/07 14:39:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/07 14:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
 ---
 2013/11/05 17:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
 Stack trace:

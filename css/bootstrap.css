@@ -324,13 +324,13 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #E7E7E7;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #080808;
   text-decoration: underline;
 }
 
@@ -1460,7 +1460,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #C2C2C2;
 }
 
 .table-bordered > thead > tr > th,
@@ -3827,8 +3827,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
+<<<<<<< HEAD
+  background-color: #080808;
+  color: #fff;
+=======
   background-color:rgb(132, 209, 200);;
   color: rgb(225,225,225);;
+>>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 }
 
 .nav > li.disabled > a {
@@ -4582,7 +4587,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
@@ -5434,7 +5439,7 @@ a.list-group-item:focus {
 
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f5f5f5;
+  background-color: #ddd;
   border-top: 1px solid #dddddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -5472,8 +5477,8 @@ a.list-group-item:focus {
 
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
-  border-color: #dddddd;
+  background-color: #ddd;
+  border-color: #C2C2C2;
 }
 
 .panel-default > .panel-heading + .panel-collapse .panel-body {
@@ -5507,8 +5512,8 @@ a.list-group-item:focus {
 }
 
 .panel-success > .panel-heading {
-  color: #468847;
-  background-color: #dff0d8;
+  color: #fff;
+  background-color: #47755E;
   border-color: #d6e9c6;
 }
 

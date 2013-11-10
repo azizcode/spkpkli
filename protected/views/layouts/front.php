@@ -88,12 +88,31 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
+<<<<<<< HEAD
+=======
+		<?php if(isset($this->admin) && $this->admin->level!='admin'){ ?>
+			<div id="wrapper">
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav side-nav">
+					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-table"></i>Slider</a></li>
+					</ul>
+				</div>
+			</div>
+		<?php } ?>
+>>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
 	 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
 	  	</div>
+<<<<<<< HEAD
+		</div>
+=======
 	  </div>
+>>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 	  	<script>
 	  		$(function() {
 			  $('.dropdown-toggle').dropdown();

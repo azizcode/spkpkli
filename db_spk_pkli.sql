@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 05 Nov 2013 pada 22.29
+-- Waktu pembuatan: 08 Nov 2013 pada 14.34
 -- Versi Server: 5.5.27
 -- Versi PHP: 5.4.7
 
@@ -231,13 +231,14 @@ CREATE TABLE IF NOT EXISTS `peserta_pkli` (
 --
 
 CREATE TABLE IF NOT EXISTS `program_pkli` (
-  `Id_program_pkli` int(11) NOT NULL,
+  `Id_program_pkli` int(11) NOT NULL AUTO_INCREMENT,
   `Id_instansi` int(11) NOT NULL,
-  `Bidang Keahlian` varchar(100) NOT NULL,
+  `Bidang_Keahlian` varchar(100) NOT NULL,
   `Jumlah_peserta` int(11) NOT NULL,
   `Waktu_pelaksanaan` varchar(100) NOT NULL,
+  `keterangan` text NOT NULL,
   PRIMARY KEY (`Id_program_pkli`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

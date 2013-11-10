@@ -89,12 +89,8 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
-<<<<<<< HEAD
-=======
 		
 		<div id="wrapper">
-		
->>>>>>> 5115c666e76a16594fcfcce2a06a982629a4a308
 		<?php if(isset($this->admin) && $this->admin->level!='admin'){ ?>
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav side-nav">
@@ -104,11 +100,8 @@
 					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
 					</ul>
 				</div>
-<<<<<<< HEAD
 			</div>
-		<?php } ?>
-=======
-		<?php } else{ ?>
+		<?php } else { ?>
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 				  <ul class="nav navbar-nav side-nav">
 					<li style="
@@ -121,8 +114,7 @@
 					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Logout</a></li>
 				  </ul>
 				</div><!-- /.navbar-collapse -->
-		 <?php }?>
->>>>>>> 5115c666e76a16594fcfcce2a06a982629a4a308
+		 <?php } ?>
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>

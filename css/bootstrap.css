@@ -450,6 +450,11 @@ cite {
   text-align: center;
 }
 
+.text-bottom {
+ margin-top: 50px;
+	font-size: 25px;
+}
+
 h1,
 h2,
 h3,

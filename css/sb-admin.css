@@ -23,6 +23,11 @@ body {
   padding: 5px 15px;
 }
 
+.panelx{
+	margin-left:115px;
+	margin-right:-70px;
+}
+
 /* Nav Messages */
 
 .messages-dropdown .dropdown-menu .message-preview .avatar,
@@ -94,13 +99,8 @@ table.tablesorter thead tr th:hover {
 
   #wrapper {
 	padding-left: 225px;
-<<<<<<< HEAD
 	background-color: white;
 	padding-bottom: 2px;
-=======
-  background-color: white;
-  padding-bottom: 2px;
->>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
   }
 
    #wrapper-inp {
@@ -163,8 +163,9 @@ table.tablesorter thead tr th:hover {
 	background-color: transparent;
   }
 
- .navbar-inverse .navbar-nav>li.sidebar>a:hover,
-  .navbar-inverse .navbar-nav>li.sidebar>a:focus {
+ .navbar-nav>li.sidebar>a:hover,
+ .navbar-nav>li.sidebar>a:focus {
+  
 	background-color: #080808;
   }
   /* Nav Messages */

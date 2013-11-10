@@ -88,8 +88,6 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
-<<<<<<< HEAD
-=======
 		<?php if(isset($this->admin) && $this->admin->level!='admin'){ ?>
 			<div id="wrapper">
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -102,7 +100,6 @@
 				</div>
 			</div>
 		<?php } ?>
->>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>

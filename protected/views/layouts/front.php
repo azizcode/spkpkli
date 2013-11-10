@@ -91,7 +91,7 @@
 		</nav>
 		
 		<div id="wrapper">
-		<?php if(isset($this->admin) && $this->admin->level!='admin'){ ?>
+		<?php if(isset($this->identitas) && $this->identitas>level!='admin'){ ?>
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav side-nav">
 					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
@@ -101,20 +101,17 @@
 					</ul>
 				</div>
 			</div>
-		<?php } else { ?>
+		<?php } else if(isset($this->identitas) && $this->identitas->level!='instansi'){ ?>
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-				  <ul class="nav navbar-nav side-nav">
-					<li style="
-						padding: 7;
-						color: rgb(170, 168, 168);
-							">Navigation</li>
-					<li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/rekomendasi"><i class="fa fa-bar-chart-o"></i>Rekomendasi</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/view"><i class="fa fa-table"></i>View</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Logout</a></li>
-				  </ul>
-				</div><!-- /.navbar-collapse -->
-		 <?php } ?>
+					<ul class="nav navbar-nav side-nav">
+					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
+					</ul>
+				</div>
+			</div>
+		<?php } ?>
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>

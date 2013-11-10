@@ -1,17 +1,3 @@
-<div id="wrapper">
-<div class="collapse navbar-collapse navbar-ex1-collapse">
-				  <ul class="nav navbar-nav side-nav">
-					<li style="
-						padding: 7;
-						color: rgb(170, 168, 168);
-							">Navigation</li>
-					<li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="sidebar"><a href="#"><i class="fa fa-bar-chart-o"></i>Rekomendasi</a></li>
-					<li class="sidebar"><a href="#"><i class="fa fa-table"></i>View</a></li>
-					<li class="sidebar"><a href="#"><i class="fa fa-table"></i>Logout</a></li>
-				  </ul>
-				</div><!-- /.navbar-collapse -->
-		</nav>		
 	<div id="page-wrapper">
 
         <div class="row">
@@ -19,123 +5,88 @@
 			<ol class="breadcrumb">
               <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
             </ol>
-            <h1>Dashboard <small>Statistics Overview</small></h1>
+            <h1>Dashboard <small>Sistem Pendukung Keputusan Bidang Keahlian PKLI</small></h1>
             <div class="alert alert-success alert-dismissable">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Welcome to SB Admin by <a class="alert-link" href="http://startbootstrap.com">Start Bootstrap</a>! Feel free to use this template for your admin needs! We are using a few different plugins to handle the dynamic tables and charts, so make sure you check out the necessary documentation links provided.
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> 
+              Selamat datang <?php echo $this->identitas->Nama_lengkap ?> di Program PKLI. 
+			  <p>Dalam Sistem ini anda akan diarahkan pada bidang keahlian yang sesuai dengan kemampuan anda dan hasil dari kuisioner yang anda isikan pada awal anda setelah login pertama kali.
+			  Anda akan diarahkan pada instansi atau perusahaan yang sesuai dengan dari bidang keahlian tersebut.</p>
+			  <b>Selamat Menjalankan Program Kerja PKLI anda..</b>
             </div>
           </div>
         </div><!-- /.row -->
 
         <div class="row">
-          <div class="col-lg-3">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">456</p>
-                    <p class="announcement-text">New Mentions!</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      View Mentions
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="panel panel-warning">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-check fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">12</p>
-                    <p class="announcement-text">To-Do Items</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Complete Tasks
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="panel panel-danger">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-tasks fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">18</p>
-                    <p class="announcement-text">Crawl Errors</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Fix Issues
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
+			<div class="panelx">
+          <div class="col-lg-5">
             <div class="panel panel-success">
               <div class="panel-heading">
                 <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                  <div class="col-xs-12">
+						<div class="col-xs-2 text-center">
+							<i class="fa fa-file-o fa-5x"></i>
+							<p class="announcement-text">Nilai</p>
+						</div>
+						<div class="col-xs-2 text-center">
+							<i class="fa fa-plus fa-3x"></i>
+						</div>
+						<div class="col-xs-2 text-center">
+							<i class="fa fa-check-square-o fa-5x"></i>
+							<p class="announcement-text">Kuisioner</p>
+						</div>						
+						<div class="col-xs-3 text-center">
+							<i class="fa fa-arrow-right fa-3x"></i>
+						</div>
+						<div class="col-xs-3 text-center">
+							<i class="fa fa-list fa-5x"></i>
+							<p class="announcement-text">Rekomendasi</p>
+						</div>
                   </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">56</p>
-                    <p class="announcement-text">New Orders!</p>
+                  <div class="col-xs-4 text-center">
+					<i class="fa fa-user fa-8x"></i>
+                  </div>
+				  <div class="col-xs-8">
+					<p class="text-bottom">Proses Rekomendasi</p>
                   </div>
                 </div>
               </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Complete Orders
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
             </div>
           </div>
+		  <div class="col-lg-5">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-12">
+						<div class="col-xs-2 text-center">
+							<i class="fa fa-list fa-5x"></i>
+							<p class="announcement-text">Rekomendasi</p>
+						</div>
+						<div class="col-xs-3 text-right">
+							<i class="fa fa-arrow-right fa-3x"></i>
+						</div>
+						<div class="col-xs-2 text-center">
+							<i class="fa fa-upload fa-5x"></i>
+							<p class="announcement-text">DaftarPKLI</p>
+						</div>						
+						<div class="col-xs-2 text-center">
+							<i class="fa fa-arrow-right fa-3x"></i>
+						</div>
+						<div class="col-xs-3 text-center">
+							<i class="fa fa-heart fa-5x"></i>
+							<p class="announcement-text">PKLI</p>
+						</div>
+                  </div>
+                  <div class="col-xs-4 text-center">
+					<i class="fa fa-user fa-8x"></i>
+                  </div>
+				  <div class="col-xs-8">
+					<p class="text-bottom">Daftar Sesuai Bidangmu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		  </div>
         </div><!-- /.row -->
 
      </div><!-- /#page-wrapper -->

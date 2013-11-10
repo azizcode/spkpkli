@@ -50,9 +50,10 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
+					
 					<li class="dropdown menu pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php if(!empty($this->identitas)){ echo $this->identitas->Nama_instansi; }else{ echo"Akun"; } ?><b class="caret"></b>
+						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php if(!empty($this->identitas)){ if(Yii::app()->user->level=="mahasiswa"){ echo $this->identitas->Nama_lengkap; }else{ echo $this->identitas->Nama_instansi; }}else{ echo"Akun"; } ?><b class="caret"></b>
 						</a> 
 						<div class="dropdown-menu col-md-9">
 							<?php if(!empty($this->user)){ ?>
@@ -88,28 +89,47 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
+<<<<<<< HEAD
+=======
+		
+		<div id="wrapper">
+		
+>>>>>>> 5115c666e76a16594fcfcce2a06a982629a4a308
 		<?php if(isset($this->admin) && $this->admin->level!='admin'){ ?>
-			<div id="wrapper">
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					<ul class="nav navbar-nav side-nav">
 					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
 					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-table"></i>Slider</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
 					</ul>
 				</div>
+<<<<<<< HEAD
 			</div>
 		<?php } ?>
+=======
+		<?php } else{ ?>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				  <ul class="nav navbar-nav side-nav">
+					<li style="
+						padding: 7;
+						color: rgb(170, 168, 168);
+							">Navigation</li>
+					<li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/rekomendasi"><i class="fa fa-bar-chart-o"></i>Rekomendasi</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/view"><i class="fa fa-table"></i>View</a></li>
+					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Logout</a></li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+		 <?php }?>
+>>>>>>> 5115c666e76a16594fcfcce2a06a982629a4a308
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
 	 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
 	  	</div>
-<<<<<<< HEAD
 		</div>
-=======
 	  </div>
->>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 	  	<script>
 	  		$(function() {
 			  $('.dropdown-toggle').dropdown();

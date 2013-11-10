@@ -45,7 +45,7 @@ return array(
 			'rules'=>array(
 				'instansi'=>'instansi/index',
 				'admin'=>'admin/index',
-				'mahasiswa'=>'admin/mahasiswa',
+				'mahasiswa'=>'mahasiswa/index',
 				'<action:\w+>'	   => 'front/<action>',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

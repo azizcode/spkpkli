@@ -1,3 +1,4 @@
+<?php $jenis= array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain'); ?>
 <div id="wrapper-inp">
 
       <!-- Sidebar -->
@@ -43,82 +44,99 @@
               <?php echo Yii::app()->user->getFlash('status'); ?>
               <?php $form=$this->beginWidget('CActiveForm', array(
               'enableClientValidation'=>true,
-              'clientOptions'=>array(
+              'clientOptions'=>array(//.;
               'validateOnSubmit'=>true,
               'htmlOptions' => array("class"=>"form-horizontal",'role' => 'form'),
               ),
               )); ?>
 
                 <fieldset>
-                  <div class="form-group">
-                    <label for="select" class="col-lg-2 control-label">Nama Instansi</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="namaInstansi">
+                  <div class="row">
+                    <label class="col-lg-2">Nama Instansi</label>
+                    <div class="col-lg-10 ">
+                      <?php echo $this->identitas->Nama_instansi ?>
                     </div>
                   </div>
 
-                  <div class="form-group">
-                  <label for="select" class="col-lg-2 control-label">Jenis Perusahan</label>
-                    <div class="col-lg-10">
-                      <select class="form-control" id="select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                  <div class="row">
+                  <label class="col-lg-2 ">Jenis Perusahan</label>
+                    <div class="col-lg-10 ">
+                      <?php echo $jenis[$this->identitas->Jenis_instasni]; ?>
                     </div>
                     </div>
 
-                    <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Lain-Lain</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="lain">
+                   <div class="row">
+                    <label class="col-lg-2">Alamat Instansi</label>
+                    <div class="col-lg-10 ">
+                      <?php echo $this->identitas->Alamat ?>
                     </div>
                   </div>
 
-                   <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Alamat Instansi</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="namaInstansi">
+                   <div class="row">
+                    <label class="col-lg-2 ">Nomor Telpon</label>
+                    <div class="col-lg-10 ">
+                      <?php echo $this->identitas->No_tlp ?>
                     </div>
                   </div>
 
-                   <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Nomor Telpon</label>
-                    <div class="col-lg-10">
-                      <input type="text" class="form-control" id="namaInstansi">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
+                  <div class="row">
                   <label for="select" class="col-lg-2 control-label">Bidang Keahlian</label>
                     <div class="col-lg-10">
                         <?php echo $form->dropDownList($program_pkli,'Bidang_Keahlian', $b_keahlian,array('class'=>'form-control','id' => 'select','required'=>'required')); ?>
                     </div>
                     </div>
 
-                   <div class="form-group">
+                   <div class="row">
                     <label for="inputEmail" class="col-lg-2 control-label">Jumlah Peserta</label>
                     <div class="col-lg-10">
                       <?php echo $form->textField($program_pkli,'Jumlah_peserta',array('class'=>'form-control')); ?>
                     </div>
                   </div> 
                   
-                  <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Waktu Pelaksanaan</label>
-                    <div class="col-lg-10">
-                      <?php echo $form->textField($program_pkli,'Waktu_pelaksanaan',array('class'=>'form-control')); ?>
-                    </div>
+                  <div class="row">
+                    <label for="inputEmail" class="col-lg-2 control-label"> Awal Pelaksanaan</label>
+                          <div class="col-lg-10">
+                          <div class='input-group date' id='datetimepicker5'>
+                          <?php echo $form->textField($program_pkli,'awal',array('class'=>'form-control','data-format'=>"YYYY/MM/DD")); ?>
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                          </span>
+                          </div>
+                          <script type="text/javascript">
+                          $(function () {
+                          $('#datetimepicker5').datetimepicker({
+                          pickTime: false
+                          });
+                          });
+                          </script>
+                          </div>
                   </div>
-                  <div class="form-group">
+
+                  <div class="row">
+                    <label for="inputEmail" class="col-lg-2 control-label"> Akhir Pelaksanaan</label>
+                          <div class="col-lg-10">
+                          <div class='input-group date' id='datetimepicker6'>
+                          <?php echo $form->textField($program_pkli,'akhir',array('class'=>'form-control','data-format'=>"YYYY/MM/DD")); ?>
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                          </span>
+                          </div>
+                          <script type="text/javascript">
+                          $(function () {
+                          $('#datetimepicker6').datetimepicker({
+                          pickTime: false
+                          });
+                          });
+                          </script>
+                          </div>
+                  </div>
+
+                  <div class="row">
                     <label for="textArea" class="col-lg-2 control-label">Keterangan</label>
                     <div class="col-lg-10">
                       <?php echo $form->textArea($program_pkli,'keterangan',array('class'=>'form-control')); ?>
                       <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
                     </div>
                   </div>
-                 <div class="form-group">
+                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-2">
                       <button class="btn btn-default">Cancel</button> 
                       <button type="submit" class="btn btn-primary">Submit</button> 
@@ -137,7 +155,3 @@
       </div><!-- /#page-wrapper -->
 
     </div><!-- /#wrapper -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>

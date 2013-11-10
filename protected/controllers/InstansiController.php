@@ -12,6 +12,10 @@ class InstansiController extends Controller
 
 	public function actionInput()
 	{
+		if (Yii::app()->user->isGuest){
+			$this->redirect(Yii::app()->request->baseUrl );
+		}
+		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
 		$program_pkli = new ProgramPkli;
 		$b_keahlian = array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
 		if(isset($_POST['ProgramPkli'])){

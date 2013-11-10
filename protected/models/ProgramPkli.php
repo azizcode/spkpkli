@@ -8,7 +8,8 @@
  * @property integer $Id_instansi
  * @property string $Bidang_Keahlian
  * @property integer $Jumlah_peserta
- * @property string $Waktu_pelaksanaan
+ * @property string $awal
+ * @property string $akhir
  * @property string $keterangan
  */
 class ProgramPkli extends CActiveRecord
@@ -39,12 +40,12 @@ class ProgramPkli extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Id_instansi, Bidang_Keahlian, Jumlah_peserta, Waktu_pelaksanaan, keterangan', 'required'),
+			array('Id_instansi, Bidang_Keahlian, Jumlah_peserta, awal, akhir, keterangan', 'required'),
 			array('Id_instansi, Jumlah_peserta', 'numerical', 'integerOnly'=>true),
-			array('Bidang_Keahlian, Waktu_pelaksanaan', 'length', 'max'=>100),
+			array('Bidang_Keahlian', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('Id_program_pkli, Id_instansi, Bidang_Keahlian, Jumlah_peserta, Waktu_pelaksanaan, keterangan', 'safe', 'on'=>'search'),
+			array('Id_program_pkli, Id_instansi, Bidang_Keahlian, Jumlah_peserta, awal, akhir, keterangan', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,7 +70,8 @@ class ProgramPkli extends CActiveRecord
 			'Id_instansi' => 'Id Instansi',
 			'Bidang_Keahlian' => 'Bidang Keahlian',
 			'Jumlah_peserta' => 'Jumlah Peserta',
-			'Waktu_pelaksanaan' => 'Waktu Pelaksanaan',
+			'awal' => 'Awal',
+			'akhir' => 'Akhir',
 			'keterangan' => 'Keterangan',
 		);
 	}
@@ -89,7 +91,8 @@ class ProgramPkli extends CActiveRecord
 		$criteria->compare('Id_instansi',$this->Id_instansi);
 		$criteria->compare('Bidang_Keahlian',$this->Bidang_Keahlian,true);
 		$criteria->compare('Jumlah_peserta',$this->Jumlah_peserta);
-		$criteria->compare('Waktu_pelaksanaan',$this->Waktu_pelaksanaan,true);
+		$criteria->compare('awal',$this->awal,true);
+		$criteria->compare('akhir',$this->akhir,true);
 		$criteria->compare('keterangan',$this->keterangan,true);
 
 		return new CActiveDataProvider($this, array(

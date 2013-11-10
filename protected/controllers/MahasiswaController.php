@@ -11,7 +11,7 @@ class MahasiswaController extends Controller
 		if(Yii::app()->user->isGuest) {
 			$this->redirect(Yii::app()->request->baseUrl);
 		}
-		$this->identitas = Mahasiswa::model()->findByPk(Yii::app()->user->id);
+		$this->identitas 				= Mahasiswa::model()->findByPk(Yii::app()->user->id);
 		$this->render('index');
 	}
 	

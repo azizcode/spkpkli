@@ -18,7 +18,8 @@ class InstansiController extends Controller
 		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
 		$program_pkli = new ProgramPkli;
 		$b_keahlian = array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
-		if($_GET['fungsi']=='edit' && isset($_GET['id'])){
+
+		if(isset($_GET['fungsi']) && isset($_GET['id'])){
 			$program_pkli = $program_pkli->findByPk($_GET['id']);
 		}
 		if(isset($_POST['ProgramPkli'])){

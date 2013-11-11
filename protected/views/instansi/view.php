@@ -42,7 +42,7 @@
                     <td><?php echo $list->awal; ?></td>
                     <td><?php echo $list->akhir; ?></td>
                     <td><?php echo $list->keterangan; ?></td>
-                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/input/edit/'.$list->Id_program_pkli; ?>">Edit</a><a href="">Delete</a><a href="">Detail</a></td>
+                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a><a href="">Delete</a><a href="">Detail</a></td>
                     <?php } ?>
                   </tr>
                 </tbody>

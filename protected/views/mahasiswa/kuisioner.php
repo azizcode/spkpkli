@@ -20,19 +20,19 @@
 									<label>1. Seberapa besar minat anda dalam bidang Pemrograman?</label>
 									<div class="radio-kuisioner">
 										<label class="radio-inline">
-											<input type="radio" name="soal1" id="optionsRadios1" value="option1"  checked="checked"> 1
+											<input type="radio" name="soal1" id="optionsRadios1" value="1"  checked="checked"> 1
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal1" id="optionsRadios1" value="option1" > 2
+											<input type="radio" name="soal1" id="optionsRadios1" value="2" > 2
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal1" id="optionsRadios1" value="option1" > 3
+											<input type="radio" name="soal1" id="optionsRadios1" value="3" > 3
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal1" id="optionsRadios1" value="option1" > 4
+											<input type="radio" name="soal1" id="optionsRadios1" value="4" > 4
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal1" id="optionsRadios1" value="option1" > 5
+											<input type="radio" name="soal1" id="optionsRadios1" value="5" > 5
 										</label>
 									</div>	
 								</div>
@@ -40,19 +40,19 @@
 									<label>2. Seberapa besar minat anda dalam bidang Jaringan?</label>
 									<div class="radio-kuisioner">
 										<label class="radio-inline">
-											<input type="radio" name="soal2" id="optionsRadios1" value="option1" checked="checked" > 1
+											<input type="radio" name="soal2" id="optionsRadios1" value="1" checked="checked" > 1
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal2" id="optionsRadios1" value="option1" > 2
+											<input type="radio" name="soal2" id="optionsRadios1" value="2" > 2
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal2" id="optionsRadios1" value="option1" > 3
+											<input type="radio" name="soal2" id="optionsRadios1" value="3" > 3
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal2" id="optionsRadios1" value="option1" > 4
+											<input type="radio" name="soal2" id="optionsRadios1" value="4" > 4
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal2" id="optionsRadios1" value="option1" > 5
+											<input type="radio" name="soal2" id="optionsRadios1" value="5" > 5
 										</label>
 									</div>
 								</div>
@@ -60,19 +60,19 @@
 									<label>3. Seberapa besar minat anda dalam bidang Multimedia?</label>
 									<div class="radio-kuisioner">
 										<label class="radio-inline">
-											<input type="radio" name="soal3" id="optionsRadios1" value="option1" checked="checked" > 1
+											<input type="radio" name="soal3" id="optionsRadios1" value="1" checked="checked" > 1
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal3" id="optionsRadios1" value="option1" > 2
+											<input type="radio" name="soal3" id="optionsRadios1" value="2" > 2
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal3" id="optionsRadios1" value="option1" > 3
+											<input type="radio" name="soal3" id="optionsRadios1" value="3" > 3
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal3" id="optionsRadios1" value="option1" > 4
+											<input type="radio" name="soal3" id="optionsRadios1" value="4" > 4
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal3" id="optionsRadios1" value="option1" > 5
+											<input type="radio" name="soal3" id="optionsRadios1" value="5" > 5
 										</label>
 									</div>
 								</div>
@@ -80,19 +80,19 @@
 									<label>4. Seberapa besar minat anda dalam bidang Hardware?</label>
 									<div class="radio-kuisioner">
 										<label class="radio-inline">
-											<input type="radio" name="soal4" id="optionsRadios1" value="option1" checked="checked"> 1
+											<input type="radio" name="soal4" id="optionsRadios1" value="1" checked="checked"> 1
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal4" id="optionsRadios1" value="option1" > 2
+											<input type="radio" name="soal4" id="optionsRadios1" value="2" > 2
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal4" id="optionsRadios1" value="option1" > 3
+											<input type="radio" name="soal4" id="optionsRadios1" value="3" > 3
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal4" id="optionsRadios1" value="option1" > 4
+											<input type="radio" name="soal4" id="optionsRadios1" value="4" > 4
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal4" id="optionsRadios1" value="option1" > 5
+											<input type="radio" name="soal4" id="optionsRadios1" value="5" > 5
 										</label>
 									</div>
 								</div>
@@ -100,19 +100,19 @@
 									<label>5. Seberapa besar minat anda dalam bidang Sistem Informasi?</label>
 									<div class="radio-kuisioner">
 										<label class="radio-inline">
-											<input type="radio" name="soal5" id="optionsRadios1" value="option1" checked="checked"> 1
+											<input type="radio" name="soal5" id="optionsRadios1" value="1" checked="checked"> 1
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal5" id="optionsRadios1" value="option1" > 2
+											<input type="radio" name="soal5" id="optionsRadios1" value="2" > 2
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal5" id="optionsRadios1" value="option1" > 3
+											<input type="radio" name="soal5" id="optionsRadios1" value="3" > 3
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal5" id="optionsRadios1" value="option1" > 4
+											<input type="radio" name="soal5" id="optionsRadios1" value="4" > 4
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="soal5" id="optionsRadios1" value="option1" > 5
+											<input type="radio" name="soal5" id="optionsRadios1" value="5" > 5
 										</label>
 									</div>
 								</div>
@@ -120,10 +120,10 @@
 								<label>6. Apakah nilai matakuliah anda sudah mempresentasikan kemampuan anda?</label>
 									<div class="radio-kuisioner">
 										<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="checked" > Ya
+											<input type="radio" name="soal6" id="optionsRadiosInline1" value="ya" checked="checked" > Ya
 										</label>
 										<label class="radio-inline">
-											<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" > Tidak
+											<input type="radio" name="soal6" id="optionsRadiosInline1" value="tidak" > Tidak
 										</label>
 									</div>
 								</div>

@@ -148,6 +148,7 @@
 									</div>
 								</div>
 								<button type="submit" class="btn btn-primary">Kirim</button>
+								<button type="reset" class="btn btn-primary">Kirim</button>
 							</form>
 						</div>
 					</div>

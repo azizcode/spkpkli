@@ -95,8 +95,24 @@ class Nilai extends CActiveRecord
 		}else if($nilai['20']>=2.5 && $nilai['20']<3.5){
 			if($nilai['21']>=3.5){
 				$cocok	= true;
-			}else if($nilai[2]>=2.5 && $nilai[2]<3.5){
+			}else if($nilai['21']>=2.5 && $nilai['21']<3.5){
 				if($nilai['19']>=2.5){
+					$cocok	= true;
+				}
+			}
+		}
+		return $cocok;
+	}
+	
+	public function multimedia($nilai){
+		$cocok		=	false;
+		if($nilai['16']>=3.5){
+			$cocok	= true;
+		}else{
+			if($nilai['17']>=3.5){
+				$cocok	= true;
+			}else if($nilai['17']>=2.5 && $nilai['17']<3.5){
+				if($nilai['18']>=2.5){
 					$cocok	= true;
 				}
 			}

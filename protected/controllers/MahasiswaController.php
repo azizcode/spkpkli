@@ -20,13 +20,17 @@ class MahasiswaController extends Controller
 	public function actionPkli()
 	{
 		$this->load();
-		$this->render('pkli');
+		$pkli		=	ProgramPkli::model()->findAll();
+		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
+		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
 	}
 	
 	public function actionRekomendasi()
 	{
 		$this->load();
-		$this->render('rekomendasi');
+		$rekomendasi	=	BidangKeahlian::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
+		$bidang			=	explode(";", $rekomendasi->bidang_keahlian);
+		$this->render('rekomendasi',array('rekomendasi' => $bidang));
 	}
 	
 	public function actionKuisioner()
@@ -110,8 +114,8 @@ class MahasiswaController extends Controller
 			$keahlian->NIM				=	$this->identitas->NIM;
 			$keahlian->bidang_keahlian	=	'';
 			$i							=	1;
-			foreach($prioritas as $bidang => $indeks){
-				if($i<=2){ $keahlian->bidang_keahlian .= $bidang.'='.$indeks.';'; $i++; }
+			foreach($prioritas as $bidang){
+				if($i<=2){ $keahlian->bidang_keahlian .= $bidang; if($i==1){ $keahlian->bidang_keahlian .= ';'; } $i++; }
 			}
 			if($keahlian->save()){ $this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/rekomendasi'); }
 		}

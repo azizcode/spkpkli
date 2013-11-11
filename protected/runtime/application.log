@@ -10496,3 +10496,225 @@ Stack trace:
 REQUEST_URI=/spkpkli/pengumuman
 HTTP_REFERER=http://localhost/spkpkli/about
 ---
+2013/11/11 22:32:16 [error] [exception.CException] exception 'CException' with message 'MahasiswaController cannot find the requested view "rekomendasi".' in D:\xampp\htdocs\spkpkli\framework\web\CController.php:878
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('rekomendasi', NULL, true)
+#1 D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(29): CController->render('rekomendasi')
+#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionRekomendasi()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('rekomendasi')
+#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/rekom...')
+#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/rekomendasi
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/11 22:36:57 [error] [php] Undefined variable: matkul (D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\rekomendasi.php:134)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(29): MahasiswaController->render()
+#3 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionRekomendasi()
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/rekomendasi
+in D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\rekomendasi.php (134)
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (29)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/11 22:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/rekomendasi
+---
+2013/11/11 22:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/rekomendasi
+---
+2013/11/11 23:30:08 [error] [php] Object of class ProgramPkli could not be converted to string (D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php:35)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(24): MahasiswaController->render()
+#3 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php (35)
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "insert".' in D:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('insert')
+#1 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('insert')
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('site/insert')
+#3 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/site/insert
+---
+2013/11/12 00:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/site/index
+---
+2013/11/12 00:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/site/index
+---
+2013/11/12 00:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/site/index
+---
+2013/11/12 00:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/site/index
+---
+2013/11/12 00:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "insert".' in D:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('insert')
+#1 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('insert')
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('site/insert')
+#3 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/site/insert
+---
+2013/11/12 00:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/site/insert
+---
+2013/11/12 00:05:11 [error] [php] Undefined variable: user (D:\xampp\htdocs\spkpkli\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/site/insert
+in D:\xampp\htdocs\spkpkli\protected\controllers\SiteController.php (39)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:05:49 [error] [exception.CException] exception 'CException' with message 'Property "User.level" is not defined.' in D:\xampp\htdocs\spkpkli\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(159): CComponent->__set('level', 'mahasiswa')
+#1 D:\xampp\htdocs\spkpkli\protected\controllers\SiteController.php(42): CActiveRecord->__set('level', 'mahasiswa')
+#2 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): SiteController->actionInsert()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('insert')
+#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('site/insert')
+#8 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/site/insert
+---

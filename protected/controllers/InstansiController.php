@@ -21,7 +21,14 @@ class InstansiController extends Controller
 
 		if(isset($_GET['fungsi']) && isset($_GET['id'])){
 			$program_pkli = $program_pkli->findByPk($_GET['id']);
+			if($_GET['fungsi']=='delete'){
+				$program_pkli->delete();
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah dihapus</div>');
+				$this->redirect(Yii::app()->request->baseUrl.'/instansi/view');
+			}
+			$program_pkli = $program_pkli->findByPk($_GET['id']);
 		}
+
 		if(isset($_POST['ProgramPkli'])){
 			$program_pkli->Bidang_Keahlian=$_POST['ProgramPkli']['Bidang_Keahlian'];
 			$program_pkli->Jumlah_peserta=$_POST['ProgramPkli']['Jumlah_peserta'];

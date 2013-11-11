@@ -46,8 +46,12 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
-					<li class="menu pull-right">
-						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php echo $this->identitas->Nama_lengkap; ?> <b class="caret"></b>
+					
+					<li class="menu pull-right" style="border:none;">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
+							<span class="glyphicon glyphicon-user"></span>
+							<span class="glyphicon-class"><?php echo $this->identitas->Nama_lengkap; ?></span>
+						</a>
 					</li>	
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
@@ -58,17 +62,16 @@
 				<ul class="nav navbar-nav side-nav">
 				<li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/rekomendasi"><i class="fa fa-bar-chart-o"></i>Rekomendasi</a></li>
-				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/view"><i class="fa fa-table"></i>View</a></li>
-				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Logout</a></li>
+				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/pkli"><i class="fa fa-table"></i>Program PKLI</a></li>
+				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Keluar</a></li>
 				</ul>
 			</div>
-		<?php echo $content; ?>
-		<div class="footer">
-	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
-	 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
-	  	</div>
+			<?php echo $content; ?>
+			<div class="footer">
+				 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
+				 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
+			</div>
 		</div>
-	  </div>
 	  	<script>
 	  		$(function() {
 			  $('.dropdown-toggle').dropdown();

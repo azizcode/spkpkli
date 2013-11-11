@@ -119,4 +119,77 @@ class Nilai extends CActiveRecord
 		}
 		return $cocok;
 	}
+	
+	public function si($nilai){
+		$cocok		=	false;
+		if($nilai['11']>=3.5){
+			$cocok	= true;
+		}else if($nilai['11']>=2.5 && $nilai['11']<3.5){
+			if($nilai['13']>=2.5){
+				$cocok	= true;
+			}else{
+				if($nilai['12']>=3.5){
+					$cocok	= true;
+				}else if($nilai['12']>=2.5 && $nilai['12']<3.5){
+					if($nilai['14']>=3.5){
+						$cocok	= true;
+					}else if($nilai['14']>=2.5 && $nilai['14']<3.5){
+						if($nilai['15']>=3.5){
+							$cocok	= true;
+						}
+					}
+				}
+			}
+		}
+		return $cocok;
+	}
+	
+	public function jaringan($nilai){
+		$cocok		=	false;
+		if($nilai['8']>=2.5){
+			$cocok	= true;
+		}else{
+			if($nilai['10']>=2.5){
+				$cocok	= true;
+			}else{
+				if($nilai['7']>=2.5){
+					$cocok	= true;
+				}else{
+					if($nilai['9']>=2.5){
+						$cocok	= true;
+					}
+				}
+			}
+		}
+		return $cocok;
+	}
+	
+	public function pemrograman($nilai){
+		$cocok		=	false;
+		if($nilai['2']>=3.5){
+			$cocok	= true;
+		}else if($nilai['2']>=2.5 && $nilai['2']<3.5){
+			if($nilai['1']>=3.5){
+				$cocok	= true;
+			}else if($nilai['1']>=2.5 && $nilai['1']<3.5){
+				if($nilai['4']>=3.5){
+					$cocok	= true;
+				}else if($nilai['4']>=2.5 && $nilai['4']<3.5){
+					if($nilai['5']>=3.5){
+						$cocok	= true;
+					}
+				}
+			}
+		}else{
+			if($nilai['3']>=2.5){
+				$cocok	= true;
+			}else{
+				if($nilai['6']>=2.5){
+					$cocok	= true;
+				}
+			}
+		}
+		return $cocok;
+	}
+	
 }

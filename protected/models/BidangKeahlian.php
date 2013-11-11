@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'bidang_keahlian':
  * @property integer $id
  * @property integer $NIM
- * @property integer $bidang_keahlian
+ * @property string $bidang_keahlian
  */
 class BidangKeahlian extends CActiveRecord
 {
@@ -37,7 +37,7 @@ class BidangKeahlian extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('NIM, bidang_keahlian', 'required'),
-			array('NIM, bidang_keahlian', 'numerical', 'integerOnly'=>true),
+			array('NIM', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, NIM, bidang_keahlian', 'safe', 'on'=>'search'),
@@ -80,7 +80,7 @@ class BidangKeahlian extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('NIM',$this->NIM);
-		$criteria->compare('bidang_keahlian',$this->bidang_keahlian);
+		$criteria->compare('bidang_keahlian',$this->bidang_keahlian,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

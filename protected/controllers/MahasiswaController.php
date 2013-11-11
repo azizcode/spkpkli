@@ -22,6 +22,7 @@ class MahasiswaController extends Controller
 		$this->load();
 		$pkli		=	ProgramPkli::model()->findAll();
 		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
+		if(!$tempatpkli){ $tempatpkli = "-"; }
 		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
 	}
 	

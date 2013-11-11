@@ -18,7 +18,7 @@
 								<tbody>
 									<tr class="success"><td>NIM</td><td><?php echo $this->identitas->NIM; ?></td></tr>
 									<tr class="active"><td>Nama</td><td><?php echo $this->identitas->Nama_lengkap; ?></td></tr>
-									<tr class="active"><td>Program PKLI</td><td><?php echo $tempatpkl; ?></td></tr>
+									<tr class="success"><td>Program PKLI</td><td><?php echo $tempatpkli; ?></td></tr>
 								</tbody>
 							</table>
 						</div>

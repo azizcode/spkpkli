@@ -10718,3 +10718,196 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/spkpkli/site/insert
 ---
+2013/11/12 00:10:00 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:13:20 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:14:19 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\index.php:9)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(17): MahasiswaController->render()
+#3 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\index.php (9)
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (17)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:15:20 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:15:22 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:23:52 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:24:17 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "localhost".' in D:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('localhost')
+#1 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('localhost')
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/localhost')
+#3 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/localhost
+---
+2013/11/12 00:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/localhost
+---
+2013/11/12 00:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/localhost
+---
+2013/11/12 00:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/localhost
+---
+2013/11/12 00:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/localhost
+---
+2013/11/12 00:24:35 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:25:25 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (12)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:26:37 [error] [php] Undefined variable: pkli (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:22)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (22)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:27:17 [error] [php] include(PesertaPkli.php): failed to open stream: No such file or directory (D:\xampp\htdocs\spkpkli\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(24): spl_autoload_call()
+#1 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#2 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#5 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#6 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/12 00:27:51 [error] [php] Undefined variable: tempatpkl (D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php:21)
+Stack trace:
+#0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\xampp\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(26): MahasiswaController->render()
+#3 D:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#4 D:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php (21)
+in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (26)
+in D:\xampp\htdocs\spkpkli\index.php (13)

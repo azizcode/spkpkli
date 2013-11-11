@@ -89,42 +89,11 @@
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>
-		
-		<div id="wrapper">
-		<?php if(isset($this->identitas) && Yii::app()->user->level!='admin'){ ?>
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav side-nav">
-					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
-					</ul>
-				</div>
-		<?php } else if(isset($this->identitas) && Yii::app()->user->level!='instansi'){ ?>
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav side-nav">
-					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
-					</ul>
-				</div>
-		<?php } else if(isset($this->identitas) && Yii::app()->user->level!='mahasiswa'){ ?>
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav side-nav">
-					<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
-					<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
-					</ul>
-				</div>
-		<?php } ?>
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
 	 		 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
 	  	</div>
-		</div>
 	  </div>
 	  	<script>
 	  		$(function() {

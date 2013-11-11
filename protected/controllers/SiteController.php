@@ -31,6 +31,22 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
+	
+	public function actionInsert()
+	{
+		$mahasiswa	=	Mahasiswa::model()->findAll();
+		$i=17;
+		foreach($mahasiswa as $value){
+			$user			=	new User;
+			$user->id_user	=	$i;
+			$user->username	=	$value->NIM;
+			$user->password	=	md5($value->NIM);
+			$user->Level	=	'mahasiswa';
+			$user->status	=	'1';
+			$user->save();
+			$i++;
+		}
+	}
 
 	/**
 	 * This is the action to handle external exceptions.

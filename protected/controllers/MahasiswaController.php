@@ -20,9 +20,9 @@ class MahasiswaController extends Controller
 		$this->render('index');
 	}
 	
-	public function actionRekomendasi()
+	public function actionPkli()
 	{
-		$this->render('rekomendasi');
+		$this->render('pkli');
 	}
 	
 	public function actionView()
@@ -40,19 +40,22 @@ class MahasiswaController extends Controller
 		if(Yii::app()->user->isGuest) {
 			$this->redirect(Yii::app()->request->baseUrl);
 		}
-		$matkul = Matakuliah::model()->findAll();
-		$this->identitas 	= Mahasiswa::model()->findByPk(Yii::app()->user->id);
-		$hardware			=	false;
+		$matkul 				=	Matakuliah::model()->findAll();
+		$this->identitas 		=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
+		if(isset($_POST['soal1'])){
+			$hardware			=	false;
 			$data				=	Nilai::model()->findAllByAttributes(array('NIM'=>$this->identitas->NIM));
-			$nilaihardware	=	array();
+			$nilaihardware		=	array();
 			foreach($data as $value){
 				if($value->kode_mk<=21&&$value->kode_mk>18){
 					$indeks[$value->kode_mk]		=	$value->Nilai;
-					$nilaihardware					  +=	$indeks;
+					$nilaihardware					+=	$indeks;
 				}
 			}
-			$hardware								=	Nilai::model()->hardware($nilaihardware);
-		$this->render('kuisioner',array("matkul"=>$matkul,'hardware'=>$hardware));
+			$hardware			=	Nilai::model()->hardware($nilaihardware);
+			$this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/pkli');
+		}
+		$this->render('kuisioner',array("matkul"=>$matkul));
 	}
 
 	// Uncomment the following methods and override them if needed

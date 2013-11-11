@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Inang: 127.0.0.1
--- Waktu pembuatan: 12 Nov 2013 pada 00.08
+-- Waktu pembuatan: 12 Nov 2013 pada 00.38
 -- Versi Server: 5.5.27
 -- Versi PHP: 5.4.7
 
@@ -75,6 +75,7 @@ INSERT INTO `instansi` (`Id_instansi`, `Nama_instansi`, `Jenis_instasni`, `Alama
 --
 
 CREATE TABLE IF NOT EXISTS `mahasiswa` (
+  `id_mahasiswa` int(11) NOT NULL,
   `NIM` int(11) NOT NULL,
   `Nama_lengkap` varchar(1000) NOT NULL,
   `Jenis_kelamin` varchar(100) NOT NULL,
@@ -92,24 +93,24 @@ CREATE TABLE IF NOT EXISTS `mahasiswa` (
   `Alamat_asal` text NOT NULL,
   `No_tlp` int(100) NOT NULL,
   `Email` text NOT NULL,
-  PRIMARY KEY (`NIM`)
+  PRIMARY KEY (`id_mahasiswa`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`NIM`, `Nama_lengkap`, `Jenis_kelamin`, `Tempat_lahir`, `Tanggal_lahir`, `Nama_orangtua`, `Pekerjaan_orangtua`, `Alamat-orangtua`, `Kota-orangtua`, `Profinsi-orangtua`, `Tahun_masuk`, `Jurusan`, `Pendidikan_terakhir`, `Alamat_dmalang`, `Alamat_asal`, `No_tlp`, `Email`) VALUES
-(10650021, 'Lukman', 'laki-laki', 'Madura', '1993-02-02', 'Anjas', 'Bupati', 'Madura', 'Madura', 'Jawa Timur', 2010, 'informatika', 'SMA', 'sawojajar', 'Madura', 98564309, 'lukmananjas@gmail.com'),
-(10650032, 'Rizal Furon Ramadhan', 'laki-laki', 'Bali', '1993-09-02', 'Furqon', 'Dosen', 'Bali', 'Bali', 'Bali', 2010, 'informatika', 'SMA', 'Sumber sari', 'Bali', 98742898, 'Furqon@gmail.com'),
-(10650054, 'Ardi Yulianto', 'laki-laki', 'Lumajang', '1992-08-05', 'yulianto', 'Programmer', 'Lumajang', 'Lumajang', 'Jawa Timur', 2010, 'informatika', 'SMA', 'Metro', 'Lumajang', 87321465, 'ardiyulianto@gmail.com'),
-(10650056, 'Syfei Karim', 'laki-laki', 'Samarinda', '1992-02-04', 'Karim', 'Dosen', 'Kalimantan', 'Samarinda', 'Kaltim', 2010, 'informatika', 'SMA', 'merjosari', 'Kalimantan', 76239067, 'syfeikarim@gmail.com'),
-(10650059, 'Dian Ahkam Sani', 'laki-laki', 'Bali', '1992-09-02', 'Ahkam', 'Seniman', 'Bali', 'Bali', 'Bali', 2010, 'informatika', 'MAN', 'merjosari', 'BALI', 9878435, 'dianahkam@gmail.com'),
-(10650076, 'Rizky maulidyah', 'Perempuan', 'Lamongan', '1994-01-01', 'Rizky', 'Pengusaha', 'Lamongan', 'Lamongan', 'Jawa Timur', 2010, 'informatika', 'MAN', 'Sumbersari', 'lamongan', 76543987, 'maulidya@gmail.com'),
-(10650088, 'H.Abdul Aziz', 'laki-laki', 'Banjar', '1992-09-09', 'AZIZ', 'Programmer', 'Kalimantan', 'Banjar', 'Kalsel', 2010, 'informatika', 'SMA', 'Metro', 'Kalimantan', 54673821, 'aziz@gmail.com'),
-(10650090, 'Zaenal Abidin', 'laki-laki', 'Jember', '1990-11-04', 'Abidin', 'Guru', 'Jember', 'Jember', 'Jatim', 2010, 'informatika', 'SMA', 'Metro', 'Jember', 8765432, 'Zaenal@gmail.com'),
-(10650098, 'Novi Anto', 'laki-laki', 'Wonogiri', '1992-11-11', 'Nyoto', 'Petani', 'Kalimantan', 'Tewe', 'Kalteng', 2010, 'informatika', 'SMA', 'merjosari', 'Kalimantan', 2147483647, 'novianto74@gmail.com'),
-(10650099, 'Agus Cahyono', 'laki-laki', 'Lumajang', '1992-09-12', 'Andi', 'Bupati', 'Lumajang', 'Lumajang', 'Jawa Timur', 2010, 'informatika', 'SMA', 'Metro', 'Kalimantan', 816587398, 'AgusCahyono@gmail.com');
+INSERT INTO `mahasiswa` (`id_mahasiswa`, `NIM`, `Nama_lengkap`, `Jenis_kelamin`, `Tempat_lahir`, `Tanggal_lahir`, `Nama_orangtua`, `Pekerjaan_orangtua`, `Alamat-orangtua`, `Kota-orangtua`, `Profinsi-orangtua`, `Tahun_masuk`, `Jurusan`, `Pendidikan_terakhir`, `Alamat_dmalang`, `Alamat_asal`, `No_tlp`, `Email`) VALUES
+(8, 10650090, 'Zaenal Abidin', 'laki-laki', 'Jember', '1990-11-04', 'Abidin', 'Guru', 'Jember', 'Jember', 'Jatim', 2010, 'informatika', 'SMA', 'Metro', 'Jember', 8765432, 'Zaenal@gmail.com'),
+(9, 10650098, 'Novi Anto', 'laki-laki', 'Wonogiri', '1992-11-11', 'Nyoto', 'Petani', 'Kalimantan', 'Tewe', 'Kalteng', 2010, 'informatika', 'SMA', 'merjosari', 'Kalimantan', 2147483647, 'novianto74@gmail.com'),
+(17, 10650021, 'Lukman', 'laki-laki', 'Madura', '1993-02-02', 'Anjas', 'Bupati', 'Madura', 'Madura', 'Jawa Timur', 2010, 'informatika', 'SMA', 'sawojajar', 'Madura', 98564309, 'lukmananjas@gmail.com'),
+(18, 10650032, 'Rizal Furon Ramadhan', 'laki-laki', 'Bali', '1993-09-02', 'Furqon', 'Dosen', 'Bali', 'Bali', 'Bali', 2010, 'informatika', 'SMA', 'Sumber sari', 'Bali', 98742898, 'Furqon@gmail.com'),
+(19, 10650054, 'Ardi Yulianto', 'laki-laki', 'Lumajang', '1992-08-05', 'yulianto', 'Programmer', 'Lumajang', 'Lumajang', 'Jawa Timur', 2010, 'informatika', 'SMA', 'Metro', 'Lumajang', 87321465, 'ardiyulianto@gmail.com'),
+(20, 10650056, 'Syfei Karim', 'laki-laki', 'Samarinda', '1992-02-04', 'Karim', 'Dosen', 'Kalimantan', 'Samarinda', 'Kaltim', 2010, 'informatika', 'SMA', 'merjosari', 'Kalimantan', 76239067, 'syfeikarim@gmail.com'),
+(21, 10650059, 'Dian Ahkam Sani', 'laki-laki', 'Bali', '1992-09-02', 'Ahkam', 'Seniman', 'Bali', 'Bali', 'Bali', 2010, 'informatika', 'MAN', 'merjosari', 'BALI', 9878435, 'dianahkam@gmail.com'),
+(22, 10650076, 'Rizky maulidyah', 'Perempuan', 'Lamongan', '1994-01-01', 'Rizky', 'Pengusaha', 'Lamongan', 'Lamongan', 'Jawa Timur', 2010, 'informatika', 'MAN', 'Sumbersari', 'lamongan', 76543987, 'maulidya@gmail.com'),
+(23, 10650088, 'H.Abdul Aziz', 'laki-laki', 'Banjar', '1992-09-09', 'AZIZ', 'Programmer', 'Kalimantan', 'Banjar', 'Kalsel', 2010, 'informatika', 'SMA', 'Metro', 'Kalimantan', 54673821, 'aziz@gmail.com'),
+(26, 10650099, 'Agus Cahyono', 'laki-laki', 'Lumajang', '1992-09-12', 'Andi', 'Bupati', 'Lumajang', 'Lumajang', 'Jawa Timur', 2010, 'informatika', 'SMA', 'Metro', 'Kalimantan', 816587398, 'AgusCahyono@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -550,8 +551,6 @@ INSERT INTO `user` (`id_user`, `username`, `password`, `Level`, `status`) VALUES
 (21, '10650059', 'a8d62ab63ce07aa9f33531848a5a783e', 'mahasiswa', 1),
 (22, '10650076', 'c7512ec8eee8245bd7388f1752e4c966', 'mahasiswa', 1),
 (23, '10650088', '7f8b32bca28a4b4afd41983398af5a7e', 'mahasiswa', 1),
-(24, '10650090', '2b9f66b976f57014b966752edbfa7b6c', 'mahasiswa', 1),
-(25, '10650098', '440fd2e411f3d109aec0b326666161a7', 'mahasiswa', 1),
 (26, '10650099', 'fd103e76c1a3406f090dbd01c67ed134', 'mahasiswa', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

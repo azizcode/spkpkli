@@ -42,28 +42,33 @@
                     <td><?php echo $list->awal; ?></td>
                     <td><?php echo $list->akhir; ?></td>
                     <td><?php echo $list->keterangan; ?></td>
-                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/delete/'.$list->Id_program_pkli; ?>">Delete</a><a href="#myModal">Detail</a></td>
+                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a>
+                      <a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/delete/'.$list->Id_program_pkli; ?>">Delete</a>
+                      <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
                     <?php } ?>
                   </tr>
                 </tbody>
               </table>
             </div>
-                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Modal header</h3>
-                </div>
-                <div class="modal-body">
-                <p>One fine body…</p>
-                </div>
-                <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                <button class="btn btn-primary">Save changes</button>
-                </div>
-                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
             <?php $this->endWidget(); ?>  
           </div>
           </div>
           </div>
         </div><!-- /.row -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/css/moment.js"></script>

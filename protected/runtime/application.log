@@ -7661,3 +7661,763 @@ Stack trace:
 REQUEST_URI=/spkpkli/instansi/js/bootstrap.js
 HTTP_REFERER=http://localhost/spkpkli/instansi/view
 ---
+2013/11/10 15:02:56 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php:50)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(784): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(20): MahasiswaController->render()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionRekomendasi()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/rekomendasi
+in D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php (50)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 15:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('gii')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/gii')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/gii
+---
+2013/11/10 15:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('gii')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/gii')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/gii
+---
+2013/11/10 15:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:13:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('gii')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/gii')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/gii
+---
+2013/11/10 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/10 15:15:28 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php:50)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(784): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(35): MahasiswaController->render()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionKuisioner()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php (50)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (35)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 15:55:58 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:15)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 15:57:36 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php:11)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(20): MahasiswaController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php (11)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 15:57:42 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php:11)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(20): MahasiswaController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php (11)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mahasisw".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('mahasisw')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('mahasisw')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/mahasisw')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasisw
+---
+2013/11/10 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasisw
+---
+2013/11/10 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasisw
+---
+2013/11/10 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasisw
+---
+2013/11/10 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasisw
+---
+2013/11/10 15:58:10 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php:11)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(20): MahasiswaController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php (11)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 15:59:48 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php:11)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): MahasiswaController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php (11)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 16:01:07 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php:11)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(20): MahasiswaController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\index.php (11)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 16:23:19 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1431): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '2', '', Array, '`t`.')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(14): CActiveRecord->findByPk('2')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/mahasisw
+---
+2013/11/10 16:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mahasisw".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('mahasisw')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('mahasisw')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/mahasisw')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasisw
+---
+2013/11/10 16:23:22 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1431): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '2', '', Array, '`t`.')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(14): CActiveRecord->findByPk('2')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/10 16:23:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mahasisw".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('mahasisw')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('mahasisw')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/mahasisw')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasisw
+---
+2013/11/10 16:23:45 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1431): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '2', '', Array, '`t`.')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(14): CActiveRecord->findByPk('2')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/10 16:26:34 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1431): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '2', '', Array, '`t`.')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(14): CActiveRecord->findByPk('2')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+---
+2013/11/10 16:26:38 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1431): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), '2', '', Array, '`t`.')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(14): CActiveRecord->findByPk('2')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+---
+2013/11/10 16:30:03 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php:50)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(784): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(40): MahasiswaController->render()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionKuisioner()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php (50)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (40)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/10 18:16:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forms.html".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('forms.html')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('forms.html')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/forms...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/forms.html
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/10 18:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/forms.html
+---
+2013/11/10 18:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/forms.html
+---
+2013/11/10 18:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/forms.html
+---
+2013/11/10 18:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/forms.html
+---
+2013/11/11 08:15:50 [error] [php] Use of undefined constant kuisioner - assumed 'kuisioner' (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:45)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (45)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 09:47:29 [error] [php] Undefined variable: hrdware (D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\kuisioner.php:167)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(57): MahasiswaController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionKuisioner()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\views\mahasiswa\kuisioner.php (167)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (57)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 09:52:59 [error] [php] Undefined variable: data (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:57)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (57)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 09:55:03 [error] [php] Undefined variable: nilai (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:49)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (49)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 09:55:39 [error] [exception.CException] exception 'CException' with message 'Property "Nilai.nilai" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('nilai')
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(49): CActiveRecord->__get('nilai')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionKuisioner()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('kuisioner')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/kuisi...')
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+---
+2013/11/11 10:07:33 [error] [php] Undefined offset: 2 (D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php:95)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php (95)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (54)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 10:08:59 [error] [php] Undefined offset: 20 (D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php:93)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php (93)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (54)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 10:11:37 [error] [php] Undefined offset: 2 (D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php:95)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php (95)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (54)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:07:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.bidang_keahlian' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bidang_keahlian`.
+in D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php (20)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:07:50 [error] [exception.CDbException] exception 'CDbException' with message 'The table "bidang_keahlian" for active record class "BidangKeahlian" cannot be found in the database.' in D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(BidangKeahlian))
+#1 D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php(20): CActiveRecord::model('BidangKeahlian')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): BidangKeahlian::model()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/11 13:08:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.bidang_keahlian' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bidang_keahlian`.
+in D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php (20)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:08:26 [error] [exception.CDbException] exception 'CDbException' with message 'The table "bidang_keahlian" for active record class "BidangKeahlian" cannot be found in the database.' in D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(BidangKeahlian))
+#1 D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php(20): CActiveRecord::model('BidangKeahlian')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): BidangKeahlian::model()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/11 13:08:30 [error] [php] Undefined offset: 2 (D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php:98)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php (98)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (54)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:08:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.bidang_keahlian' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bidang_keahlian`.
+in D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php (20)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:08:33 [error] [exception.CDbException] exception 'CDbException' with message 'The table "bidang_keahlian" for active record class "BidangKeahlian" cannot be found in the database.' in D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(BidangKeahlian))
+#1 D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php(20): CActiveRecord::model('BidangKeahlian')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): BidangKeahlian::model()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/11 13:08:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.bidang_keahlian' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bidang_keahlian`.
+in D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php (20)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:08:43 [error] [exception.CDbException] exception 'CDbException' with message 'The table "bidang_keahlian" for active record class "BidangKeahlian" cannot be found in the database.' in D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(BidangKeahlian))
+#1 D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php(20): CActiveRecord::model('BidangKeahlian')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): BidangKeahlian::model()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+---
+2013/11/11 13:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mahasiswaa".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('mahasiswaa')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('mahasiswaa')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/mahasiswa...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswaa
+---
+2013/11/11 13:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswaa
+---
+2013/11/11 13:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswaa
+---
+2013/11/11 13:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswaa
+---
+2013/11/11 13:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswaa
+---
+2013/11/11 13:09:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.bidang_keahlian' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bidang_keahlian`.
+in D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php (20)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (15)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 13:09:17 [error] [exception.CDbException] exception 'CDbException' with message 'The table "bidang_keahlian" for active record class "BidangKeahlian" cannot be found in the database.' in D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(BidangKeahlian))
+#1 D:\XAMPP\htdocs\spkpkli\protected\models\BidangKeahlian.php(20): CActiveRecord::model('BidangKeahlian')
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): BidangKeahlian::model()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/11 13:11:08 [error] [exception.CDbException] exception 'CDbException' with message 'Table "bidang_keahlian" does not have a column named "NIM".' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1464): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(15): CActiveRecord->findByAttributes(Array)
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionIndex()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/index')
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa
+---

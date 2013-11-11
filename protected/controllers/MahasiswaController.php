@@ -11,7 +11,12 @@ class MahasiswaController extends Controller
 		if(Yii::app()->user->isGuest) {
 			$this->redirect(Yii::app()->request->baseUrl);
 		}
-		$this->identitas 				= Mahasiswa::model()->findByPk(Yii::app()->user->id);
+		$this->identitas 	= Mahasiswa::model()->findByPk(Yii::app()->user->id);
+		$kuisioner =  BidangKeahlian::model()->findByAttributes(array('NIM'=>$this->identitas->NIM));
+		if(!$kuisioner){
+			$cekKuisioner="true";
+				$this->redirect('mahasiswa/kuisioner');
+		}
 		$this->render('index');
 	}
 	
@@ -32,7 +37,22 @@ class MahasiswaController extends Controller
 	
 	public function actionKuisioner()
 	{
-		$this->render('kuisioner');
+		if(Yii::app()->user->isGuest) {
+			$this->redirect(Yii::app()->request->baseUrl);
+		}
+		$matkul = Matakuliah::model()->findAll();
+		$this->identitas 	= Mahasiswa::model()->findByPk(Yii::app()->user->id);
+		$hardware			=	false;
+			$data				=	Nilai::model()->findAllByAttributes(array('NIM'=>$this->identitas->NIM));
+			$nilaihardware	=	array();
+			foreach($data as $value){
+				if($value->kode_mk<=21&&$value->kode_mk>18){
+					$indeks[$value->kode_mk]		=	$value->Nilai;
+					$nilaihardware					  +=	$indeks;
+				}
+			}
+			$hardware								=	Nilai::model()->hardware($nilaihardware);
+		$this->render('kuisioner',array("matkul"=>$matkul,'hardware'=>$hardware));
 	}
 
 	// Uncomment the following methods and override them if needed

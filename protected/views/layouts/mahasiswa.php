@@ -46,10 +46,8 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
-					
 					<li class="menu pull-right">
 						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php echo $this->identitas->Nama_lengkap; ?> <b class="caret"></b>
-						</a> 
 					</li>	
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
@@ -58,10 +56,10 @@
 		<div id="wrapper">
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
-				<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/instansi"><i class="fa fa-bar-chart-o"></i>Instansi</a></li>
-				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-bar-chart-o"></i>Pengumuman</a></li>
-				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/slider"><i class="fa fa-sign-out"></i>Slider</a></li>
+				<li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/rekomendasi"><i class="fa fa-bar-chart-o"></i>Rekomendasi</a></li>
+				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/view"><i class="fa fa-table"></i>View</a></li>
+				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Logout</a></li>
 				</ul>
 			</div>
 		<?php echo $content; ?>

@@ -153,7 +153,11 @@ table.tablesorter thead tr th:hover {
 	color: #fff;
 	background-color: #080808;
   }
-
+  
+  .stdform{
+	margin: 10px;
+  }
+  
   .side-nav>li>a {
 	width: 225px;
   }

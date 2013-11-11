@@ -4,6 +4,7 @@
  * This is the model class for table "mahasiswa".
  *
  * The followings are the available columns in table 'mahasiswa':
+ * @property integer $id_mahasiswa
  * @property integer $NIM
  * @property string $Nama_lengkap
  * @property string $Jenis_kelamin
@@ -50,13 +51,13 @@ class Mahasiswa extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('NIM, Nama_lengkap, Jenis_kelamin, Tempat_lahir, Tanggal_lahir, Nama_orangtua, Pekerjaan_orangtua, Alamat_orangtua, Kota_orangtua, Profinsi_orangtua, Tahun_masuk, Jurusan, Pendidikan_terakhir, Alamat_dmalang, Alamat_asal, No_tlp, Email', 'required'),
-			array('NIM, Tahun_masuk, No_tlp', 'numerical', 'integerOnly'=>true),
+			array('id_mahasiswa, NIM, Nama_lengkap, Jenis_kelamin, Tempat_lahir, Tanggal_lahir, Nama_orangtua, Pekerjaan_orangtua, Alamat_orangtua, Kota_orangtua, Profinsi_orangtua, Tahun_masuk, Jurusan, Pendidikan_terakhir, Alamat_dmalang, Alamat_asal, No_tlp, Email', 'required'),
+			array('id_mahasiswa, NIM, Tahun_masuk, No_tlp', 'numerical', 'integerOnly'=>true),
 			array('Nama_lengkap', 'length', 'max'=>1000),
 			array('Jenis_kelamin, Tempat_lahir, Nama_orangtua, Pekerjaan_orangtua, Kota_orangtua, Profinsi_orangtua, Jurusan', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('NIM, Nama_lengkap, Jenis_kelamin, Tempat_lahir, Tanggal_lahir, Nama_orangtua, Pekerjaan_orangtua, Alamat_orangtua, Kota_orangtua, Profinsi_orangtua, Tahun_masuk, Jurusan, Pendidikan_terakhir, Alamat_dmalang, Alamat_asal, No_tlp, Email', 'safe', 'on'=>'search'),
+			array('id_mahasiswa, NIM, Nama_lengkap, Jenis_kelamin, Tempat_lahir, Tanggal_lahir, Nama_orangtua, Pekerjaan_orangtua, Alamat_orangtua, Kota_orangtua, Profinsi_orangtua, Tahun_masuk, Jurusan, Pendidikan_terakhir, Alamat_dmalang, Alamat_asal, No_tlp, Email', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,6 +78,7 @@ class Mahasiswa extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'id_mahasiswa' => 'Id Mahasiswa',
 			'NIM' => 'Nim',
 			'Nama_lengkap' => 'Nama Lengkap',
 			'Jenis_kelamin' => 'Jenis Kelamin',
@@ -108,6 +110,7 @@ class Mahasiswa extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id_mahasiswa',$this->id_mahasiswa);
 		$criteria->compare('NIM',$this->NIM);
 		$criteria->compare('Nama_lengkap',$this->Nama_lengkap,true);
 		$criteria->compare('Jenis_kelamin',$this->Jenis_kelamin,true);

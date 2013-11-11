@@ -9606,3 +9606,219 @@ REQUEST_URI=/spkpkli/css/form.css
 HTTP_REFERER=http://localhost/spkpkli/input/edit/1
 >>>>>>> 6c07cd2c7fe60d165dfbea057060695bfa3b51d4
 ---
+2013/11/11 17:41:50 [error] [exception.CException] exception 'CException' with message 'FrontController cannot find the requested view "pengumuman".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:878
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('pengumuman', NULL, true)
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(48): CController->render('pengumuman')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionPengumuman()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('pengumuman')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/pengumuma...')
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/pengumuman
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/11 18:01:12 [error] [php] Undefined offset: 2 (D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php:98)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/kuisioner
+in D:\XAMPP\htdocs\spkpkli\protected\models\Nilai.php (98)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (54)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 18:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "kuisione".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('kuisione')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('kuisione')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/kuisi...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/kuisione
+---
+2013/11/11 18:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisione
+---
+2013/11/11 18:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisione
+---
+2013/11/11 18:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisione
+---
+2013/11/11 18:01:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisione
+---
+2013/11/11 18:19:22 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php:50)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(784): MahasiswaController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(25): MahasiswaController->render()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionRekomendasi()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/rekomendasi
+in D:\XAMPP\htdocs\spkpkli\protected\views\layouts\mahasiswa.php (50)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (25)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/11 18:20:54 [error] [exception.CException] exception 'CException' with message 'Property "FrontController.identitas" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\views\front\index.php(32): CComponent->__get('identitas')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', NULL, true)
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', NULL, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(25): CController->render('index')
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/spkpkli/
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/11 18:21:01 [error] [exception.CException] exception 'CException' with message 'Property "FrontController.identitas" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\views\front\index.php(32): CComponent->__get('identitas')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', NULL, true)
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', NULL, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(25): CController->render('index')
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/spkpkli/
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/11 18:21:02 [error] [exception.CException] exception 'CException' with message 'Property "FrontController.identitas" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\views\front\index.php(32): CComponent->__get('identitas')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', NULL, true)
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', NULL, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(25): CController->render('index')
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/spkpkli/
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/11 18:21:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "l".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('l')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('l')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/l')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/l
+---
+2013/11/11 18:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/l
+---
+2013/11/11 18:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/l
+---
+2013/11/11 18:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/l
+---
+2013/11/11 18:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/l
+---
+2013/11/11 18:21:22 [error] [exception.CException] exception 'CException' with message 'Property "FrontController.identitas" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\views\front\index.php(32): CComponent->__get('identitas')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', NULL, true)
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', NULL, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(25): CController->render('index')
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionIndex()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/spkpkli/
+---

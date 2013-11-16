@@ -10936,6 +10936,36 @@ Stack trace:
 REQUEST_URI=/spkpkli/site/insert
 >>>>>>> 713fc3cb7fabc4f1e3d2af6f7e99328a7c93a0c6
 ---
+<<<<<<< HEAD
+2013/11/12 00:30:05 [error] [php] include(PesertaPkli.php): failed to open stream: No such file or directory (D:\XAMPP\htdocs\spkpkli\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(24): spl_autoload_call()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli/bidang/1
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/12 00:30:29 [error] [php] include(PesertaPkli.php): failed to open stream: No such file or directory (D:\XAMPP\htdocs\spkpkli\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(24): spl_autoload_call()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+=======
 2013/11/12 00:10:00 [error] [php] Trying to get property of non-object (D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:12)
 Stack trace:
 #0 D:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
@@ -11129,6 +11159,7 @@ REQUEST_URI=/spkpkli/mahasiswa/pkli
 in D:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php (21)
 in D:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (26)
 in D:\xampp\htdocs\spkpkli\index.php (13)
+<<<<<<< HEAD
 2013/11/12 01:50:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '17' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
 in C:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (75)
 in C:\xampp\htdocs\spkpkli\index.php (13)
@@ -11360,3 +11391,6 @@ Stack trace:
 REQUEST_URI=/spkpkli/pengumuman
 HTTP_REFERER=http://localhost/spkpkli/about
 ---
+=======
+>>>>>>> 5c8a4c88fa0d6255889c540fae2369a784c656ed
+>>>>>>> 756b3c4384d69daf56047c15323905bee37ff63d

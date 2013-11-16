@@ -44,7 +44,7 @@
                 <div class="col-lg-6">
                   <ul class="list-unstyled">
                     <li><a href="#dinosaurs">Dinosaurs</a></li>
-                    <li><a href="#spaceships">Spaceship</a>s</li>
+                    <li><a href="#spaceships">Spaceships</a></li>
                     <li><a href="#fried-foods">Fried Foods</a></li>
                     <li><a href="#wild-animals">Wild Animals</a></li>
                   </ul>

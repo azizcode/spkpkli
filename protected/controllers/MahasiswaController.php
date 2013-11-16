@@ -22,7 +22,11 @@ class MahasiswaController extends Controller
 		$this->load();
 		$pkli		=	ProgramPkli::model()->findAll();
 		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
+<<<<<<< HEAD
 		if(!tempatpkli){  }
+=======
+		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; }
+>>>>>>> 5c8a4c88fa0d6255889c540fae2369a784c656ed
 		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
 	}
 	

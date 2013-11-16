@@ -51,18 +51,36 @@
               </table>
             </div>
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog2">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title" id="myModalLabel"><b>Detail Peserta PKLI</b></h4>
                       </div>
                       <div class="modal-body">
-                        ...
+                      <table class="table table-bordered table-hover tablesorter">
+                        <thead>
+                          <tr>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Alamat Malang</th>
+                            <th>Nomer telpon</th>
+                            <th>E-mail</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Novi Anto</td>
+                            <td>10650098</td>
+                            <td>Merjosari</td>
+                            <td>085607070290</td>
+                            <td>novianto74@gmail.com</td>
+                          </tr>
+                        </tbody>
+                      </table>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                       </div>
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->

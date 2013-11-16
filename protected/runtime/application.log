@@ -11504,3 +11504,14 @@ Stack trace:
 REQUEST_URI=/spkpkli/pengumuman
 HTTP_REFERER=http://localhost/spkpkli/
 ---
+2013/11/16 11:44:33 [error] [php] Use of undefined constant tempatpkli - assumed 'tempatpkli' (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:25)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (25)
+in C:\xampp\htdocs\spkpkli\index.php (13)

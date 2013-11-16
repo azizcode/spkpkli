@@ -43,7 +43,7 @@
                     <td><?php echo $list->akhir; ?></td>
                     <td><?php echo $list->keterangan; ?></td>
                     <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a>
-                      <a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/delete/'.$list->Id_program_pkli; ?>">Delete</a>
+                      <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
                       <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
                     <?php } ?>
                   </tr>
@@ -63,6 +63,24 @@
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Konfirmasi Delete </h4>
+                      </div>
+                      <div class="modal-body">
+                        Apakah Anda yakin ingin menghapus ini ?
+                      </div>
+                      <div class="modal-footer">
+                        <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
+                        <a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/delete/'.$list->Id_program_pkli; ?>" type="button" class="btn btn-primary">Delete</a>
                       </div>
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->

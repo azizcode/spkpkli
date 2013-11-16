@@ -50,12 +50,14 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
-					
-					<li class="dropdown menu pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php echo $this->identitas->Nama_instansi; ?><b class="caret"></b>
-						</a> 
-					</li>	
+
+					<li class="menu pull-right" style="border:none;">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
+							<span class="glyphicon glyphicon-user"></span>
+							<span class="glyphicon-class"></i><?php echo $this->identitas->Nama_instansi; ?></span>
+						</a>
+					</li>
+						
 				</ul>
 		  	</div><!-- /.navbar-collapse -->
 		</nav>

@@ -60,7 +60,7 @@
 		<div id="wrapper">
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
-				<li class="active sidebar"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+				<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/rekomendasi"><i class="fa fa-bar-chart-o"></i>Rekomendasi</a></li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/pkli"><i class="fa fa-table"></i>Program PKLI</a></li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Keluar</a></li>

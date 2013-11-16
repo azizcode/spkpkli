@@ -10936,3 +10936,31 @@ Stack trace:
 REQUEST_URI=/spkpkli/site/insert
 >>>>>>> 713fc3cb7fabc4f1e3d2af6f7e99328a7c93a0c6
 ---
+2013/11/12 00:30:05 [error] [php] include(PesertaPkli.php): failed to open stream: No such file or directory (D:\XAMPP\htdocs\spkpkli\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(24): spl_autoload_call()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli/bidang/1
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/12 00:30:29 [error] [php] include(PesertaPkli.php): failed to open stream: No such file or directory (D:\XAMPP\htdocs\spkpkli\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php(24): spl_autoload_call()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)

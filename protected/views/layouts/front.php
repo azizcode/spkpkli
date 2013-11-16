@@ -79,7 +79,7 @@
 								</div>
 								<div class="row" style="margin-top:6px;">
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
-									<div class="col-md-6"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
+									<div class="col-md-6"><a href="<?php echo Yii::app()->request->baseUrl; ?>/daftar" class="btn btn-success pull-right" >Daftar</button></a>
 								</div>
 							<?php $this->endWidget(); ?>
 

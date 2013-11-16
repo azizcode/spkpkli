@@ -43,8 +43,8 @@
                     <td><?php echo $list->akhir; ?></td>
                     <td><?php echo $list->keterangan; ?></td>
                     <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a>
-                      <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
-                      <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
+                       | <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
+                       | <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
                     <?php } ?>
                   </tr>
                 </tbody>

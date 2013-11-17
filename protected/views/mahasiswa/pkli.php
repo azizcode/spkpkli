@@ -44,12 +44,35 @@
 											<td><?php echo $instansi->Alamat; ?></td>
 											<td><?php echo $value->Jumlah_peserta; ?></td>
 											<td><?php echo $b_keahlian[$value->Bidang_Keahlian]; ?></td>
-											<td><a href="<?php echo '#pkli'.$value->Id_program_pkli; ?>" class="linktabel">Detail</a> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/pkli/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a></td>
+											<td><a href="#myModal" data-toggle="modal" data-target="#myModal" class="linktabel" >Detail</a> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/pkli/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a></td>
 										</tr>
 									<?php $i++; } ?>
 								</tbody>
 							</table>
 						</div>
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		                  <div class="modal-dialog2">
+		                    <div class="modal-content">
+		                      <div class="modal-header">
+		                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                        <h4 class="modal-title" id="myModalLabel"><b>Detail program PKLI</b></h4>
+		                      </div>
+		                      <div class="modal-body">
+		                    	<table class="table table-bordered table-hover table-striped tablesorter">
+					                  <tr><td>Nama Instansi</td><td>Pasca UIN</td></tr>
+					                  <tr><td>Alamat</td><td>Batu, Malang</td></tr>
+					                  <tr><td>Bidang Keahlian</td><td>Jaringan</td></tr>
+					                  <tr><td>Membutuhkan</td><td>10</td></tr>
+					                  <tr><td>Nomer Telepon</td><td>0341-2314</td></tr>
+					                  <tr><td>Keterangan</td><td>Digaji 5 juta</td></tr> 
+					             </table>
+		                      </div>
+		                      <div class="modal-footer">
+		                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		                      </div>
+		                    </div><!-- /.modal-content -->
+		                  </div><!-- /.modal-dialog -->
+		                </div><!-- /.modal -->
 					</div>
 				</div>
 			</div>

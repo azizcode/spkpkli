@@ -1,12 +1,58 @@
-<div class="ui grid">
-  <div class="one wide column">
+<div class="container" id="middle">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 align="center"><small>Sistem Pendukung Keputusan Bidang Keahlian PKLI</small></h1>
+      <div class="alert alert-success alert-dismissable"> 
+        <p align="justify"><strong>PRAKTEK KERJA LAPANGAN</strong> adalah salah satu bentuk emplementasi secara sistematis dan sinkron antara program pendidikan di sekolah dengan program penguasaan keahlian yang diperoleh melalui kegiatan kerja secara langsung didunia kerja untuk mencapai tingkat keahlian tertentu.</p></br>
+        <p align="justify"><strong>SI REKOMENDASI PROGRAM KEAHLIAN PKLI</strong> dengan Anjuran bidang keahlian menggunakan dicision tree merupakan system informasi yang dilengkapai dengan Anjuran bidang keahlian. Maksud anjuran bidang keahlian disini adalah system ini mampu memberi saran kepada mahasiswa bidang keahlian yang tepat untuk melaksanan praktek kerja lapangan. secara tidak langsung system ini juga dapat membantu mahasiswa dalam menentukan tempat praktek kerja lapangan yang sesuain dengan bidang keahlian yang di sarankan. Dengan adanya  SI PKL dengan Anjuran bidang keahlian di harapkan mahasiswa tidak lagi mengalami kebinggungan dalam menentukan bidang keahlian yang akan di tekuni dan mendapatkan tempat praktek kerja lapangan yang sesuai dengan bidang keahlian yang dimilikinya</b>
+      </div>
+      <div class="col-lg-4">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12">
+              <div class="col-xs-4 text-center">
+                <i class="fa fa-user fa-8x"></i>
+              </div>
+              <div class="col-xs-8">
+                <p class="text-bottom">Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12">
+              <div class="col-xs-4 text-center">
+                <i class="fa fa-user fa-8x"></i>
+              </div>
+              <div class="col-xs-8">
+                <p class="text-bottom">Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12">
+              <div class="col-xs-4 text-center">
+                <i class="fa fa-user fa-8x"></i>
+              </div>
+              <div class="col-xs-8">
+                <p class="text-bottom">Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="nine wide column">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor, nulla ut commodo consequat, sapien mi vulputate ante, eget egestas enim purus in odio. Phasellus vel ipsum euismod, sollicitudin elit eu, egestas magna. Pellentesque semper urna ut facilisis porta. Integer rhoncus nec nibh vitae ultricies. Curabitur feugiat sapien luctus mauris faucibus gravida. Cras non tristique quam, sit amet euismod augue. Mauris semper, metus vel gravida molestie, augue ligula facilisis metus, non bibendum lacus mauris nec dolor. Fusce in urna eu turpis pretium aliquam. Maecenas placerat tellus magna, quis pulvinar velit fermentum et. Praesent elementum volutpat nisi vitae tempus. Morbi sagittis enim quis ligula dignissim, at vestibulum quam facilisis. In justo nibh, aliquam sit amet lacus elementum, tempor ullamcorper nisl. Sed risus augue, fringilla vitae mi id, mollis vulputate dolor. Nunc consectetur sapien quis aliquam tristique. Nulla metus est, vehicula vitae sem ut, lacinia eleifend enim. Aliquam vestibulum, tellus at fermentum placerat, sapien sem laoreet lorem, in pretium libero nisl eget orci.</p>
-  </div>
-  <div class="five wide column">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor, nulla ut commodo consequat, sapien mi vulputate ante, eget egestas enim purus in odio. Phasellus vel ipsum euismod, sollicitudin elit eu, egestas magna. Pellentesque semper urna ut facilisis porta. Integer rhoncus nec nibh vitae ultricies. Curabitur feugiat sapien luctus mauris faucibus gravida. Cras non tristique quam, sit amet euismod augue. Mauris semper, metus vel gravida molestie, augue ligula facilisis metus, non bibendum lacus mauris nec dolor. Fusce in urna eu turpis pretium aliquam. Maecenas placerat tellus magna, quis pulvinar velit fermentum et. Praesent elementum volutpat nisi vitae tempus. Morbi sagittis enim quis ligula dignissim, at vestibulum quam facilisis. In justo nibh, aliquam sit amet lacus elementum, tempor ullamcorper nisl. Sed risus augue, fringilla vitae mi id, mollis vulputate dolor. Nunc consectetur sapien quis aliquam tristique. Nulla metus est, vehicula vitae sem ut, lacinia eleifend enim. Aliquam vestibulum, tellus at fermentum placerat, sapien sem laoreet lorem, in pretium libero nisl eget orci.
-  </div>
-  <div class="one wide column">
-  </div>
-</div>
+

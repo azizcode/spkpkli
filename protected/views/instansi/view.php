@@ -42,28 +42,69 @@
                     <td><?php echo $list->awal; ?></td>
                     <td><?php echo $list->akhir; ?></td>
                     <td><?php echo $list->keterangan; ?></td>
-                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/delete/'.$list->Id_program_pkli; ?>">Delete</a><a href="#myModal">Detail</a></td>
+                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a>
+                       | <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
+                       | <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
                     <?php } ?>
                   </tr>
                 </tbody>
               </table>
             </div>
-                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Modal header</h3>
-                </div>
-                <div class="modal-body">
-                <p>One fine body…</p>
-                </div>
-                <div class="modal-footer">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                <button class="btn btn-primary">Save changes</button>
-                </div>
-                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog2">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel"><b>Detail Peserta PKLI</b></h4>
+                      </div>
+                      <div class="modal-body">
+                      <table class="table table-bordered table-hover tablesorter">
+                        <thead>
+                          <tr>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Alamat Malang</th>
+                            <th>Nomer telpon</th>
+                            <th>E-mail</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Novi Anto</td>
+                            <td>10650098</td>
+                            <td>Merjosari</td>
+                            <td>085607070290</td>
+                            <td>novianto74@gmail.com</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Konfirmasi Delete </h4>
+                      </div>
+                      <div class="modal-body">
+                        Apakah Anda yakin ingin menghapus ini ?
+                      </div>
+                      <div class="modal-footer">
+                        <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
+                        <a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/delete/'.$list->Id_program_pkli; ?>" type="button" class="btn btn-primary">Delete</a>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
             <?php $this->endWidget(); ?>  
           </div>
           </div>
           </div>
         </div><!-- /.row -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/css/moment.js"></script>

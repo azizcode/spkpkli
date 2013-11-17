@@ -16,7 +16,7 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-datetimepicker.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/locales/bootstrap-datetimepicker.id.js"></script>
-
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/modal.js"></script>
 	</head>
 	<body>
 		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,6 +50,7 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
+<<<<<<< HEAD
 				</ul>
 				<ul class="nav navbar-nav navbar-right">	
 					<li class="menu pull-right" style="border:none;">
@@ -58,6 +59,16 @@
 							<span class="glyphicon-class"><?php echo $this->identitas->Nama_instansi; ?></span>
 						</a>
 					</li>	
+=======
+
+					<li class="menu pull-right" style="border:none;">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
+							<span class="glyphicon glyphicon-user"></span>
+							<span class="glyphicon-class"></i><?php echo $this->identitas->Nama_instansi; ?></span>
+						</a>
+					</li>
+						
+>>>>>>> ebe143c2f87620975f22cc5dd9d5bb8ce0a0c0b2
 				</ul>
 		  	</nav><!-- /.navbar-collapse -->
 		</header>

@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome.min.css">
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-2.0.3.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/modal.js"></script>
 
 	</head>
 	<body>

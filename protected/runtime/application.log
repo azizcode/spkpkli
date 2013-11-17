@@ -11835,3 +11835,19 @@ Stack trace:
 REQUEST_URI=/spkpkli/instansi
 HTTP_REFERER=http://localhost/spkpkli/
 ---
+2013/11/17 16:50:57 [error] [exception.CException] exception 'CException' with message 'FrontController cannot find the requested view "pengumuman".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:878
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('pengumuman', NULL, true)
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(48): CController->render('pengumuman')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionPengumuman()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('pengumuman')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/pengumuma...')
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/pengumuman
+HTTP_REFERER=http://localhost/spkpkli/instansi
+---

@@ -13,8 +13,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="panelx">
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <div class="panel panel-success">
           <div class="panel-heading">
             <div class="row">
@@ -48,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <div class="panel panel-success">
           <div class="panel-heading">
             <div class="row">
@@ -82,6 +81,5 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
  </div>

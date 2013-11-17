@@ -15,7 +15,7 @@
 
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -26,8 +26,8 @@
 				<a class="navbar-brand" href="<?php echo Yii::app()->request->baseUrl; ?>">SPK PKLI</a>
 			</div>
 		  	<!-- Collect the nav links, forms, and other content for toggling -->
-		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav col-md-10 col-xs-7">
+		  	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
 					<li class="menu <?php if($this->action=='home'){ ?>odd<?php } ?>">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>">
 							<span class="glyphicon glyphicon-home"></span>
@@ -46,7 +46,8 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
-					
+				</ul>
+				<ul class="nav navbar-nav navbar-right">	
 					<li class="menu pull-right" style="border:none;">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
 							<span class="glyphicon glyphicon-user"></span>
@@ -54,9 +55,8 @@
 						</a>
 					</li>	
 				</ul>
-		  	</div><!-- /.navbar-collapse -->
-		</nav>
-		
+		  	</nav><!-- /.navbar-collapse -->
+		</header>
 		<div id="wrapper">
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">

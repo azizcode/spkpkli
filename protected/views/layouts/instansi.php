@@ -19,7 +19,7 @@
 
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -30,8 +30,8 @@
 				<a class="navbar-brand" href="<?php echo Yii::app()->request->baseUrl; ?>">SPK PKLI</a>
 			</div>
 		  	<!-- Collect the nav links, forms, and other content for toggling -->
-		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav col-md-10 col-xs-7">
+		  	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
 					<li class="menu <?php if($this->action=='home'){ ?>odd<?php } ?>">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>">
 							<span class="glyphicon glyphicon-home"></span>
@@ -50,23 +50,24 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
-					
-					<li class="dropdown menu pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
-						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php echo $this->identitas->Nama_instansi; ?><b class="caret"></b>
-						</a> 
+				</ul>
+				<ul class="nav navbar-nav navbar-right">	
+					<li class="menu pull-right" style="border:none;">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
+							<span class="glyphicon glyphicon-user"></span>
+							<span class="glyphicon-class"><?php echo $this->identitas->Nama_instansi; ?></span>
+						</a>
 					</li>	
 				</ul>
-		  	</div><!-- /.navbar-collapse -->
-		</nav>
-		
+		  	</nav><!-- /.navbar-collapse -->
+		</header>
 		<div id="wrapper">
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
 				<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/instansi/input"><i class="fa fa-bar-chart-o"></i>Input</a></li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/instansi/view"><i class="fa fa-bar-chart-o"></i>View</a></li>
-				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Logout</a></li>
+				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Keluar</a></li>
 				</ul>
 			</div>
 			<?php echo $content; ?>

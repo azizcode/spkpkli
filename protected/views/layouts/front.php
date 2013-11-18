@@ -80,14 +80,9 @@
 									</div>
 								</div>
 								<div class="row" style="margin-top:6px;">
-<<<<<<< HEAD
-									<div class="col-md-4"><button type="submit" class="btn btn-primary">Masuk</button></div>
-									<div class="col-md-4"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
-=======
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
-									<div class="col-md-6"><a href="<?php echo Yii::app()->request->baseUrl; ?>/daftar" class="btn btn-success pull-right" >Daftar</button></a>
->>>>>>> ebe143c2f87620975f22cc5dd9d5bb8ce0a0c0b2
-								</div>
+									<div class="col-md-6"><button class="btn btn-success pull-right" onclick="location.href = 'daftar';">Daftar</button></div>
+									
 							<?php $this->endWidget(); ?>
 
 							<?php } ?>	

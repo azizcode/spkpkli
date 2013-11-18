@@ -31,6 +31,8 @@
 										<th>No</th>
 										<th>Instansi</th>
 										<th>Kuota</th>
+										<th>Terdaftar</th>
+										<th>Tersedia</th>
 										<th>Bidang Keahlian</th>
 										<th>Aksi</th>
 									</tr>
@@ -40,9 +42,15 @@
 										<tr class="<?php if($i%2==0){ ?>success<?php } else { ?> active<?php } ?>">
 											<td><?php echo $i; ?></td>
 											<td><?php echo $instansi->Nama_instansi; ?></td>
-											<td><?php echo $value->Jumlah_peserta; ?></td>
+											<td><?php echo $value->Jumlah_peserta. ' Orang'; ?></td>
+											<?php 
+												$terdaftar	=	count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$value->Id_program_pkli))); 
+												$tersedia	=	$value->Jumlah_peserta - $terdaftar; 
+											?>	
+											<td><?php echo $terdaftar.' Orang'; ?></td>
+											<td><?php if($tersedia==0){ echo 'Kuota Penuh'; }else { echo $tersedia.' Orang'; } ?></td>
 											<td><?php echo $b_keahlian[$value->Bidang_Keahlian]; ?></td>
-											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="linktabel detail-instansi">Detail</a><?php if($id_tempat_pkli=="-1"){ ?> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a><?php } ?></td>
+											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="linktabel detail-instansi">Detail</a><?php if($id_tempat_pkli=="-1" && $tersedia!=0){ ?> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a><?php } ?></td>
 										</tr>
 									<?php $i++; } ?>
 								</tbody>

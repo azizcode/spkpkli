@@ -47,11 +47,12 @@ class MahasiswaController extends Controller
 			$pkli		=	ProgramPkli::model()->findAllByAttributes(array('Bidang_Keahlian'=>$_GET['id']));
 		}
 		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
-		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; $id_tempatpkli = ('-1'); }else{
+		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; $idx = ('-1'); }else{
 			$id = ProgramPkli::model()->findByPk(PesertaPkli::model()->findByAttributes(array('NIM'=>$this->identitas->NIM))->Id_program);
 			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
+			$idx		=	$id->Id_program_pkli;
 		}
-		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $id->Id_program_pkli));
+		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $idx));
 	}
 	
 	public function actionDetailpkli()
@@ -64,7 +65,7 @@ class MahasiswaController extends Controller
 			$result['alamat']				=	$instansi->Alamat;
 			$result['bidang']				=	$b_keahlian[$pkli->Bidang_Keahlian];
 			$result['kuota']				=	$pkli->Jumlah_peserta.' Orang';
-			$result['terdaftar']			=	count(PesertaPkli::model()->findByAttributes(array('Id_program'=>$pkli->Id_program_pkli))).' Orang';
+			$result['terdaftar']			=	count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$pkli->Id_program_pkli))).' Orang';
 			$tersedia						=	$result['kuota'] - $result['terdaftar'];
 			if($tersedia==0){ $result['tersedia'] 	=	'Kuota Penuh'; }else { $result['tersedia'] = $tersedia.' Orang'; };
 			$result['telepon']				=	$instansi->No_tlp;

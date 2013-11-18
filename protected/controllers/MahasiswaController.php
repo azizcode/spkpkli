@@ -43,6 +43,22 @@ class MahasiswaController extends Controller
 		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
 	}
 	
+	public function actionDetailpkli()
+	{
+		if(!Yii::app()->user->isGuest) {
+			$pkli 							=	ProgramPkli::model()->findByPk($_GET['id']);
+			$instansi						=	Instansi::model()->findByPk($pkli->Id_instansi);
+			$b_keahlian 					=	array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
+			$result['nama']					=	$instansi->Nama_instansi;
+			$result['alamat']				=	$instansi->Alamat;
+			$result['bidang']				=	$b_keahlian[$pkli->Bidang_Keahlian];
+			$result['jumlah']				=	$pkli->Jumlah_peserta;
+			$result['telepon']				=	$instansi->No_tlp;
+			$result['keterangan']			=	$pkli->keterangan;
+			echo json_encode($result);
+		}
+	}
+	
 	public function actionRekomendasi()
 	{
 		$this->load();

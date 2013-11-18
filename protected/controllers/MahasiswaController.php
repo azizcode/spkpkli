@@ -3,7 +3,7 @@
 class MahasiswaController extends Controller
 {
 	public $layout="mahasiswa";
-	public $action="";
+	public $action="home";
 	
 	public $identitas;
 	
@@ -26,13 +26,65 @@ class MahasiswaController extends Controller
 		$this->render('about');
 	}
 	
+	public function actionPengumuman()
+	{
+		$this->load();
+		$this->action					=	'pengumuman';
+		$this->setPageTitle(' - Pengumuman');
+		$this->render('pengumuman');
+	}
+	
 	public function actionPkli()
 	{
 		$this->load();
 		$pkli		=	ProgramPkli::model()->findAll();
 		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
-		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; }
+		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; }else{
+			$id = ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>'5'))->Id_instansi;
+			$tempatpkli	=	Instansi::model()->findByPk($_GET[$id]);
+		}
 		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
+	}
+	
+	public function actionDetailpkli()
+	{
+		if(!Yii::app()->user->isGuest) {
+			$pkli 							=	ProgramPkli::model()->findByPk($_GET['id']);
+			$instansi						=	Instansi::model()->findByPk($pkli->Id_instansi);
+			$b_keahlian 					=	array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
+			$result['nama']					=	$instansi->Nama_instansi;
+			$result['alamat']				=	$instansi->Alamat;
+			$result['bidang']				=	$b_keahlian[$pkli->Bidang_Keahlian];
+			$result['jumlah']				=	$pkli->Jumlah_peserta;
+			$result['telepon']				=	$instansi->No_tlp;
+			$result['keterangan']			=	$pkli->keterangan;
+			echo json_encode($result);
+		}
+	}
+
+	public function actionProfil()
+	{
+		if(!Yii::app()->user->isGuest) {
+			$identitas 						=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
+			$result['nama']					=	$identitas->Nama_lengkap;
+			$result['nim']					=	$identitas->NIM;
+			$result['alamat']				=	$identitas->Alamat_dmalang;
+			$result['telepon']				=	$identitas->No_tlp;
+			$result['email']				=	$identitas->Email;
+			echo json_encode($result);
+		}
+	}
+
+	public function actionDaftar()
+	{
+		$this->load();
+		$daftar = new PesertaPkli;
+				$daftar->NIM = $this->identitas->NIM;
+				$daftar->Id_program = $_GET['id'];
+				if($daftar->save()){
+					Yii::app()->user->setFlash('status','<div class="alert alert-success">Berhasil</div>');
+					$this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/pkli');
+				}
 	}
 	
 	public function actionRekomendasi()

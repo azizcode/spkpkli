@@ -324,7 +324,7 @@ textarea {
 }
 
 a {
-  color: #D1CCCC;
+  color: #DDD;
   text-decoration: none;
 }
 
@@ -3306,6 +3306,7 @@ input[type="button"].btn-block {
 
 .open > .dropdown-menu {
   display: block;
+  background-color: #45456;
 }
 
 .open > a {
@@ -3837,13 +3838,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-<<<<<<< HEAD
   background-color: #080808;
   color: #fff;
-=======
-  background-color:rgb(132, 209, 200);;
-  color: rgb(225,225,225);;
->>>>>>> 37ee3ac26c7a66cb5c26b0dd57ac0f6f52886657
 }
 
 .nav > li.disabled > a {
@@ -3861,7 +3857,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: #080808;
   border-color: #428bca;
 }
 
@@ -4026,13 +4022,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav .caret {
-  border-top-color: #428bca;
-  border-bottom-color: #428bca;
+  border-top-color: #DDD;
+  border-bottom-color: #DDD;
 }
 
 .nav a:hover .caret {
-  border-top-color: #2a6496;
-  border-bottom-color: #2a6496;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 
 .nav-tabs .dropdown-menu {

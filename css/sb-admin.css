@@ -29,6 +29,7 @@ body {
 	margin-right:-70px;
 }
 
+
 /* Nav Messages */
 
 .messages-dropdown .dropdown-menu .message-preview .avatar,
@@ -164,13 +165,14 @@ table.tablesorter thead tr th:hover {
   .side-nav>li.dropdown>ul.dropdown-menu>li>a {
 	color: #999999;
 	padding: 15px 15px 15px 25px;
+	background-color: #FFF;
   }
 
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a.active,
   .side-nav>li.dropdown>ul.dropdown-menu>li>a:focus {
-	color: #fff;
-	background-color: #080808;
+	color: #080807;
+	background-color: #DDD;
   }
   
   .stdform{

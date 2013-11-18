@@ -36,8 +36,8 @@ class PesertaPkli extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Id_peserta, Id_program, NIM', 'required'),
-			array('Id_peserta, Id_program, NIM', 'numerical', 'integerOnly'=>true),
+			array('Id_program, NIM', 'required'),
+			array('Id_program, NIM', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('Id_peserta, Id_program, NIM', 'safe', 'on'=>'search'),

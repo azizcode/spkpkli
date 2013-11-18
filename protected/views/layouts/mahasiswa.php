@@ -114,7 +114,9 @@
 						$('#nama-instansi').text(json.nama);
 						$('#alamat-instansi').text(json.alamat);
 						$('#bidang-keahlian').text(json.bidang);
-						$('#jumlah').text(json.jumlah);
+						$('#kuota').text(json.kuota);
+						$('#terdaftar').text(json.terdaftar);
+						$('#tersedia').text(json.tersedia);
 						$('#telepon-instansi').text(json.telepon);
 						$('#keterangan').text(json.keterangan);
 					});

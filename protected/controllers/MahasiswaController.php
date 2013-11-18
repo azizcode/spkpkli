@@ -47,11 +47,11 @@ class MahasiswaController extends Controller
 			$pkli		=	ProgramPkli::model()->findAllByAttributes(array('Bidang_Keahlian'=>$_GET['id']));
 		}
 		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
-		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; }else{
-			$id = ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>'5'))->Id_instansi;
-			$tempatpkli	=	Instansi::model()->findByPk($_GET[$id]);
+		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; $id_tempatpkli = ('-1'); }else{
+			$id = ProgramPkli::model()->findByPk(PesertaPkli::model()->findByAttributes(array('NIM'=>$this->identitas->NIM))->Id_program);
+			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
 		}
-		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
+		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $id->Id_program_pkli));
 	}
 	
 	public function actionDetailpkli()
@@ -63,7 +63,10 @@ class MahasiswaController extends Controller
 			$result['nama']					=	$instansi->Nama_instansi;
 			$result['alamat']				=	$instansi->Alamat;
 			$result['bidang']				=	$b_keahlian[$pkli->Bidang_Keahlian];
-			$result['jumlah']				=	$pkli->Jumlah_peserta;
+			$result['kuota']				=	$pkli->Jumlah_peserta.' Orang';
+			$result['terdaftar']			=	count(PesertaPkli::model()->findByAttributes(array('Id_program'=>$pkli->Id_program_pkli))).' Orang';
+			$tersedia						=	$result['kuota'] - $result['terdaftar'];
+			if($tersedia==0){ $result['tersedia'] 	=	'Kuota Penuh'; }else { $result['tersedia'] = $tersedia.' Orang'; };
 			$result['telepon']				=	$instansi->No_tlp;
 			$result['keterangan']			=	$pkli->keterangan;
 			echo json_encode($result);
@@ -87,12 +90,12 @@ class MahasiswaController extends Controller
 	{
 		$this->load();
 		$daftar = new PesertaPkli;
-				$daftar->NIM = $this->identitas->NIM;
-				$daftar->Id_program = $_GET['id'];
-				if($daftar->save()){
-					Yii::app()->user->setFlash('status','<div class="alert alert-success">Berhasil</div>');
-					$this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/pkli');
-				}
+		$daftar->NIM = $this->identitas->NIM;
+		$daftar->Id_program = $_GET['id'];
+		if($daftar->save()){
+			Yii::app()->user->setFlash('status','<div class="alert alert-success">Berhasil</div>');
+			$this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/pkli');
+		}
 	}
 	
 	public function actionRekomendasi()

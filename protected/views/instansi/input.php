@@ -81,15 +81,15 @@
                     <label for="inputEmail" class="col-lg-2 control-label"> Awal Pelaksanaan</label>
                           <div class="col-lg-10">
                           <div class='input-group date' id='datetimepicker5'>
-                          <?php $program_pkli->awal = date("d-m-Y",strtotime($program_pkli->awal)); ?>
-                          <?php echo $form->textField($program_pkli,'awal',array('class'=>'form-control','data-format'=>"DD-MM-YYYY")); ?>
+                          <?php $program_pkli->awal = strtotime($program_pkli->awal); ?>
+                          <?php $program_pkli->awal = date("d-m-Y", $program_pkli->awal); ?>
+                          <?php echo $form->textField($program_pkli,'awal',array('class'=>'form-control','data-format'=>"DD-MM-YYYY" )); ?>
                           <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
                           </span>
                           </div>
                           <script type="text/javascript">
                           $(function () {
                           $('#datetimepicker5').datetimepicker({
-                          pickTime: false
                           });
                           });
                           </script>

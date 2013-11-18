@@ -3,7 +3,7 @@
 class MahasiswaController extends Controller
 {
 	public $layout="mahasiswa";
-	public $action="";
+	public $action="home";
 	
 	public $identitas;
 	
@@ -24,6 +24,14 @@ class MahasiswaController extends Controller
 		$this->action					=	'about';
 		$this->setPageTitle(' - About');
 		$this->render('about');
+	}
+	
+	public function actionPengumuman()
+	{
+		$this->load();
+		$this->action					=	'pengumuman';
+		$this->setPageTitle(' - Pengumuman');
+		$this->render('pengumuman');
 	}
 	
 	public function actionPkli()

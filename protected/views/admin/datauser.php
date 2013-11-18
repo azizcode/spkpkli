@@ -82,5 +82,5 @@
                 </div><!-- /.modal -->
           </div>
           </div>
-          </div>
-        </div><!-- /.row -->
+        </div>
+    </div><!-- /.row -->

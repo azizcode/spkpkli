@@ -51,7 +51,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">	
 					<li class="menu pull-right" style="border:none;">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil" data-toggle="modal" data-target="#modal-mahasiswa" class="detail"> 
+						<a href="" data-toggle="modal" data-target="#modal-mahasiswa" class="detail-mahasiswa"> 
 							<span class="glyphicon glyphicon-user"></span>
 							<span class="glyphicon-class"><?php echo $this->identitas->Nama_lengkap; ?></span>
 						</a>
@@ -69,12 +69,7 @@
 				</ul>
 			</div>
 			<?php echo $content; ?>
-			<div class="footer">
-				 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
-				 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
-			</div>
-		</div>
-	  	<div class="modal fade" id="modal-mahasiswa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal fade" id="modal-mahasiswa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog2">
             <div class="modal-content">
               <div class="modal-header">
@@ -83,11 +78,11 @@
               </div>
               <div class="modal-body">
             	<table class="table table-bordered table-hover table-striped tablesorter">
-	                  <tr><td>Nama </td><td id="nama_mahasiswa"></td></tr>
-	                  <tr><td>NIM</td><td id="nim_mahasiswa"></td></tr>
-	                  <tr><td>Alamat</td><td id="alamat_mahasiswa"></td></tr>
-	                  <tr><td>Nomor Telepon</td><td id="telepon_mahasiswa"></td></tr>
-	                  <tr><td>E-mail</td><td id="email_mahasiswa"></td></tr> 
+	                  <tr><td>Nama </td><td id="nama-mahasiswa"></td></tr>
+	                  <tr><td>NIM</td><td id="nim-mahasiswa"></td></tr>
+	                  <tr><td>Alamat</td><td id="alamat-mahasiswa"></td></tr>
+	                  <tr><td>Nomor Telepon</td><td id="telepon-mahasiswa"></td></tr>
+	                  <tr><td>E-mail</td><td id="email-mahasiswa"></td></tr> 
 	             </table>
               </div>
               <div class="modal-footer">
@@ -96,30 +91,47 @@
             </div><!-- /.modal-content -->
           </div>
         </div>
+		
 		<script>
 			$(function() {
-				$('.detail').click(function(e) {
+				$('.detail-mahasiswa').click(function(e) {
 					e.preventDefault();
-					var url = $(this).attr('href');
 					$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil", function(json) {
 		                $.each(json, function(k, v) {    
-							$('#nama_mahasiswa').text(json.nama);
-							$('#nim_mahasiswa').text(json.nim);
-							$('#alamat_mahasiswa').text(json.alamat);
-							$('#telepon_mahasiswa').text(json.telepon);
-							$('#email_mahasiswa').text(json.email);
+							$('#nama-mahasiswa').text(json.nama);
+							$('#nim-mahasiswa').text(json.nim);
+							$('#alamat-mahasiswa').text(json.alamat);
+							$('#telepon-mahasiswa').text(json.telepon);
+							$('#email-mahasiswa').text(json.email);
 		                });
 					});
 				});
+			$('.detail-instansi').click(function(e) {
+				e.preventDefault();
+				var url = $(this).attr('data-instansi');
+				$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/detailpkli/"+url, function(json) {
+					$.each(json, function(k, v) {    
+						$('#nama-instansi').text(json.nama);
+						$('#alamat-instansi').text(json.alamat);
+						$('#bidang-keahlian').text(json.bidang);
+						$('#kuota').text(json.kuota);
+						$('#terdaftar').text(json.terdaftar);
+						$('#tersedia').text(json.tersedia);
+						$('#telepon-instansi').text(json.telepon);
+						$('#keterangan').text(json.keterangan);
+					});
+				});
 			});
-		</script>
-		<script>
-	  		$(function() {
 			  $('.dropdown-toggle').dropdown();
 			  $('.dropdown input, .dropdown label').click(function(e) {
 			    e.stopPropagation();
 			  });
 			});
 	  	</script>
+			<div class="footer">
+				 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
+				 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
+			</div>
+		</div>
 	</body>	
 </html>

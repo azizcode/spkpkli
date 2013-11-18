@@ -37,13 +37,22 @@ class MahasiswaController extends Controller
 	public function actionPkli()
 	{
 		$this->load();
-		$pkli		=	ProgramPkli::model()->findAll();
-		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
-		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; }else{
-			$id = ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>'5'))->Id_instansi;
-			$tempatpkli	=	Instansi::model()->findByPk($_GET[$id]);
+		$kuisioner =  BidangKeahlian::model()->findByAttributes(array('NIM'=>$this->identitas->NIM));
+		if(!$kuisioner){
+			$cekKuisioner="true";
+				$this->redirect('mahasiswa/kuisioner');
 		}
-		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli));
+		$pkli		=	ProgramPkli::model()->findAll();
+		if(isset($_GET['id'])){
+			$pkli		=	ProgramPkli::model()->findAllByAttributes(array('Bidang_Keahlian'=>$_GET['id']));
+		}
+		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
+		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; $idx = ('-1'); }else{
+			$id = ProgramPkli::model()->findByPk(PesertaPkli::model()->findByAttributes(array('NIM'=>$this->identitas->NIM))->Id_program);
+			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
+			$idx		=	$id->Id_program_pkli;
+		}
+		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $idx));
 	}
 	
 	public function actionDetailpkli()
@@ -55,7 +64,10 @@ class MahasiswaController extends Controller
 			$result['nama']					=	$instansi->Nama_instansi;
 			$result['alamat']				=	$instansi->Alamat;
 			$result['bidang']				=	$b_keahlian[$pkli->Bidang_Keahlian];
-			$result['jumlah']				=	$pkli->Jumlah_peserta;
+			$result['kuota']				=	$pkli->Jumlah_peserta.' Orang';
+			$result['terdaftar']			=	count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$pkli->Id_program_pkli))).' Orang';
+			$tersedia						=	$result['kuota'] - $result['terdaftar'];
+			if($tersedia==0){ $result['tersedia'] 	=	'Kuota Penuh'; }else { $result['tersedia'] = $tersedia.' Orang'; };
 			$result['telepon']				=	$instansi->No_tlp;
 			$result['keterangan']			=	$pkli->keterangan;
 			echo json_encode($result);
@@ -64,13 +76,13 @@ class MahasiswaController extends Controller
 
 	public function actionProfil()
 	{
+		$this->load();
 		if(!Yii::app()->user->isGuest) {
-			$identitas 						=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
-			$result['nama']					=	$identitas->Nama_lengkap;
-			$result['nim']					=	$identitas->NIM;
-			$result['alamat']				=	$identitas->Alamat_dmalang;
-			$result['telepon']				=	$identitas->No_tlp;
-			$result['email']				=	$identitas->Email;
+			$result['nama']					=	$this->identitas->Nama_lengkap;
+			$result['nim']					=	$this->identitas->NIM;
+			$result['alamat']				=	$this->identitas->Alamat_dmalang;
+			$result['telepon']				=	$this->identitas->No_tlp;
+			$result['email']				=	$this->identitas->Email;
 			echo json_encode($result);
 		}
 	}
@@ -79,17 +91,22 @@ class MahasiswaController extends Controller
 	{
 		$this->load();
 		$daftar = new PesertaPkli;
-				$daftar->NIM = $this->identitas->NIM;
-				$daftar->Id_program = $_GET['id'];
-				if($daftar->save()){
-					Yii::app()->user->setFlash('status','<div class="alert alert-success">Berhasil</div>');
-					$this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/pkli');
-				}
+		$daftar->NIM = $this->identitas->NIM;
+		$daftar->Id_program = $_GET['id'];
+		if($daftar->save()){
+			Yii::app()->user->setFlash('status','<div class="alert alert-success">Berhasil</div>');
+			$this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/pkli');
+		}
 	}
 	
 	public function actionRekomendasi()
 	{
 		$this->load();
+		$kuisioner =  BidangKeahlian::model()->findByAttributes(array('NIM'=>$this->identitas->NIM));
+		if(!$kuisioner){
+			$cekKuisioner="true";
+				$this->redirect('mahasiswa/kuisioner');
+		}
 		$rekomendasi	=	BidangKeahlian::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
 		$bidang			=	explode(";", $rekomendasi->bidang_keahlian);
 		$this->render('rekomendasi',array('rekomendasi' => $bidang));

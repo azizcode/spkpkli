@@ -38,7 +38,7 @@
                     <?php foreach ($program as $list) { ?>
                     <tr>
                     <td><?php echo $ahli[$list->Bidang_Keahlian]; ?></td>
-                    <td><?php echo $list->Jumlah_peserta; ?></td>
+                    <td><?php echo $list->Jumlah_peserta; ?> Orang</td>
                     <td>
                       <?php
                         $date= date_create($list->awal);
@@ -52,9 +52,9 @@
                       ?>
                     </td>
                     <td><?php echo $list->keterangan; ?></td>
-                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a>
-                       | <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
-                       | <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
+                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>" class="linktabel">Edit</a>
+                       | <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="linktabel">Delete</a>
+                       | <a href="#myModal" data-toggle="modal" data-target="#myModal" data-program="<?php echo $list->Id_program_pkli; ?>" class="detail-peserta linktabel">Detail</a></td>
                     <?php } ?>
                   </tr>
                 </tbody>
@@ -68,7 +68,7 @@
                         <h4 class="modal-title" id="myModalLabel"><b>Detail Peserta PKLI</b></h4>
                       </div>
                       <div class="modal-body">
-                      <table class="table table-bordered table-hover tablesorter">
+                      <table id="peserta" class="table table-bordered table-hover tablesorter">
                         <thead>
                           <tr>
                             <th>Nama</th>
@@ -79,13 +79,6 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>Novi Anto</td>
-                            <td>10650098</td>
-                            <td>Merjosari</td>
-                            <td>085607070290</td>
-                            <td>novianto74@gmail.com</td>
-                          </tr>
                         </tbody>
                       </table>
                       </div>

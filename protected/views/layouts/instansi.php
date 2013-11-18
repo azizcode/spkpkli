@@ -39,13 +39,13 @@
 						</a>
 					</li>
 					<li class="menu <?php if($this->action=='pengumuman'){ ?>odd<?php } ?>">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/pengumuman">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/instansi/pengumuman">
 							<span class="glyphicon glyphicon-warning-sign"></span>
 							<span class="glyphicon-class">Pengumuman</span>
 						</a>
 					</li>
 					<li class="menu <?php if($this->action=='about'){ ?>odd<?php } ?>">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/about">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/instansi/about">
 							<span class="glyphicon glyphicon-info-sign"></span>
 							<span class="glyphicon-class">About</span>
 						</a>
@@ -78,7 +78,17 @@
 		</div>
 	  	<script>
 	  		$(function() {
-			  $('.dropdown-toggle').dropdown();
+				$('.detail-peserta').click(function(e) {
+					$("#peserta > tbody").html("");
+					e.preventDefault();
+					var url = $(this).attr('data-program');
+					$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/instansi/detailview/"+url, function(json) {
+						$.each(json, function(k, v) {    
+							$("#peserta").append("<tr><td>" + v.nim + "</td><td>" + v.nama + "</td><td>" + v.alamat + "</td><td>" + v.telp + "</td><td>" + v.email + "</td></tr>");
+						});
+					});
+				});
+			$('.dropdown-toggle').dropdown();
 			  $('.dropdown input, .dropdown label').click(function(e) {
 			    e.stopPropagation();
 			  });

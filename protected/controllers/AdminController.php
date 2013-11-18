@@ -22,7 +22,8 @@ class AdminController extends Controller
 	
 	public function actionDataInstansi()
 	{
-		$this->render('datainstansi');
+		$instansi= Instansi::model()->findAll();
+		$this->render('datainstansi',array('instansi'=>$instansi));
 	}
 	
 	public function actionPengumuman()

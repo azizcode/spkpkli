@@ -4,18 +4,57 @@ class InstansiController extends Controller
 {
 	public $layout='instansi';
 	public $identitas;
+	public $action="home";
+	
+	public function load(){
+		if (Yii::app()->user->isGuest){
+			$this->redirect(Yii::app()->request->baseUrl );
+		}
+		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
+	}
+	
+	public function actionAbout()
+	{
+		$this->load();
+		$this->action					=	'about';
+		$this->setPageTitle(' - About');
+		$this->render('about');
+	}
+	
+	public function actionDetailview()
+	{
+		$this->load();
+		$peserta	=	PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$_GET['id']));
+		$i			=	0;
+		foreach($peserta as $mahasiswa){
+			$value	=	Mahasiswa::model()->findByAttributes(array('NIM' => $mahasiswa->NIM));
+			$result[$i]['nim']	=	$value->NIM;
+			$result[$i]['nama']			=	$value->Nama_lengkap;
+			$result[$i]['alamat']	=	$value->Alamat_dmalang;
+			$result[$i]['telp']		=	$value->No_tlp;
+			$result[$i]['email']		=	$value->Email;
+			$i++;
+		}
+		echo json_encode($result);
+	}
+	
+	public function actionPengumuman()
+	{
+		$this->load();
+		$this->action					=	'pengumuman';
+		$this->setPageTitle(' - Pengumuman');
+		$this->render('pengumuman');
+	}
+	
 	public function actionIndex()
 	{
-		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
+		$this->load();
 		$this->render('index');
 	}
 
 	public function actionInput()
 	{
-		if (Yii::app()->user->isGuest){
-			$this->redirect(Yii::app()->request->baseUrl );
-		}
-		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
+		$this->load();
 		$program_pkli = new ProgramPkli;
 		$b_keahlian = array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
 
@@ -49,7 +88,7 @@ class InstansiController extends Controller
 
 	public function actionView()
 	{
-		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
+		$this->load();
 		$program= ProgramPkli::model()->findAllByAttributes(array('Id_instansi'=>$this->identitas->Id_instansi));
 		$this->render('view',array('program'=>$program));
 	}

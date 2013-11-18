@@ -11,8 +11,9 @@ class FrontController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 			$this->user->attributes		=	$_POST['LoginForm'];
-			$this->user->validate();
-			$this->user->login();
+			if(!($this->user->validate() && $this->user->login())){
+				Yii::app()->user->setFlash('tetap',"$('#formlogin').attr('class', 'dropdown menu pull-right open');");
+			}
 		}
 		if (!Yii::app()->user->isGuest){
 			if(Yii::app()->user->level=='admin'){ $this->redirect('admin'); }

@@ -53,7 +53,7 @@
 					</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown menu pull-right">
+					<li id="formlogin" class="dropdown menu pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
 						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php if(!empty($this->identitas)){ if(Yii::app()->user->level=="mahasiswa"){ echo $this->identitas->Nama_lengkap; }else{ echo $this->identitas->Nama_instansi; }}else{ echo"Akun"; } ?><b class="caret"></b>
 						</a> 
@@ -102,6 +102,7 @@
 			  $('.dropdown input, .dropdown label').click(function(e) {
 			    e.stopPropagation();
 			  });
+			  <?php if(Yii::app()->user->hasFlash('tetap')){ echo Yii::app()->user->getFlash('tetap'); } ?>
 			});
 	  	</script>
 	</body>

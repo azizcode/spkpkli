@@ -37,7 +37,15 @@ class MahasiswaController extends Controller
 	public function actionPkli()
 	{
 		$this->load();
+		$kuisioner =  BidangKeahlian::model()->findByAttributes(array('NIM'=>$this->identitas->NIM));
+		if(!$kuisioner){
+			$cekKuisioner="true";
+				$this->redirect('mahasiswa/kuisioner');
+		}
 		$pkli		=	ProgramPkli::model()->findAll();
+		if(isset($_GET['id'])){
+			$pkli		=	ProgramPkli::model()->findAllByAttributes(array('Bidang_Keahlian'=>$_GET['id']));
+		}
 		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
 		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; }else{
 			$id = ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>'5'))->Id_instansi;
@@ -64,13 +72,13 @@ class MahasiswaController extends Controller
 
 	public function actionProfil()
 	{
+		$this->load();
 		if(!Yii::app()->user->isGuest) {
-			$identitas 						=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
-			$result['nama']					=	$identitas->Nama_lengkap;
-			$result['nim']					=	$identitas->NIM;
-			$result['alamat']				=	$identitas->Alamat_dmalang;
-			$result['telepon']				=	$identitas->No_tlp;
-			$result['email']				=	$identitas->Email;
+			$result['nama']					=	$this->identitas->Nama_lengkap;
+			$result['nim']					=	$this->identitas->NIM;
+			$result['alamat']				=	$this->identitas->Alamat_dmalang;
+			$result['telepon']				=	$this->identitas->No_tlp;
+			$result['email']				=	$this->identitas->Email;
 			echo json_encode($result);
 		}
 	}
@@ -90,6 +98,11 @@ class MahasiswaController extends Controller
 	public function actionRekomendasi()
 	{
 		$this->load();
+		$kuisioner =  BidangKeahlian::model()->findByAttributes(array('NIM'=>$this->identitas->NIM));
+		if(!$kuisioner){
+			$cekKuisioner="true";
+				$this->redirect('mahasiswa/kuisioner');
+		}
 		$rekomendasi	=	BidangKeahlian::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
 		$bidang			=	explode(";", $rekomendasi->bidang_keahlian);
 		$this->render('rekomendasi',array('rekomendasi' => $bidang));

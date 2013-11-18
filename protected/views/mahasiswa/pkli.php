@@ -44,14 +44,14 @@
 											<td><?php echo $instansi->Alamat; ?></td>
 											<td><?php echo $value->Jumlah_peserta; ?></td>
 											<td><?php echo $b_keahlian[$value->Bidang_Keahlian]; ?></td>
-											<td ><a href="<?php echo $value->Id_program_pkli ?>" data-toggle="modal" data-target="#modal-instansi" class="detail-instansi">Detail</a> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a></td>
+											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="detail-instansi">Detail</a> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a></td>
 										</tr>
 									<?php $i++; } ?>
 								</tbody>
 							</table>
 						</div>
 						<div class="modal fade" id="modal-instansi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		                  <div class="modal-dialog2">
+		                  <div class="modal-dialog">
 		                    <div class="modal-content">
 		                      <div class="modal-header">
 		                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -79,21 +79,3 @@
 		</div>
 	</div>
 </div>
-<script>
-	$(function() {
-		$('.detail-instansi').click(function(e) {
-			e.preventDefault();
-			var url = $(this).attr('href');
-			$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/detailpkli/"+url, function(json) {
-                $.each(json, function(k, v) {    
-					$('#nama-instansi').text(json.nama);
-					$('#alamat-instansi').text(json.alamat);
-					$('#bidang-keahlian').text(json.bidang);
-					$('#jumlah').text(json.jumlah);
-					$('#telepon-instansi').text(json.telepon);
-					$('#keterangan').text(json.keterangan);
-                });
-			});
-		});
-	});
-</script>

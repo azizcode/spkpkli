@@ -62,18 +62,19 @@
 		<div id="wrapper">
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
-				<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-				<li class="dropdown sidebar"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table"></i>Laporan<b class="caret"></b></a>
-					<ul>
-                    	<li class="t"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/rekomendasi">Mahasiswa</a></li>
-                        <li class="t"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/rekomendasi">Instansi</a></li>
+				<li class="active sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table"></i>Laporan<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                    	<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/rekomendasi"><i class="fa fa-caret-right "></i>Mahasiswa</a></li>
+                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/rekomendasi"><i class="fa fa-caret-right "></i>Instansi</a></li>
                     </ul>
 				</li>
-				<li class="dropdown sidebar"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-table"></i>Kelola Sistem<b class="caret"></b></a>
-					<ul>
-                    	<li class="t"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datamahasiswa">Mahasiswa</a></li>
-                        <li class="t"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datainstansi">Instansi</a></li>
-						<li class="t"><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman">Pengumuman</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i>Kelola Sistem<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datauser"><i class="fa fa-caret-right "></i>User</a></li>
+                    	<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datamahasiswa"><i class="fa fa-caret-right "></i>Mahasiswa</a></li>
+                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datainstansi"><i class="fa fa-caret-right "></i>Instansi</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-caret-right "></i>Pengumuman</a></li>
                     </ul>
 				</li>
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Keluar</a></li>

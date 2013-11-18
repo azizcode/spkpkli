@@ -37,13 +37,13 @@
 						</a>
 					</li>
 					<li class="menu <?php if($this->action=='pengumuman'){ ?>odd<?php } ?>">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/pengumuman">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/pengumuman">
 							<span class="glyphicon glyphicon-warning-sign"></span>
 							<span class="glyphicon-class">Pengumuman</span>
 						</a>
 					</li>
 					<li class="menu <?php if($this->action=='about'){ ?>odd<?php } ?>">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/about">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/about">
 							<span class="glyphicon glyphicon-info-sign"></span>
 							<span class="glyphicon-class">About</span>
 						</a>

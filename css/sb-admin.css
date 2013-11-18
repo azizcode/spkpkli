@@ -142,6 +142,10 @@ table.tablesorter thead tr th:hover {
 	background-color: #302E2E;
 	overflow-y: auto;
   }
+  
+  .container{
+	min-height:100%;
+  }
 
   /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
 

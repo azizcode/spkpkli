@@ -32,6 +32,24 @@
 								</tbody>
 							</table>
 						</div>
+						<h3 align="center">Transkrip Nilai Mata Kuliah</h3>
+						<div class="table-responsive">
+							<table class="table table-bordered table-hover table-striped tablesorter">
+								<thead>
+									<tr>
+										<th>Kode Mata Kuliah</th>
+										<th>Nama Mata Kuliah</th>
+										<th>SKS</th>
+										<th>Nilai Angka</th>
+										<th>Nilai Huruf</th>
+										<th>SKS x Nilai Angka</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -44,7 +44,7 @@
 											<td><?php echo $instansi->Alamat; ?></td>
 											<td><?php echo $value->Jumlah_peserta; ?></td>
 											<td><?php echo $b_keahlian[$value->Bidang_Keahlian]; ?></td>
-											<td ><a href="<?php echo $value->Id_program_pkli ?>" data-toggle="modal" data-target="#modal-instansi" class="detail-instansi">Detail</a> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/pkli/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a></td>
+											<td ><a href="<?php echo $value->Id_program_pkli ?>" data-toggle="modal" data-target="#modal-instansi" class="detail-instansi">Detail</a> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a></td>
 										</tr>
 									<?php $i++; } ?>
 								</tbody>

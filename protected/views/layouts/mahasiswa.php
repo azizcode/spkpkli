@@ -51,7 +51,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">	
 					<li class="menu pull-right" style="border:none;">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
+						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil" data-toggle="modal" data-target="#modal-mahasiswa" class="detail"> 
 							<span class="glyphicon glyphicon-user"></span>
 							<span class="glyphicon-class"><?php echo $this->identitas->Nama_lengkap; ?></span>
 						</a>
@@ -74,7 +74,46 @@
 				 <div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
 			</div>
 		</div>
-	  	<script>
+	  	<div class="modal fade" id="modal-mahasiswa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog2">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><b>Profile Mahasiswa</b></h4>
+              </div>
+              <div class="modal-body">
+            	<table class="table table-bordered table-hover table-striped tablesorter">
+	                  <tr><td>Nama </td><td id="nama_mahasiswa"></td></tr>
+	                  <tr><td>NIM</td><td id="nim_mahasiswa"></td></tr>
+	                  <tr><td>Alamat</td><td id="alamat_mahasiswa"></td></tr>
+	                  <tr><td>Nomor Telepon</td><td id="telepon_mahasiswa"></td></tr>
+	                  <tr><td>E-mail</td><td id="email_mahasiswa"></td></tr> 
+	             </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Keluar</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div>
+        </div>
+		<script>
+			$(function() {
+				$('.detail').click(function(e) {
+					e.preventDefault();
+					var url = $(this).attr('href');
+					$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil", function(json) {
+		                $.each(json, function(k, v) {    
+							$('#nama_mahasiswa').text(json.nama);
+							$('#nim_mahasiswa').text(json.nim);
+							$('#alamat_mahasiswa').text(json.alamat);
+							$('#telepon_mahasiswa').text(json.telepon);
+							$('#email_mahasiswa').text(json.email);
+		                });
+					});
+				});
+			});
+		</script>
+		<script>
 	  		$(function() {
 			  $('.dropdown-toggle').dropdown();
 			  $('.dropdown input, .dropdown label').click(function(e) {
@@ -82,5 +121,5 @@
 			  });
 			});
 	  	</script>
-	</body>
+	</body>	
 </html>

@@ -12839,3 +12839,1059 @@ REQUEST_URI=/spkpkli/admin/datamahasiswa
 >>>>>>> 7473eeab8d8e0683fdd96e5363fec642df8a5d96
 HTTP_REFERER=http://localhost/spkpkli/admin
 ---
+2013/11/18 07:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/instansi
+---
+2013/11/18 07:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 07:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 07:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 07:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 07:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rekomendasi".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('rekomendasi')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('rekomendasi')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/rekomenda...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/rekomendasi
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 07:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rekomendasi".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('rekomendasi')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('rekomendasi')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/rekomenda...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/rekomendasi
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 07:18:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rekomendasi".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('rekomendasi')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('rekomendasi')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/rekomenda...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/rekomendasi
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 07:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/18 07:45:17 [error] [php] Object of class ProgramPkli could not be converted to string (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:105)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (105)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 07:46:26 [error] [php] Non-static method Date_TimeZone::isValidID() should not be called statically (C:\xampp\php\pear\Date\TimeZone.php:4717)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\YiiBase.php(421): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php(103): spl_autoload_call()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#7 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#8 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#11 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#12 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#13 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date.php (55)
+2013/11/18 07:46:59 [error] [php] Non-static method Date_TimeZone::isValidID() should not be called statically (C:\xampp\php\pear\Date\TimeZone.php:4717)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\YiiBase.php(421): include()
+#1 unknown(0): autoload()
+#2 C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php(103): spl_autoload_call()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#7 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#8 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#11 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#12 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#13 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date\TimeZone.php (4717)
+in C:\xampp\php\pear\Date.php (55)
+2013/11/18 07:52:55 [error] [php] str_replace() expects at least 3 parameters, 1 given (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (84)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 08:33:34 [error] [php] Object of class ProgramPkli could not be converted to string (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (85)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 08:37:41 [error] [exception.CException] exception 'CException' with message 'Property "InstansiController.awal" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php(84): CComponent->__get('awal')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('input', Array, true)
+#5 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): CController->render('input', Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('input')
+#11 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('instansi/input')
+#12 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/spkpkli/instansi/input
+HTTP_REFERER=http://localhost/spkpkli/instansi
+---
+2013/11/18 10:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/view')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/5
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 10:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 10:56:53 [error] [php] Undefined index: id (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:49)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/detailpkli//spkpkli/mahasiswa/profil
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (49)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 10:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 10:58:47 [error] [php] Undefined index: id (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:49)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/detailpkli//spkpkli/mahasiswa/profil
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (49)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 10:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 10:59:22 [error] [php] Undefined index: id (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:49)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/detailpkli//spkpkli/mahasiswa/profil
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (49)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 11:00:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:18:51 [error] [php] Undefined index: id (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:65)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/profile//spkpkli/mahasiswa/profil
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (65)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 11:19:01 [error] [php] Undefined index: id (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:65)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/profile//spkpkli/mahasiswa/profil
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (65)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 11:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:36:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:40:02 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:43:07 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:43:09 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:45:23 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:45:25 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:47:14 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:47:16 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 11:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/profil')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/profil
+---
+2013/11/18 11:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/profil
+---
+2013/11/18 11:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/profil
+---
+2013/11/18 11:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/profil
+---
+2013/11/18 11:48:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/profil
+---
+2013/11/18 11:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "profil/view".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('profil/view')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/profil/10650098
+---
+2013/11/18 11:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:49:20 [error] [exception.CException] exception 'CException' with message 'Property "Mahasiswa.Nama_Lengkap" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_Lengkap')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(66): CActiveRecord->__get('Nama_Lengkap')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionProfil()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+---
+2013/11/18 11:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "profil/view".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('profil/view')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/profil/10650098
+---
+2013/11/18 11:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/profil/10650098
+---
+2013/11/18 11:52:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/view')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/5
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 11:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/view')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/5
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 11:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/view')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/5
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 12:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/view')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/5
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/pkli
+---
+2013/11/18 12:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('gii')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/gii')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/gii
+---
+2013/11/18 12:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('gii')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/gii')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/gii
+---
+2013/11/18 12:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/gii
+---
+2013/11/18 12:53:52 [error] [php] Undefined variable: identitas (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/daftar/5
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (84)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 13:01:34 [error] [php] Creating default object from empty value (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:78)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/daftar/5
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (78)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 13:03:11 [error] [php] Creating default object from empty value (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:78)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/daftar/5
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (78)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 13:12:22 [error] [php] Creating default object from empty value (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:78)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/daftar/5
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (78)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 13:53:20 [error] [php] Object of class PesertaPkli could not be converted to string (C:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(43): MahasiswaController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php (21)
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (43)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:19:52 [error] [exception.CException] exception 'CException' with message 'Property "ProgramPkli.Nama_instansi" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('Nama_instansi')
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(43): CActiveRecord->__get('Nama_instansi')
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('pkli')
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/pkli')
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+---
+2013/11/18 14:22:35 [error] [php] Object of class Instansi could not be converted to string (C:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): MahasiswaController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): MahasiswaController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php(45): MahasiswaController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): MahasiswaController->actionPkli()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php (21)
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (45)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:25:41 [error] [php] Undefined offset: 11 (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (43)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:27:07 [error] [php] Undefined offset: 11 (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (44)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:28:15 [error] [php] Undefined index: $id (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (44)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:29:32 [error] [php] Undefined offset: 11 (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (45)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:33:09 [error] [php] Undefined offset: 11 (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (45)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:34:27 [error] [php] Undefined offset: 11 (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (45)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:42:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '18' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:42:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '18' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\xampp\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/18 14:46:25 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:69)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/profil
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (69)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 14:49:01 [error] [php] Undefined offset: 11 (C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (44)
+in C:\xampp\htdocs\spkpkli\index.php (13)

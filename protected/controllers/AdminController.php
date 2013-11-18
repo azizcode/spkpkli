@@ -8,9 +8,16 @@ class AdminController extends Controller
 		$this->render('index');
 	}
 	
+	public function actionDataUser()
+	{
+		$user= User::model()->findAll();
+		$this->render('datauser',array('user'=>$user));
+	}
+	
 	public function actionDataMahasiswa()
 	{
-		$this->render('datamahasiswa');
+		$mahasiswa= Mahasiswa::model()->findAll();
+		$this->render('datamahasiswa',array('mahasiswa'=>$mahasiswa));
 	}
 	
 	public function actionDataInstansi()

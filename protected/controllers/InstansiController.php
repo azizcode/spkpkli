@@ -32,8 +32,10 @@ class InstansiController extends Controller
 		if(isset($_POST['ProgramPkli'])){
 			$program_pkli->Bidang_Keahlian=$_POST['ProgramPkli']['Bidang_Keahlian'];
 			$program_pkli->Jumlah_peserta=$_POST['ProgramPkli']['Jumlah_peserta'];
-			$program_pkli->awal=$_POST['ProgramPkli']['awal'];
-			$program_pkli->akhir=$_POST['ProgramPkli']['akhir'];
+			$date 				= date_create($_POST['ProgramPkli']['awal']);  
+            $program_pkli->awal = date_format($date, 'Y-m-d');
+			$date 				= date_create($_POST['ProgramPkli']['akhir']);  
+            $program_pkli->akhir = date_format($date, 'Y-m-d');
 			$program_pkli->keterangan=$_POST['ProgramPkli']['keterangan'];
 			$program_pkli->Id_instansi=Yii::app()->user->id;
 			if($program_pkli->save()){

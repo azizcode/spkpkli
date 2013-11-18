@@ -12307,4 +12307,535 @@ REQUEST_URI=/spkpkli/mahasiswa/pkli
 in C:\xampp\htdocs\spkpkli\protected\views\mahasiswa\pkli.php (66)
 in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (26)
 in C:\xampp\htdocs\spkpkli\index.php (13)
+<<<<<<< HEAD
+2013/11/18 04:03:21 [error] [php] Undefined variable: date (C:\xampp\htdocs\spkpkli\protected\views\instansi\view.php:42)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(54): InstansiController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionView()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/view
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\view.php (42)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (54)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 04:21:39 [error] [php] date_format() expects parameter 1 to be DateTime, string given (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input/edit/5
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (84)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 04:23:06 [error] [php] date_format() expects parameter 1 to be DateTime, boolean given (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input/edit/5
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (84)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 04:24:42 [error] [php] date_format() expects parameter 1 to be DateTime, boolean given (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input/edit/5
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (84)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 04:26:15 [error] [php] date_create() expects parameter 2 to be DateTimeZone, string given (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input/edit/5
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (84)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 04:29:45 [error] [php] date_format() expects parameter 1 to be DateTime, boolean given (C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php:84)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): InstansiController->renderInternal()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): InstansiController->renderFile()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): InstansiController->renderPartial()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php(47): InstansiController->render()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): InstansiController->actionInput()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/input/edit/5
+in C:\xampp\htdocs\spkpkli\protected\views\instansi\input.php (84)
+in C:\xampp\htdocs\spkpkli\protected\controllers\InstansiController.php (47)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 05:39:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profil".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('profil')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('profil')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/profi...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/profil
+HTTP_REFERER=http://localhost/spkpkli/instansi/input
+---
+2013/11/18 05:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 05:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 05:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 05:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/profil
+---
+2013/11/18 05:42:51 [error] [php] Undefined variable: user (C:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): FrontController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): FrontController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): FrontController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/
+in C:\xampp\htdocs\spkpkli\protected\controllers\FrontController.php (21)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/18 05:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/admin
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/18 05:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+=======
 >>>>>>> ebe143c2f87620975f22cc5dd9d5bb8ce0a0c0b2
+2013/11/18 05:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/admin
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/18 05:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:33:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+>>>>>>> 7473eeab8d8e0683fdd96e5363fec642df8a5d96
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+<<<<<<< HEAD
+2013/11/18 05:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+=======
+2013/11/18 05:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+>>>>>>> 7473eeab8d8e0683fdd96e5363fec642df8a5d96
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+<<<<<<< HEAD
+2013/11/18 05:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+=======
+2013/11/18 05:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+>>>>>>> 7473eeab8d8e0683fdd96e5363fec642df8a5d96
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+<<<<<<< HEAD
+2013/11/18 05:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+=======
+2013/11/18 05:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+>>>>>>> 7473eeab8d8e0683fdd96e5363fec642df8a5d96
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+<<<<<<< HEAD
+2013/11/18 05:52:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/admin
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa
+---
+2013/11/18 05:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+=======
+2013/11/18 05:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 05:39:15 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:24)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/18 05:46:45 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:24)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/18 06:27:23 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.identitas" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\protected\views\admin\index.php(9): CComponent->__get('identitas')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', NULL, true)
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', NULL, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(8): CController->render('index')
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('index')
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/index')
+#12 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/spkpkli/admin
+---
+2013/11/18 06:49:12 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php:24)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): MahasiswaController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): MahasiswaController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): MahasiswaController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/mahasiswa/pkli
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\MahasiswaController.php (24)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/18 06:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pengumuman".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('pengumuman')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('pengumuman')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/pengumuma...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/pengumuman
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 06:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pengumuman".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('pengumuman')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('pengumuman')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/pengumuma...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/pengumuman
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/18 06:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/pengumuman
+---
+2013/11/18 06:55:54 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "datamahasiswa".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:878
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('datamahasiswa', NULL, true)
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(13): CController->render('datamahasiswa')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataMahasiswa()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('datamahasiswa')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/datamahas...')
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+>>>>>>> 7473eeab8d8e0683fdd96e5363fec642df8a5d96
+HTTP_REFERER=http://localhost/spkpkli/admin
+---

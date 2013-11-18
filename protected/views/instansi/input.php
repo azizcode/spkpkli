@@ -81,7 +81,8 @@
                     <label for="inputEmail" class="col-lg-2 control-label"> Awal Pelaksanaan</label>
                           <div class="col-lg-10">
                           <div class='input-group date' id='datetimepicker5'>
-                          <?php echo $form->textField($program_pkli,'awal',array('class'=>'form-control','data-format'=>"YYYY/MM/DD")); ?>
+                          <?php $program_pkli->awal = date("d-m-Y",strtotime($program_pkli->awal)); ?>
+                          <?php echo $form->textField($program_pkli,'awal',array('class'=>'form-control','data-format'=>"DD-MM-YYYY")); ?>
                           <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
                           </span>
                           </div>
@@ -99,7 +100,8 @@
                     <label for="inputEmail" class="col-lg-2 control-label"> Akhir Pelaksanaan</label>
                           <div class="col-lg-10">
                           <div class='input-group date' id='datetimepicker6'>
-                          <?php echo $form->textField($program_pkli,'akhir',array('class'=>'form-control','data-format'=>"YYYY/MM/DD")); ?>
+                          <?php $program_pkli->akhir = date("d-m-Y",strtotime($program_pkli->akhir)); ?>
+                          <?php echo $form->textField($program_pkli,'akhir',array('class'=>'form-control','data-format'=>"DD-MM-YYYY")); ?>
                           <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
                           </span>
                           </div>

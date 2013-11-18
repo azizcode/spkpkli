@@ -39,8 +39,18 @@
                     <tr>
                     <td><?php echo $ahli[$list->Bidang_Keahlian]; ?></td>
                     <td><?php echo $list->Jumlah_peserta; ?></td>
-                    <td><?php echo $list->awal; ?></td>
-                    <td><?php echo $list->akhir; ?></td>
+                    <td>
+                      <?php
+                        $date= date_create($list->awal);
+                        echo $awal = date_format($date, 'd-m-Y'); 
+                      ?>
+                    </td>
+                    <td>
+                      <?php 
+                        $date=date_create($list->akhir);
+                        echo $akhir = date_format($date, 'd-m-Y'); 
+                      ?>
+                    </td>
                     <td><?php echo $list->keterangan; ?></td>
                     <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>">Edit</a>
                        | <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>

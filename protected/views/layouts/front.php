@@ -20,7 +20,7 @@
 
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -31,8 +31,8 @@
 				<a class="navbar-brand" href="<?php echo Yii::app()->request->baseUrl; ?>">SPK PKLI</a>
 			</div>
 		  	<!-- Collect the nav links, forms, and other content for toggling -->
-		  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav col-md-10 col-xs-7">
+		  	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-ex1-collapse" role="navigation">
+				<ul class="nav navbar-nav">
 					<li class="menu <?php if($this->action=='home'){ ?>odd<?php } ?>">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>">
 							<span class="glyphicon glyphicon-home"></span>
@@ -51,8 +51,9 @@
 							<span class="glyphicon-class">About</span>
 						</a>
 					</li>
-					
-					<li class="dropdown menu pull-right">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					<li id="formlogin" class="dropdown menu pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
 						<i class="glyphicon glyphicon-user" style="padding-right:4px;"></i><?php if(!empty($this->identitas)){ if(Yii::app()->user->level=="mahasiswa"){ echo $this->identitas->Nama_lengkap; }else{ echo $this->identitas->Nama_instansi; }}else{ echo"Akun"; } ?><b class="caret"></b>
 						</a> 
@@ -80,16 +81,15 @@
 								</div>
 								<div class="row" style="margin-top:6px;">
 									<div class="col-md-6"><button type="submit" class="btn btn-primary">Masuk</button></div>
-									<div class="col-md-6"><a href="<?php echo Yii::app()->request->baseUrl; ?>/daftar" class="btn btn-success pull-right" >Daftar</button></a>
-								</div>
+									<div class="col-md-6"><a href="<?php echo Yii::app()->request->baseUrl; ?>/daftar" class="btn btn-success pull-right" >Daftar</button></a></div>
 							<?php $this->endWidget(); ?>
 
 							<?php } ?>	
 						</div>
 					</li>	
 				</ul>
-		  	</div><!-- /.navbar-collapse -->
-		</nav>
+		  	</nav><!-- /.navbar-collapse -->
+		</header>
 		<?php echo $content; ?>
 		<div class="footer">
 	 		 <div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
@@ -102,6 +102,7 @@
 			  $('.dropdown input, .dropdown label').click(function(e) {
 			    e.stopPropagation();
 			  });
+			  <?php if(Yii::app()->user->hasFlash('tetap')){ echo Yii::app()->user->getFlash('tetap'); } ?>
 			});
 	  	</script>
 	</body>

@@ -6,7 +6,7 @@
       </ol>
       <h1><small>Sistem Pendukung Keputusan Bidang Keahlian PKLI</small></h1>
       <div class="alert alert-success alert-dismissable"> 
-        Selamat datang <b><?php echo $this->identitas->Nama_instansi; ?></b>
+        Selamat datang <b></b>
         <p>Di sistem informasi rekomendasi PKLI , sebagai instansi ada memiliki peran yang sanggat baik dalam proses pembelajaran mahasiswa. Instansi ini di harapkan mampu memberikan bekal atau pengalaman sebelum mahasiswa tejun ke dunia kerja yang sesungguhnya</p>
         <b>Kami ucapakn terimakasih telah menggunakan sistem kami</b>
       </div>

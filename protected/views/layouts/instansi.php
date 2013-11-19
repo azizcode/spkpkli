@@ -53,7 +53,7 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">	
 					<li class="menu pull-right" style="border:none;">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil">
+						<a href="" data-toggle="modal" data-target="#modal-instansi" class="profinstansi"
 							<span class="glyphicon glyphicon-user"></span>
 							<span class="glyphicon-class"><?php echo $this->identitas->Nama_instansi; ?></span>
 						</a>
@@ -71,6 +71,28 @@
 				</ul>
 			</div>
 			<?php echo $content; ?>
+			<div class="modal fade" id="modal-instansi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog2">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><b>Profile Instansi</b></h4>
+              </div>
+              <div class="modal-body">
+            	<table class="table table-bordered table-hover table-striped tablesorter">
+	                  <tr><td>Nama </td><td id="nama-instansi"></td></tr>
+	                  <tr><td>Jenis Instansi</td><td id="jenis-instansi"></td></tr>
+	                  <tr><td>Alamat</td><td id="alamat-instansi"></td></tr>
+	                  <tr><td>Nomor Telepon</td><td id="telepon-instansi"></td></tr>
+	                  <tr><td>E-mail</td><td id="email-instansi"></td></tr> 
+	             </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Keluar</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div>
+        </div>
 			<div class="footer">
 				<div class="footer-left"><span> Copyright &copy; <?php echo date('Y'); ?> SIC 2013 All Rights Reserved</span></div>
 				<div class="footer-right"><span><?php echo Yii::powered(); ?></span></div>
@@ -86,6 +108,18 @@
 						$.each(json, function(k, v) {    
 							$("#peserta").append("<tr><td>" + v.nim + "</td><td>" + v.nama + "</td><td>" + v.alamat + "</td><td>" + v.telp + "</td><td>" + v.email + "</td></tr>");
 						});
+					});
+				});
+				$('.profinstansi').click(function(e) {
+					e.preventDefault();
+					$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/instansi/profil", function(json) {
+		                $.each(json, function(k, v) {    
+							$('#nama-instansi').text(json.nama);
+							$('#jenis-instansi').text(json.jenis);
+							$('#alamat-instansi').text(json.alamat);
+							$('#telepon-instansi').text(json.telepon);
+							$('#email-instansi').text(json.email);
+		                });
 					});
 				});
 			$('.dropdown-toggle').dropdown();

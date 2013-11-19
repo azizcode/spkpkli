@@ -2,10 +2,10 @@
 -- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
--- Inang: 127.0.0.1
--- Waktu pembuatan: 12 Nov 2013 pada 00.38
--- Versi Server: 5.5.27
--- Versi PHP: 5.4.7
+-- Host: 127.0.0.1
+-- Generation Time: Nov 19, 2013 at 02:09 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Basis data: `db_spk_pkli`
+-- Database: `db_spk_pkli`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `bidang_keahlian`
+-- Table structure for table `bidang_keahlian`
 --
 
 CREATE TABLE IF NOT EXISTS `bidang_keahlian` (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `bidang_keahlian` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data untuk tabel `bidang_keahlian`
+-- Dumping data for table `bidang_keahlian`
 --
 
 INSERT INTO `bidang_keahlian` (`id`, `NIM`, `bidang_keahlian`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `bidang_keahlian` (`id`, `NIM`, `bidang_keahlian`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `instansi`
+-- Table structure for table `instansi`
 --
 
 CREATE TABLE IF NOT EXISTS `instansi` (
@@ -54,10 +54,10 @@ CREATE TABLE IF NOT EXISTS `instansi` (
   `No_tlp` varchar(40) NOT NULL,
   `email` varchar(30) NOT NULL,
   PRIMARY KEY (`Id_instansi`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
--- Dumping data untuk tabel `instansi`
+-- Dumping data for table `instansi`
 --
 
 INSERT INTO `instansi` (`Id_instansi`, `Nama_instansi`, `Jenis_instasni`, `Alamat`, `No_tlp`, `email`) VALUES
@@ -66,12 +66,13 @@ INSERT INTO `instansi` (`Id_instansi`, `Nama_instansi`, `Jenis_instasni`, `Alama
 (13, 'Diskominfo', '3', 'Malang', '0341-2874', 'kominfo@yahoo.com'),
 (14, 'Telkom', '2', 'Malang', '0341-5434', 'telkom@yahoo.com'),
 (15, 'Kaskus', '2', 'Jakarta', '021-8738', 'kaskus@yahoo.com'),
-(16, 'Pertokimia', '2', 'Gersik', '0651-0895', 'gersik@yahoo.com');
+(16, 'Pertokimia', '2', 'Gersik', '0651-0895', 'gersik@yahoo.com'),
+(24, 'pt.bentoel', '2', 'Malang', '0341-74446754', 'bentoel@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `mahasiswa`
+-- Table structure for table `mahasiswa`
 --
 
 CREATE TABLE IF NOT EXISTS `mahasiswa` (
@@ -97,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `mahasiswa`
+-- Dumping data for table `mahasiswa`
 --
 
 INSERT INTO `mahasiswa` (`id_mahasiswa`, `NIM`, `Nama_lengkap`, `Jenis_kelamin`, `Tempat_lahir`, `Tanggal_lahir`, `Nama_orangtua`, `Pekerjaan_orangtua`, `Alamat-orangtua`, `Kota-orangtua`, `Profinsi-orangtua`, `Tahun_masuk`, `Jurusan`, `Pendidikan_terakhir`, `Alamat_dmalang`, `Alamat_asal`, `No_tlp`, `Email`) VALUES
@@ -115,7 +116,7 @@ INSERT INTO `mahasiswa` (`id_mahasiswa`, `NIM`, `Nama_lengkap`, `Jenis_kelamin`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `matakuliah`
+-- Table structure for table `matakuliah`
 --
 
 CREATE TABLE IF NOT EXISTS `matakuliah` (
@@ -126,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `matakuliah` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `matakuliah`
+-- Dumping data for table `matakuliah`
 --
 
 INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `jumlah_sks`) VALUES
@@ -155,7 +156,7 @@ INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `jumlah_sks`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `nilai`
+-- Table structure for table `nilai`
 --
 
 CREATE TABLE IF NOT EXISTS `nilai` (
@@ -165,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `nilai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `nilai`
+-- Dumping data for table `nilai`
 --
 
 INSERT INTO `nilai` (`NIM`, `kode_mk`, `Nilai`) VALUES
@@ -471,7 +472,7 @@ INSERT INTO `nilai` (`NIM`, `kode_mk`, `Nilai`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `peserta_pkli`
+-- Table structure for table `peserta_pkli`
 --
 
 CREATE TABLE IF NOT EXISTS `peserta_pkli` (
@@ -484,7 +485,7 @@ CREATE TABLE IF NOT EXISTS `peserta_pkli` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `program_pkli`
+-- Table structure for table `program_pkli`
 --
 
 CREATE TABLE IF NOT EXISTS `program_pkli` (
@@ -499,7 +500,7 @@ CREATE TABLE IF NOT EXISTS `program_pkli` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
--- Dumping data untuk tabel `program_pkli`
+-- Dumping data for table `program_pkli`
 --
 
 INSERT INTO `program_pkli` (`Id_program_pkli`, `Id_instansi`, `Bidang_Keahlian`, `Jumlah_peserta`, `awal`, `akhir`, `keterangan`) VALUES
@@ -517,7 +518,7 @@ INSERT INTO `program_pkli` (`Id_program_pkli`, `Id_instansi`, `Bidang_Keahlian`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -530,11 +531,12 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `Level`, `status`) VALUES
 (0, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin', 1),
+(7, '10650099', 'fd103e76c1a3406f090dbd01c67ed134', 'mahasiswa', 1),
 (8, '10650090', '2b9f66b976f57014b966752edbfa7b6c', 'mahasiswa', 1),
 (9, '10650098', '440fd2e411f3d109aec0b326666161a7', 'mahasiswa', 1),
 (10, 'aneh', 'd41d8cd98f00b204e9800998ecf8427e', 'instansi', 0),
@@ -551,7 +553,7 @@ INSERT INTO `user` (`id_user`, `username`, `password`, `Level`, `status`) VALUES
 (21, '10650059', 'a8d62ab63ce07aa9f33531848a5a783e', 'mahasiswa', 1),
 (22, '10650076', 'c7512ec8eee8245bd7388f1752e4c966', 'mahasiswa', 1),
 (23, '10650088', '7f8b32bca28a4b4afd41983398af5a7e', 'mahasiswa', 1),
-(26, '10650099', 'fd103e76c1a3406f090dbd01c67ed134', 'mahasiswa', 1);
+(24, 'bentoel', '60df92d3fa34fc1b1162dc2982dcbbbc', 'instansi', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

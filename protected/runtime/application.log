@@ -61,3 +61,246 @@ Stack trace:
 REQUEST_URI=/spkpkli/admin/datainstansi
 HTTP_REFERER=http://localhost/spkpkli/admin
 ---
+2013/11/19 01:04:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '17' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:04:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '17' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:06:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '18' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:06:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '18' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:07:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '19' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:07:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '19' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:08:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '20' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:08:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '20' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:08:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '21' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:08:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '21' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:08:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '22' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:08:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '22' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:08:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php (73)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:08:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '23' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `user` (`username`, `password`, `Level`, `status`, `id_user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in D:\XAMPP\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\FrontController.php(73): CActiveRecord->save()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): FrontController->actionDaftar()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('daftar')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('front/daftar')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/daftar
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 01:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "mahasiswa".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('mahasiswa')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('mahasiswa')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('mahasiswa/mahas...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/mahasiswa/mahasiswa/kuisioner
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/kuisioner
+---
+2013/11/19 01:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/mahasiswa/kuisioner
+---
+2013/11/19 01:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/mahasiswa/kuisioner
+---
+2013/11/19 01:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/mahasiswa/kuisioner
+---
+2013/11/19 01:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/mahasiswa/mahasiswa/kuisioner
+---
+2013/11/19 01:21:47 [error] [php] Undefined variable: result (D:\XAMPP\htdocs\spkpkli\protected\controllers\InstansiController.php:38)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/detailview/5
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\InstansiController.php (38)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/19 01:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/admin/datauser
+---
+2013/11/19 02:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/admin/datauser
+---
+2013/11/19 02:09:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/
+---
+2013/11/19 02:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---
+2013/11/19 02:10:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/daftar
+---

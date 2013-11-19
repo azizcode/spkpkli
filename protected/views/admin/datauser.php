@@ -1,9 +1,8 @@
   <div id="page-wrapper">
-
         <div class="row">
           <div class="col-lg-12">
 			<ol class="breadcrumb-inp">
-              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+              <li><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             </ol>
           </div>
         </div><!-- /.row -->
@@ -55,7 +54,14 @@
 						<td><?php echo $list->username; ?></td>
 						<td><?php echo $list->password; ?></td>
 						<td><?php echo $list->Level; ?></td>
-						<td><?php echo $list->status; ?></td>
+						<td>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" name="[status][<?php echo $list->id_user; ?>]" <?php if($list->status=='1'){ ?>checked="checked"<?php } ?>>
+								Aktif
+							  </label>
+							</div>
+						</td>
 						<td><a href="">Edit</a>
 						   <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
 					  </tr>

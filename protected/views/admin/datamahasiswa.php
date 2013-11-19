@@ -3,8 +3,7 @@
         <div class="row">
           <div class="col-lg-12">
 			<ol class="breadcrumb-inp">
-              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
-            </ol>
+              <li><a href="<?php echo Yii::app()->request->baseUrl; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
           </div>
         </div><!-- /.row -->
 <div id="page-wrapper">

@@ -52,8 +52,16 @@
                       ?>
                     </td>
                     <td><?php echo $list->keterangan; ?></td>
+                    <?php   
+                            $from = strtotime($awal);
+                            $to = strtotime($akhir);
+                            $now = time();
+
+                     ?>       
                     <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>" class="linktabel">Edit</a>
-                       | <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="linktabel">Delete</a>
+                       <?php if($from >= $now || $to <= $now) { ?>
+                       | <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="linktabel">Delete</a>    
+                         <?php } ?>
                        | <a href="#myModal" data-toggle="modal" data-target="#myModal" data-program="<?php echo $list->Id_program_pkli; ?>" class="detail-peserta linktabel">Detail</a></td>
                     <?php } ?>
                   </tr>

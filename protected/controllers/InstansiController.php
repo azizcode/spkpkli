@@ -20,7 +20,19 @@ class InstansiController extends Controller
 		$this->setPageTitle(' - About');
 		$this->render('about');
 	}
-	
+	public function actionProfil()
+	{
+		$this->load();
+		if(!Yii::app()->user->isGuest) {
+			$result['nama']					=	$this->identitas->Nama_instansi;
+			$jenis= array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain');
+			$result['jenis']				=	$jenis[$this->identitas->Jenis_instasni];
+			$result['alamat']				=	$this->identitas->Alamat;
+			$result['telepon']				=	$this->identitas->No_tlp;
+			$result['email']				=	$this->identitas->email;
+			echo json_encode($result);
+		}
+	}
 	public function actionDetailview()
 	{
 		$this->load();

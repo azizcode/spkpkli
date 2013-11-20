@@ -107,9 +107,10 @@ class MahasiswaController extends Controller
 			$cekKuisioner="true";
 				$this->redirect('mahasiswa/kuisioner');
 		}
+		$nilai          =   Nilai::model()->findAllByAttributes(array('NIM'=>$this->identitas->NIM));
 		$rekomendasi	=	BidangKeahlian::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
 		$bidang			=	explode(";", $rekomendasi->bidang_keahlian);
-		$this->render('rekomendasi',array('rekomendasi' => $bidang));
+		$this->render('rekomendasi',array('rekomendasi' => $bidang,'nilai'=>$nilai));
 	}
 	
 	public function actionKuisioner()
@@ -193,7 +194,7 @@ class MahasiswaController extends Controller
 			$keahlian->NIM				=	$this->identitas->NIM;
 			$keahlian->bidang_keahlian	=	'';
 			$i							=	1;
-			foreach($prioritas as $bidang){
+			foreach($prioritas as $bidang => $value){
 				if($i<=2){ $keahlian->bidang_keahlian .= $bidang; if($i==1){ $keahlian->bidang_keahlian .= ';'; } $i++; }
 			}
 			if($keahlian->save()){ $this->redirect(Yii::app()->request->baseUrl.'/mahasiswa/rekomendasi'); }

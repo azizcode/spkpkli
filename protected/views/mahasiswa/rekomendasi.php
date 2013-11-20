@@ -1,4 +1,4 @@
-<?php $b_keahlian 	= 	array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia'); ?>
+<?php $b_keahlian 	= 	array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Multimedia', '5' => 'Sistem Informasi','4'=>'Hardware'); ?>
 <div id="page-wrapper">
 	<div class="row">
 		<div class="col-lg-12">
@@ -46,7 +46,6 @@
 									</tr>
 								</thead>
 								<tbody>
-									
 								</tbody>
 							</table>
 						</div>

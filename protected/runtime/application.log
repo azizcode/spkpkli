@@ -949,3 +949,429 @@ Stack trace:
 REQUEST_URI=/spkpkli/css/form.css
 HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
 ---
+2013/11/20 13:49:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "rekomendasi".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('rekomendasi')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('rekomendasi')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/rekomenda...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/rekomendasi
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/20 13:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/20 13:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/20 13:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/20 13:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/rekomendasi
+---
+2013/11/20 14:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tinymce.min.js')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tinymce.min.js')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tinymce.min.js')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:52:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:55:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:56:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 14:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tiny/tinymce.min.js".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('tiny/tinymce.mi...')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/tiny/tinymce.min.js
+HTTP_REFERER=http://localhost/spkpkli/admin/input
+---
+2013/11/20 15:34:11 [error] [php] Undefined variable: program_pkli (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:34:44 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:35:04 [error] [php] Undefined variable: Pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:35:06 [error] [php] Undefined variable: Pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:35:06 [error] [php] Undefined variable: Pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:35:06 [error] [php] Undefined variable: Pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:35:07 [error] [php] Undefined variable: Pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(36): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:49:43 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(37): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (37)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:50:32 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(38): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (38)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:51:36 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(38): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (38)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:51:39 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(38): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (38)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:51:40 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(38): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (38)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:51:40 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(38): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (38)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 15:58:13 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(41): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (41)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 16:00:40 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(41): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (41)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 16:00:43 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(41): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (41)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 16:28:34 [error] [php] Undefined variable: pengumuman (C:\xampp\htdocs\spkpkli\protected\views\admin\input.php:16)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(53): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (53)
+in C:\xampp\htdocs\spkpkli\index.php (13)

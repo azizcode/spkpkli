@@ -28,7 +28,33 @@ class AdminController extends Controller
 	
 	public function actionPengumuman()
 	{
-		$this->render('pengumuman');
+	 $this->render('pengumuman');
+	}
+
+	public function actionInput()
+	{
+			$pengumuman = new Pengumuman;
+		if(isset($_GET['id']))
+		{
+			$pengumuman= $pengumuman->findByPk($_GET['id']);
+		}
+		if(isset($_POS['Pengumuman']))
+		{
+			$pengumuman->judul = $_POST['Pengumuman']['judul'];
+			$pengumuman->isi = $_POST['Pengumuman']['isi'];
+			$pengumuman->cover = $_POST['Pengumuman']['cover'];
+			if(isset($_POST['Pengumuman']['tanggal']){
+				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
+			}else{
+				$pengumuman->tanggal = '2013-11-17';
+			}
+			if($pengumuman->save()){
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
+				}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
+				}
+		}
+		$this->render('input',array('pengumuman'=>$pengumuman));
 	}
 
 	// Uncomment the following methods and override them if needed

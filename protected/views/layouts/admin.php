@@ -14,6 +14,7 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/modal.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/tiny/tinymce.min.js"></script>
 
 	</head>
 	<body>
@@ -33,30 +34,8 @@
 					<li class="menu <?php if($this->action=='home'){ ?>odd<?php } ?>">
 						<a href="<?php echo Yii::app()->request->baseUrl; ?>">
 							<span class="glyphicon glyphicon-home"></span>
-							<span class="glyphicon-class">Home</span>
+							<span class="glyphicon-class">Halaman Admin</span>
 						</a>
-					</li>
-					<li class="menu <?php if($this->action=='pengumuman'){ ?>odd<?php } ?>">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/pengumuman">
-							<span class="glyphicon glyphicon-warning-sign"></span>
-							<span class="glyphicon-class">Pengumuman</span>
-						</a>
-					</li>
-					<li class="menu <?php if($this->action=='about'){ ?>odd<?php } ?>">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/about">
-							<span class="glyphicon glyphicon-info-sign"></span>
-							<span class="glyphicon-class">About</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">	
-					<li class="menu pull-right" style="border:none;">
-						<a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/profil">
-							<span class="glyphicon glyphicon-user"></span>
-							<span class="glyphicon-class">Admin</span>
-						</a>
-					</li>	
-				</ul>
 		  	</nav><!-- /.navbar-collapse -->
 		</header>
 		<div id="wrapper">
@@ -74,9 +53,17 @@
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datauser"><i class="fa fa-caret-right "></i>User</a></li>
                     	<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datamahasiswa"><i class="fa fa-caret-right "></i>Mahasiswa</a></li>
                         <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/datainstansi"><i class="fa fa-caret-right "></i>Instansi</a></li>
-						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-caret-right "></i>Pengumuman</a></li>
+						</li>
                     </ul>
 				</li>
+
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i>Pengumuman<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input"><i class="fa fa-caret-right "></i>Input Pengumuman</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/pengumuman"><i class="fa fa-caret-right "></i>View Pengumuman</a></li>
+					</ul>
+				</li>	
+
 				<li class="sidebar"><a href="<?php echo Yii::app()->request->baseUrl; ?>/logout"><i class="fa fa-sign-out"></i>Keluar</a></li>
 				</ul>
 			</div>

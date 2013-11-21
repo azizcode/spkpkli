@@ -38,7 +38,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<?php $i=1; foreach($instansi as $value){ $instansi = Instansi::model()->findByPk($value->Id_instansi); ?>
+									<?php $i=1; foreach($pkli as $value){ $instansi = Instansi::model()->findByPk($value->Id_instansi); ?>
 										<tr class="<?php if($i%2==0){ ?>success<?php } else { ?> active<?php } ?>">
 											<td><?php echo $i; ?></td>
 											<td><?php echo $instansi->Nama_instansi; ?></td>
@@ -47,10 +47,16 @@
 												$terdaftar	=	count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$value->Id_program_pkli))); 
 												$tersedia	=	$value->Jumlah_peserta - $terdaftar; 
 											?>	
+											<?php
+												date_default_timezone_set("Asia/Jakarta");
+												$from = strtotime($value->awal);
+												$to = strtotime($value->akhir);
+												$now = time();
+											?> 
 											<td><?php echo $terdaftar.' Orang'; ?></td>
 											<td><?php if($tersedia==0){ echo 'Kuota Penuh'; }else { echo $tersedia.' Orang'; } ?></td>
 											<td><?php echo $b_keahlian[$value->Bidang_Keahlian]; ?></td>
-											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="linktabel detail-instansi">Detail</a><?php if($id_tempat_pkli=="-1" && $tersedia!=0){ ?> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a><?php } ?></td>
+											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="linktabel detail-instansi">Detail</a><?php if($id_tempat_pkli=="-1" && $tersedia!=0 && $now <= $from){ ?> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a><?php } ?></td>
 										</tr>
 									<?php $i++; } ?>
 								</tbody>
@@ -68,6 +74,7 @@
 					                  <tr><td>Nama Instansi</td><td id="nama-instansi"></td></tr>
 					                  <tr><td>Alamat</td><td id="alamat-instansi"></td></tr>
 					                  <tr><td>Bidang Keahlian</td><td id="bidang-keahlian"></td></tr>
+					                  <tr><td>Pelaksanaan</td><td id="pelaksanaan"></td></tr>
 					                  <tr><td>Kuota</td><td id="kuota"></td></tr>
 					                  <tr><td>Terdaftar</td><td id="terdaftar"></td></tr>
 					                  <tr><td>Tersedia</td><td id="tersedia"></td></tr>

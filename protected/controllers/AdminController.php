@@ -33,7 +33,7 @@ class AdminController extends Controller
 
 	public function actionInput()
 	{
-			$pengumuman = new Pengumuman;
+		$pengumuman = new Pengumuman;
 		if(isset($_GET['id']))
 		{
 			$pengumuman= $pengumuman->findByPk($_GET['id']);
@@ -42,7 +42,16 @@ class AdminController extends Controller
 		{
 			$pengumuman->judul = $_POST['Pengumuman']['judul'];
 			$pengumuman->isi = $_POST['Pengumuman']['isi'];
-			$pengumuman->cover = 'cover';
+
+			$pengumuman->cover	=	CUploadedFile::getInstance($pengumuman,'cover');
+			if($pengumuman->cover){
+				$gambar		=	rand(10000000,100000000).'_'.$pengumuman->cover;
+				while(is_file($gambar)){
+					$gambar	=	rand(10000000,100000000).'_'.$pengumuman->cover;
+				}
+			}	
+			$pengumuman->cover->saveAs(Yii::getPathOfAlias('webroot') . '/gambar/'.$gambar);
+
 			if(isset($_POST['Pengumuman']['tanggal'])){
 				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
 			}else{
@@ -52,7 +61,7 @@ class AdminController extends Controller
 				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
 				}else{
 				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
-				}
+			}
 		}
 		$this->render('input',array('pengumuman'=>$pengumuman));
 	}

@@ -209,6 +209,17 @@ class MahasiswaController extends Controller
 		}
 		$this->identitas 		=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
 	}
+	
+	public function huruf($angka){
+		if($angka=='4'){ $huruf='A'; }
+		else if($angka=='3.5'){ $huruf='B+'; }
+		else if($angka=='3'){ $huruf='B'; }
+		else if($angka=='2.5'){ $huruf='C+'; }
+		else if($angka=='2'){ $huruf='C'; }
+		else if($angka=='1'){ $huruf='D'; }
+		else { $huruf='E'; }
+		return $huruf;
+	}
 
 	// Uncomment the following methods and override them if needed
 	/*

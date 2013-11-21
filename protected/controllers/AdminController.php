@@ -38,15 +38,15 @@ class AdminController extends Controller
 		{
 			$pengumuman= $pengumuman->findByPk($_GET['id']);
 		}
-		if(isset($_POS['Pengumuman']))
+		if(isset($_POST['Pengumuman']))
 		{
 			$pengumuman->judul = $_POST['Pengumuman']['judul'];
 			$pengumuman->isi = $_POST['Pengumuman']['isi'];
-			$pengumuman->cover = $_POST['Pengumuman']['cover'];
-			if(isset($_POST['Pengumuman']['tanggal']){
+			$pengumuman->cover = 'cover';
+			if(isset($_POST['Pengumuman']['tanggal'])){
 				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
 			}else{
-				$pengumuman->tanggal = '2013-11-17';
+				$pengumuman->tanggal = date("Y/m/d");
 			}
 			if($pengumuman->save()){
 				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');

@@ -53,7 +53,7 @@
 			<div class="form-group">
 				<label class="control-label" for="userfile">Gambar Sampul</label>
 				  <div class="controls">
-					<?php echo $form->fileField($pengumuman,'cover',array('class'=>'form-control')); ?>
+					<?php echo $form->fileField($pengumuman,'cover', array('class'=>'form-control')); ?>
 				  </div>
 			</div>
 

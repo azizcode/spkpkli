@@ -2,10 +2,10 @@
 -- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 19, 2013 at 02:09 AM
--- Server version: 5.5.27
--- PHP Version: 5.4.7
+-- Inang: 127.0.0.1
+-- Waktu pembuatan: 22 Nov 2013 pada 00.49
+-- Versi Server: 5.5.27
+-- Versi PHP: 5.4.7
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `db_spk_pkli`
+-- Basis data: `db_spk_pkli`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bidang_keahlian`
+-- Struktur dari tabel `bidang_keahlian`
 --
 
 CREATE TABLE IF NOT EXISTS `bidang_keahlian` (
@@ -31,19 +31,20 @@ CREATE TABLE IF NOT EXISTS `bidang_keahlian` (
   `NIM` int(11) NOT NULL,
   `bidang_keahlian` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
--- Dumping data for table `bidang_keahlian`
+-- Dumping data untuk tabel `bidang_keahlian`
 --
 
 INSERT INTO `bidang_keahlian` (`id`, `NIM`, `bidang_keahlian`) VALUES
-(3, 10650098, '5;4');
+(15, 10650098, '1;2'),
+(16, 10650090, '1;2');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `instansi`
+-- Struktur dari tabel `instansi`
 --
 
 CREATE TABLE IF NOT EXISTS `instansi` (
@@ -54,10 +55,10 @@ CREATE TABLE IF NOT EXISTS `instansi` (
   `No_tlp` varchar(40) NOT NULL,
   `email` varchar(30) NOT NULL,
   PRIMARY KEY (`Id_instansi`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
 
 --
--- Dumping data for table `instansi`
+-- Dumping data untuk tabel `instansi`
 --
 
 INSERT INTO `instansi` (`Id_instansi`, `Nama_instansi`, `Jenis_instasni`, `Alamat`, `No_tlp`, `email`) VALUES
@@ -67,12 +68,13 @@ INSERT INTO `instansi` (`Id_instansi`, `Nama_instansi`, `Jenis_instasni`, `Alama
 (14, 'Telkom', '2', 'Malang', '0341-5434', 'telkom@yahoo.com'),
 (15, 'Kaskus', '2', 'Jakarta', '021-8738', 'kaskus@yahoo.com'),
 (16, 'Pertokimia', '2', 'Gersik', '0651-0895', 'gersik@yahoo.com'),
-(24, 'pt.bentoel', '2', 'Malang', '0341-74446754', 'bentoel@gmail.com');
+(24, 'pt.bentoel', '2', 'Malang', '0341-74446754', 'bentoel@gmail.com'),
+(25, 'google', '2', 'jakarta', '021-65498', 'google@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Struktur dari tabel `mahasiswa`
 --
 
 CREATE TABLE IF NOT EXISTS `mahasiswa` (
@@ -98,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mahasiswa`
+-- Dumping data untuk tabel `mahasiswa`
 --
 
 INSERT INTO `mahasiswa` (`id_mahasiswa`, `NIM`, `Nama_lengkap`, `Jenis_kelamin`, `Tempat_lahir`, `Tanggal_lahir`, `Nama_orangtua`, `Pekerjaan_orangtua`, `Alamat-orangtua`, `Kota-orangtua`, `Profinsi-orangtua`, `Tahun_masuk`, `Jurusan`, `Pendidikan_terakhir`, `Alamat_dmalang`, `Alamat_asal`, `No_tlp`, `Email`) VALUES
@@ -116,7 +118,7 @@ INSERT INTO `mahasiswa` (`id_mahasiswa`, `NIM`, `Nama_lengkap`, `Jenis_kelamin`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `matakuliah`
+-- Struktur dari tabel `matakuliah`
 --
 
 CREATE TABLE IF NOT EXISTS `matakuliah` (
@@ -127,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `matakuliah` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `matakuliah`
+-- Dumping data untuk tabel `matakuliah`
 --
 
 INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `jumlah_sks`) VALUES
@@ -156,7 +158,7 @@ INSERT INTO `matakuliah` (`kode_mk`, `nama_mk`, `jumlah_sks`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nilai`
+-- Struktur dari tabel `nilai`
 --
 
 CREATE TABLE IF NOT EXISTS `nilai` (
@@ -166,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `nilai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `nilai`
+-- Dumping data untuk tabel `nilai`
 --
 
 INSERT INTO `nilai` (`NIM`, `kode_mk`, `Nilai`) VALUES
@@ -472,20 +474,35 @@ INSERT INTO `nilai` (`NIM`, `kode_mk`, `Nilai`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `peserta_pkli`
+-- Struktur dari tabel `pengumuman`
 --
 
-CREATE TABLE IF NOT EXISTS `peserta_pkli` (
-  `Id_peserta` int(11) NOT NULL,
-  `Id_program` int(11) NOT NULL,
-  `NIM` int(11) NOT NULL,
-  PRIMARY KEY (`Id_peserta`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `pengumuman` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `judul` varchar(50) NOT NULL,
+  `isi` text NOT NULL,
+  `cover` text NOT NULL,
+  `tanggal` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `program_pkli`
+-- Struktur dari tabel `peserta_pkli`
+--
+
+CREATE TABLE IF NOT EXISTS `peserta_pkli` (
+  `Id_peserta` int(11) NOT NULL AUTO_INCREMENT,
+  `Id_program` int(11) NOT NULL,
+  `NIM` int(11) NOT NULL,
+  PRIMARY KEY (`Id_peserta`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `program_pkli`
 --
 
 CREATE TABLE IF NOT EXISTS `program_pkli` (
@@ -497,10 +514,10 @@ CREATE TABLE IF NOT EXISTS `program_pkli` (
   `akhir` date NOT NULL,
   `keterangan` text NOT NULL,
   PRIMARY KEY (`Id_program_pkli`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
--- Dumping data for table `program_pkli`
+-- Dumping data untuk tabel `program_pkli`
 --
 
 INSERT INTO `program_pkli` (`Id_program_pkli`, `Id_instansi`, `Bidang_Keahlian`, `Jumlah_peserta`, `awal`, `akhir`, `keterangan`) VALUES
@@ -513,12 +530,13 @@ INSERT INTO `program_pkli` (`Id_program_pkli`, `Id_instansi`, `Bidang_Keahlian`,
 (11, 14, 1, 20, '2013-12-12', '2013-12-12', 'Mendapatkan biaya Transport selama 1 bulan'),
 (12, 15, 1, 10, '2013-11-27', '2013-12-17', 'Dibutuhkan kerja 24 jam full'),
 (13, 15, 2, 2, '2013-11-27', '2013-12-17', 'Memperbaiki sistem jaringan kantor'),
-(14, 13, 1, 7, '2013-11-16', '2013-12-16', 'Membuat Aplikasi interaktif TV-Digital');
+(14, 13, 1, 7, '2013-11-16', '2013-12-16', 'Membuat Aplikasi interaktif TV-Digital'),
+(17, 25, 5, 10, '1970-01-01', '1970-01-01', 'ok');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -531,7 +549,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `Level`, `status`) VALUES
@@ -553,7 +571,8 @@ INSERT INTO `user` (`id_user`, `username`, `password`, `Level`, `status`) VALUES
 (21, '10650059', 'a8d62ab63ce07aa9f33531848a5a783e', 'mahasiswa', 1),
 (22, '10650076', 'c7512ec8eee8245bd7388f1752e4c966', 'mahasiswa', 1),
 (23, '10650088', '7f8b32bca28a4b4afd41983398af5a7e', 'mahasiswa', 1),
-(24, 'bentoel', '60df92d3fa34fc1b1162dc2982dcbbbc', 'instansi', 0);
+(24, 'bentoel', '60df92d3fa34fc1b1162dc2982dcbbbc', 'instansi', 0),
+(25, 'google', 'c822c1b63853ed273b89687ac505f9fa', 'instansi', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

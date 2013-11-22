@@ -11,6 +11,7 @@ class InstansiController extends Controller
 			$this->redirect(Yii::app()->request->baseUrl );
 		}
 		$this->identitas = Instansi::model()->findByPk(Yii::app()->user->id);
+		date_default_timezone_set("Asia/Jakarta");
 	}
 	
 	public function actionAbout()

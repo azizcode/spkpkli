@@ -52,7 +52,7 @@ class MahasiswaController extends Controller
 			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
 			$idx		=	$id->Id_program_pkli;
 		}
-		$this->render('pkli',array('instansi' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $idx));
+		$this->render('pkli',array('pkli' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $idx));
 	}
 	
 	public function actionDetailpkli()
@@ -64,6 +64,9 @@ class MahasiswaController extends Controller
 			$result['nama']					=	$instansi->Nama_instansi;
 			$result['alamat']				=	$instansi->Alamat;
 			$result['bidang']				=	$b_keahlian[$pkli->Bidang_Keahlian];
+			$awal							=	date_create($pkli->awal);
+			$akhir							=	date_create($pkli->akhir);
+			$result['pelaksanaan']			=	date_format($awal, 'd-m-Y').' s.d. '.date_format($akhir, 'd-m-Y');
 			$result['kuota']				=	$pkli->Jumlah_peserta.' Orang';
 			$result['terdaftar']			=	count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$pkli->Id_program_pkli))).' Orang';
 			$tersedia						=	$result['kuota'] - $result['terdaftar'];
@@ -208,6 +211,17 @@ class MahasiswaController extends Controller
 			$this->redirect(Yii::app()->request->baseUrl);
 		}
 		$this->identitas 		=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
+	}
+	
+	public function huruf($angka){
+		if($angka=='4'){ $huruf='A'; }
+		else if($angka=='3.5'){ $huruf='B+'; }
+		else if($angka=='3'){ $huruf='B'; }
+		else if($angka=='2.5'){ $huruf='C+'; }
+		else if($angka=='2'){ $huruf='C'; }
+		else if($angka=='1'){ $huruf='D'; }
+		else { $huruf='E'; }
+		return $huruf;
 	}
 
 	// Uncomment the following methods and override them if needed

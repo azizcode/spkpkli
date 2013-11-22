@@ -57,26 +57,39 @@ class AdminController extends Controller
 
 	public function actionInput()
 	{
-			$pengumuman = new Pengumuman;
+		$pengumuman = new Pengumuman;
 		if(isset($_GET['id']))
 		{
 			$pengumuman= $pengumuman->findByPk($_GET['id']);
 		}
-		if(isset($_POS['Pengumuman']))
+		if(isset($_POST['Pengumuman']))
 		{
 			$pengumuman->judul = $_POST['Pengumuman']['judul'];
 			$pengumuman->isi = $_POST['Pengumuman']['isi'];
+<<<<<<< HEAD
 			$pengumuman->cover = $_POST['Pengumuman']['cover'];
+=======
+
+			$pengumuman->cover	=	CUploadedFile::getInstance($pengumuman,'cover');
+			if($pengumuman->cover){
+				$gambar		=	rand(10000000,100000000).'_'.$pengumuman->cover;
+				while(is_file($gambar)){
+					$gambar	=	rand(10000000,100000000).'_'.$pengumuman->cover;
+				}
+			}	
+			$pengumuman->cover->saveAs(Yii::getPathOfAlias('webroot') . '/gambar/'.$gambar);
+
+>>>>>>> 82c384d4951d86073b452fb02468e2f3b75356ca
 			if(isset($_POST['Pengumuman']['tanggal'])){
 				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
 			}else{
-				$pengumuman->tanggal = '2013-11-17';
+				$pengumuman->tanggal = date("Y/m/d");
 			}
 			if($pengumuman->save()){
 				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
 				}else{
 				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
-				}
+			}
 		}
 		$this->render('input',array('pengumuman'=>$pengumuman));
 	}

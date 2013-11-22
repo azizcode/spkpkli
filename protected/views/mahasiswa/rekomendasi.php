@@ -46,6 +46,16 @@
 									</tr>
 								</thead>
 								<tbody>
+									<?php $i=1; foreach($nilai as $value){ $matkul = Matakuliah::model()->findByPk($value->kode_mk); ?>
+										<tr class="<?php if($i%2==0){ ?>success<?php } else { ?> active<?php } ?>">
+											<td><?php echo $value->kode_mk; ?></td>
+											<td><?php echo $matkul->nama_mk; ?></td>
+											<td><?php echo $matkul->jumlah_sks; ?></td>
+											<td><?php echo $value->Nilai; ?></td>
+											<td><?php echo $this->huruf($value->Nilai); ?></td>
+											<td><?php echo $value->Nilai * $matkul->jumlah_sks; ?></td>
+										</tr>
+									<?php $i++; } ?>
 								</tbody>
 							</table>
 						</div>

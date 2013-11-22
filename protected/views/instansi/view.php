@@ -12,6 +12,7 @@
 <!-- Forms
       ================================================== -->
      <div class="row">
+		<?php if($program) { ?>
           <div class="col-lg-12">
             <h2>View Peserta Program PLKI</h2>
             <?php echo Yii::app()->user->getFlash('status'); ?>
@@ -22,7 +23,7 @@
               'htmlOptions' => array("class"=>"form-horizontal",'role' => 'form'),
               ),
               )); ?>
-            <div class="table-responsive">
+			  <div class="table-responsive">
               <table class="table table-bordered table-hover tablesorter">
                 <thead>
                   <tr>
@@ -53,16 +54,13 @@
                     </td>
                     <td><?php echo $list->keterangan; ?></td>
                     <?php   
-                            $from = strtotime($awal);
-                            $to = strtotime($akhir);
-                            $now = time();
-
+                        $peserta	=	PesertaPkli::model()->findByAttributes(array('Id_program'=>$list->Id_program_pkli));
                      ?>       
-                    <td><a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>" class="linktabel">Edit</a>
-                       <?php if($from >= $now || $to <= $now) { ?>
+                    <td>
+						<?php if(!$peserta) { ?>
+						<a href="<?php echo Yii::app()->request->baseUrl.'/instansi/input/edit/'.$list->Id_program_pkli; ?>" class="linktabel">Edit</a>
                        | <a href="#myModal2" data-toggle="modal" data-target="#myModal2" class="linktabel">Delete</a>    
-                         <?php } ?>
-                       | <a href="#myModal" data-toggle="modal" data-target="#myModal" data-program="<?php echo $list->Id_program_pkli; ?>" class="detail-peserta linktabel">Detail</a></td>
+					   | <?php } ?><a href="#myModal" data-toggle="modal" data-target="#myModal" data-program="<?php echo $list->Id_program_pkli; ?>" class="detail-peserta linktabel">Detail</a></td>
                     <?php } ?>
                   </tr>
                 </tbody>
@@ -116,6 +114,7 @@
                 </div><!-- /.modal -->
             <?php $this->endWidget(); ?>  
           </div>
+		  <?php } ?>
           </div>
           </div>
         </div><!-- /.row -->

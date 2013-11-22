@@ -1375,6 +1375,7 @@ REQUEST_URI=/spkpkli/admin/input
 in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
 in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (53)
 in C:\xampp\htdocs\spkpkli\index.php (13)
+<<<<<<< HEAD
 2013/11/20 17:15:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.pengumuman' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `pengumuman`.
 in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (36)
 in D:\XAMPP\htdocs\spkpkli\index.php (13)
@@ -1616,3 +1617,16 @@ REQUEST_URI=/spkpkli/admin/datamahasiswa
 in D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php (50)
 in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (29)
 in D:\XAMPP\htdocs\spkpkli\index.php (13)
+=======
+2013/11/21 15:14:36 [error] [php] Undefined variable: datetime (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:49)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/input
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (49)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+>>>>>>> 82c384d4951d86073b452fb02468e2f3b75356ca

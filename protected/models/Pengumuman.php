@@ -43,6 +43,7 @@ class Pengumuman extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, judul, isi, cover, tanggal', 'safe', 'on'=>'search'),
+			array('image', 'file', 'types'=>'jpg, gif, png','allowEmpty' => true, 'on'=>'update'),
 		);
 	}
 

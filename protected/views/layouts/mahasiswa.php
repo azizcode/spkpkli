@@ -114,6 +114,7 @@
 						$('#nama-instansi').text(json.nama);
 						$('#alamat-instansi').text(json.alamat);
 						$('#bidang-keahlian').text(json.bidang);
+						$('#pelaksanaan').text(json.pelaksanaan);
 						$('#kuota').text(json.kuota);
 						$('#terdaftar').text(json.terdaftar);
 						$('#tersedia').text(json.tersedia);

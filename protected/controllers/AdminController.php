@@ -66,9 +66,6 @@ class AdminController extends Controller
 		{
 			$pengumuman->judul = $_POST['Pengumuman']['judul'];
 			$pengumuman->isi = $_POST['Pengumuman']['isi'];
-<<<<<<< HEAD
-			$pengumuman->cover = $_POST['Pengumuman']['cover'];
-=======
 
 			$pengumuman->cover	=	CUploadedFile::getInstance($pengumuman,'cover');
 			if($pengumuman->cover){
@@ -78,8 +75,6 @@ class AdminController extends Controller
 				}
 			}	
 			$pengumuman->cover->saveAs(Yii::getPathOfAlias('webroot') . '/gambar/'.$gambar);
-
->>>>>>> 82c384d4951d86073b452fb02468e2f3b75356ca
 			if(isset($_POST['Pengumuman']['tanggal'])){
 				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
 			}else{

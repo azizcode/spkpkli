@@ -99,7 +99,7 @@ class AdminController extends Controller
 		$this->load();
 		if(!Yii::app()->user->isGuest) {
 			$instansi = Instansi::model()->findAllByAttributes;
-			$result['nama']					=	$this->$instansi->Nama_instansi;
+			$result['nama']					=	$_GET['id'];
 			$jenis= array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain');
 			$result['jenis']				=	$jenis[$this->$instansi->Jenis_instasni];
 			$result['alamat']				=	$this->$instansi->Alamat;

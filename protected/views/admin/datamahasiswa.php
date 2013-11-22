@@ -58,7 +58,7 @@
 								<input type="checkbox" name="status[<?php echo $list->id_user; ?>]" <?php if($list->status=='1'){ ?>checked="checked"<?php } ?>>
 								Aktif
 							  </label>/
-							  <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a>
+							  <a href=" " data-toggle="modal" data-target="#myModal4"  class="detail-mahasiswa"> Detail</a>
 							</div>
 						</td>
 					  </tr>
@@ -68,7 +68,7 @@
 				  <input class="pull-right" type="submit" name="update"/>
 				 </form>
 				</div>
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog2">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -76,26 +76,13 @@
                         <h4 class="modal-title" id="myModalLabel"><b>Detail Peserta PKLI</b></h4>
                       </div>
                       <div class="modal-body">
-                      <table class="table table-bordered table-hover tablesorter">
-                        <thead>
-                          <tr>
-                            <th>Nama</th>
-                            <th>NIM</th>
-                            <th>Alamat Malang</th>
-                            <th>Nomer telpon</th>
-                            <th>E-mail</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Novi Anto</td>
-                            <td>10650098</td>
-                            <td>Merjosari</td>
-                            <td>085607070290</td>
-                            <td>novianto74@gmail.com</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <table class="table table-bordered table-hover table-striped tablesorter">
+                    <tr><td>Nama </td><td id="nama-mahasiswa"></td></tr>
+                    <tr><td>NIM</td><td id="nim-mahasiswa"></td></tr>
+                    <tr><td>Alamat</td><td id="alamat-mahasiswa"></td></tr>
+                    <tr><td>Nomor Telepon</td><td id="telepon-mahasiswa"></td></tr>
+                    <tr><td>E-mail</td><td id="email-mahasiswa"></td></tr> 
+               </table>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

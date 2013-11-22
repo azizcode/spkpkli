@@ -10,7 +10,8 @@ class AdminController extends Controller
 	
 	public function actionLaporan()
 	{
-		$this->render('laporan');
+		$laporan=PesertaPkli::model()->findAll();
+		$this->render('laporan',array('laporan'=>$laporan));
 	}
 	
 	public function actionDataMahasiswa()

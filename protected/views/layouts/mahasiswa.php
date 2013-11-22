@@ -9,12 +9,15 @@
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/sb-admin.css">
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css">
+		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-datetimepicker.min.css">
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/font-awesome.min.css">
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-2.0.3.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/modal.js"></script>
-
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
+		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/locales/bootstrap-datetimepicker.id.js"></script>
 	</head>
 	<body>
 		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">

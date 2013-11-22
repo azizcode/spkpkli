@@ -41,11 +41,11 @@ class InstansiController extends Controller
 		$i			=	0;
 		foreach($peserta as $mahasiswa){
 			$value	=	Mahasiswa::model()->findByAttributes(array('NIM' => $mahasiswa->NIM));
-			$result[$i]['nim']	=	$value->NIM;
-			$result[$i]['nama']			=	$value->Nama_lengkap;
+			$result[$i]['nim']		=	$value->NIM;
+			$result[$i]['nama']		=	$value->Nama_lengkap;
 			$result[$i]['alamat']	=	$value->Alamat_dmalang;
 			$result[$i]['telp']		=	$value->No_tlp;
-			$result[$i]['email']		=	$value->Email;
+			$result[$i]['email']	=	$value->Email;
 			$i++;
 		}
 		echo json_encode($result);

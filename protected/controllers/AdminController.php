@@ -95,6 +95,34 @@ class AdminController extends Controller
 		$this->render('input',array('pengumuman'=>$pengumuman));
 	}
 
+	public function actionDetailinstansi()
+	{
+		$this->load();
+		if(!Yii::app()->user->isGuest) {
+			$instansi = Instansi::model()->findAllByAttributes;
+			$result['nama']					=	$this->$instansi->Nama_instansi;
+			$jenis= array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain');
+			$result['jenis']				=	$jenis[$this->$instansi->Jenis_instasni];
+			$result['alamat']				=	$this->$instansi->Alamat;
+			$result['telepon']				=	$this->$instansi->No_tlp;
+			$result['email']				=	$this->$instansi->email;
+			echo json_encode($result);
+		}
+	}
+	public function actionDetailMahasiswa()
+	{
+		$this->load();
+		if(!Yii::app()->user->isGuest) {
+			$identitas = Mahasiswa::model()->findByPk($_GET['id_mahasiswa']);
+			$result['nama']					=	$this->identitas->Nama_lengkap;
+			$result['nim']					=	$this->identitas->NIM;
+			$result['alamat']				=	$this->identitas->Alamat_dmalang;
+			$result['telepon']				=	$this->identitas->No_tlp;
+			$result['email']				=	$this->identitas->Email;
+			echo json_encode($result);
+		}
+	}
+
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

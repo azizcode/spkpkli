@@ -18,6 +18,49 @@ class MahasiswaController extends Controller
 		$this->render('index');
 	}
 	
+	public function actionMandiri()
+	{
+		$this->load();
+		$kuisioner =  BidangKeahlian::model()->findByAttributes(array('NIM'=>$this->identitas->NIM));
+		if(!$kuisioner){
+			$cekKuisioner="true";
+				$this->redirect('mahasiswa/kuisioner');
+		}
+		$instansi    					=  new Instansi;
+		$program_pkli 					=  new ProgramPkli;
+		$b_keahlian 					=  array('1'=>'Pemrogramman', '2'=>'Jaringan', '3'=>'Hardware', '4' => 'Sistem Informasi','5'=>'Multimedia');
+		$user       					=  new User;
+		$j_instansi  					=  array('1'=>'Sekolah', '2'=>'Perusahaan', '3'=>'Pemerintah', '4' => 'Lain-lain');
+		if(isset($_POST['Instansi'])){
+			$instansi->Nama_instansi = $_POST['Instansi']['Nama_instansi'];
+			$instansi->Jenis_instasni = $_POST['Instansi']['Jenis_instasni'];
+			$instansi->Alamat = $_POST['Instansi']['Alamat'];
+			$instansi->No_tlp = $_POST['Instansi']['No_tlp'];
+			$instansi->email = $_POST['Instansi']['email'];
+			if($instansi->save()){
+				$program_pkli->Bidang_Keahlian	=	$_POST['ProgramPkli']['Bidang_Keahlian'];
+				$program_pkli->Jumlah_peserta	=	$_POST['ProgramPkli']['Jumlah_peserta'];
+				$date 							=	date_create($_POST['ProgramPkli']['awal']);  
+				$program_pkli->awal 			=	date_format($date, 'Y-m-d');
+				$date 							=	date_create($_POST['ProgramPkli']['akhir']);  
+				$program_pkli->akhir 			=	date_format($date, 'Y-m-d');
+				$program_pkli->keterangan		=	$_POST['ProgramPkli']['keterangan'];
+				$program_pkli->Id_instansi		=	$instansi->Id_instansi;
+				if($program_pkli->save()){
+					$daftar = new PesertaPkli;
+					$daftar->NIM = $this->identitas->NIM;
+					$daftar->Id_program 		=	$program_pkli->Id_program_pkli;
+					if($daftar->save()){
+						Yii::app()->user->setFlash('status','<div class="alert alert-success">Anda telah Mendaftar PKLI secara mandiri</div>');
+					}
+				}
+			}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-danger">Error! silahkan cek form login Anda lagi </div>');
+			}
+		}
+		$this->render('mandiri',array('instansi'=>$instansi, 'user'=>$user,'j_instansi'=>$j_instansi,'program_pkli'=>$program_pkli, 'b_keahlian'=>$b_keahlian));
+	}
+	
 	public function actionAbout()
 	{
 		$this->load();
@@ -52,6 +95,19 @@ class MahasiswaController extends Controller
 			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
 			$idx		=	$id->Id_program_pkli;
 		}
+		$av=false;
+		$i=1; 
+		foreach($pkli as $value){ 
+			$instansi   = Instansi::model()->findByPk($value->Id_instansi);
+			$terdaftar	=  count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$value->Id_program_pkli))); 
+			$tersedia	=	$value->Jumlah_peserta - $terdaftar;
+			$from = strtotime($value->awal);
+			$to = strtotime($value->akhir);
+			$now = time();
+			if($tersedia>0 && $now < $from){ $av=true; } 
+			$i++; 
+		}
+		if($av==false){ $tempatpkli = 'Semua Program Sudah Terisi Silakan Mendaftar Lewat <a href="'.Yii::app()->request->baseUrl.'/mahasiswa/mandiri">Jalur Mandiri'; $idx = ('-1'); }
 		$this->render('pkli',array('pkli' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $idx));
 	}
 	
@@ -211,6 +267,7 @@ class MahasiswaController extends Controller
 			$this->redirect(Yii::app()->request->baseUrl);
 		}
 		$this->identitas 		=	Mahasiswa::model()->findByPk(Yii::app()->user->id);
+		date_default_timezone_set("Asia/Jakarta");
 	}
 	
 	public function huruf($angka){

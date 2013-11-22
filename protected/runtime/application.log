@@ -1944,4 +1944,177 @@ Stack trace:
 REQUEST_URI=/spkpkli/css/print.css
 HTTP_REFERER=http://localhost/spkpkli/admin/laporan
 ---
+<<<<<<< HEAD
+2013/11/22 08:08:43 [error] [php] Undefined variable: result (D:\XAMPP\htdocs\spkpkli\protected\controllers\InstansiController.php:51)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/detailview/5
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\InstansiController.php (51)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 02:19:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/admin/laporan
+---
+2013/11/22 02:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/admin/laporan
+---
+2013/11/22 08:47:55 [error] [php] Undefined variable: result (D:\XAMPP\htdocs\spkpkli\protected\controllers\InstansiController.php:51)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): InstansiController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): InstansiController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): InstansiController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/instansi/detailview/5
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\InstansiController.php (51)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 02:56:40 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:14)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/laporan
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (14)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 02:58:44 [error] [php] Trying to get property of non-object (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:14)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/laporan
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (14)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 02:59:34 [error] [php] Undefined variable: mahasiswa (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:14)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/laporan
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (14)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 03:00:42 [error] [php] Undefined variable: list2 (D:\XAMPP\htdocs\spkpkli\protected\views\admin\laporan.php:31)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(14): AdminController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionLaporan()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/laporan
+in D:\XAMPP\htdocs\spkpkli\protected\views\admin\laporan.php (31)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (14)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 04:23:54 [error] [exception.CException] exception 'CException' with message 'Property "PesertaPkli.id_program" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id_program')
+#1 D:\XAMPP\htdocs\spkpkli\protected\views\admin\laporan.php(36): CActiveRecord->__get('id_program')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('laporan', Array, true)
+#6 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(14): CController->render('laporan', Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionLaporan()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('laporan')
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/laporan')
+#13 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/spkpkli/admin/laporan
+---
+2013/11/22 04:24:38 [error] [exception.CDbException] exception 'CDbException' with message 'Table "program_pkli" does not have a column named "id_program_pkli".' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1464): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\protected\views\admin\laporan.php(36): CActiveRecord->findByAttributes(Array)
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('laporan', Array, true)
+#6 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(14): CController->render('laporan', Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionLaporan()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('laporan')
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/laporan')
+#13 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/spkpkli/admin/laporan
+---
+2013/11/22 04:25:36 [error] [exception.CException] exception 'CException' with message 'Property "ProgramPkli.id_instansi" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id_instansi')
+#1 D:\XAMPP\htdocs\spkpkli\protected\views\admin\laporan.php(37): CActiveRecord->__get('id_instansi')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('laporan', Array, true)
+#6 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(14): CController->render('laporan', Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionLaporan()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('laporan')
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/laporan')
+#13 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/spkpkli/admin/laporan
+---
+2013/11/22 04:26:20 [error] [exception.CException] exception 'CException' with message 'Property "PesertaPkli.id_program" is not defined.' in D:\XAMPP\htdocs\spkpkli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(143): CComponent->__get('id_program')
+#1 D:\XAMPP\htdocs\spkpkli\protected\views\admin\laporan.php(40): CActiveRecord->__get('id_program')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(126): require('D:\XAMPP\htdocs...')
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\XAMPP\htdocs...', Array, true)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('laporan', Array, true)
+#6 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(14): CController->render('laporan', Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionLaporan()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('laporan')
+#12 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/laporan')
+#13 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/spkpkli/admin/laporan
+---
+=======
 >>>>>>> 49b933185938d6e90f927fbd35d4e738cfea80e9
+>>>>>>> 949fa6d182d0f1f39bb8d4ce926155fc256ed52b

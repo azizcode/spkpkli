@@ -48,7 +48,6 @@
 												$tersedia	=	$value->Jumlah_peserta - $terdaftar; 
 											?>	
 											<?php
-												date_default_timezone_set("Asia/Jakarta");
 												$from = strtotime($value->awal);
 												$to = strtotime($value->akhir);
 												$now = time();
@@ -56,7 +55,7 @@
 											<td><?php echo $terdaftar.' Orang'; ?></td>
 											<td><?php if($tersedia==0){ echo 'Kuota Penuh'; }else { echo $tersedia.' Orang'; } ?></td>
 											<td><?php echo $b_keahlian[$value->Bidang_Keahlian]; ?></td>
-											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="linktabel detail-instansi">Detail</a><?php if($id_tempat_pkli=="-1" && $tersedia!=0 && $now <= $from){ ?> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a><?php } ?></td>
+											<td ><a href="" data-toggle="modal" data-target="#modal-instansi" data-instansi="<?php echo $value->Id_program_pkli ?>" class="linktabel detail-instansi">Detail</a><?php if($id_tempat_pkli=="-1" && $tersedia!=0 && $now < $from){ ?> | <a href="<?php echo Yii::app()->request->baseUrl.'/mahasiswa/daftar/'.$value->Id_program_pkli; ?>" class="linktabel">Daftar</a><?php } ?></td>
 										</tr>
 									<?php $i++; } ?>
 								</tbody>

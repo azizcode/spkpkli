@@ -9,7 +9,8 @@
 <div id="page-wrapper">
      <div class="row">
           <div class="col-lg-12">
-            <h2>Data Mahasiswa PKLI</h2>
+            <h2>Data Mahasiswa</h2>
+				<?php echo Yii::app()->user->getFlash('status'); ?>
 				<button type="button" class="btn btn-primary pull-right" onclik="#myModal3" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-import"></span> Import Data Mahasiswa</button>
 				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -35,30 +36,37 @@
                   </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
 				<div class="table-responsive">
+				<form role="form" method="post">
 				  <table class="table table-bordered table-hover tablesorter">
 					<thead>
 					  <tr>
-						<th>NIM</th>
-						<th>Nama Mahasiswa</th>
-						<th>Angkatan</th>
-						<th>Email</th>
+						<th>ID</th>
+						<th>Username</th>
+						<th>Level</th>
 						<th>Action</th>
 					  </tr>
 					</thead>
 					<tbody>
-						<?php foreach ($mahasiswa as $list) { ?>
+						 <?php foreach ($user as $list) { ?>
 						<tr>
-						<td><?php echo $list->NIM; ?></td>
-						<td><?php echo $list->Nama_lengkap; ?></td>
-						<td><?php echo $list->Tahun_masuk; ?></td>
-						<td><?php echo $list->Email; ?></td>
-						<td><a href="">Edit</a>
-						   | <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
-						   | <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a></td>
+						<td><?php echo $list->id_user; ?></td>
+						<td><?php echo $list->username; ?></td>
+						<td><?php echo $list->Level; ?></td>
+						<td>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" name="status[<?php echo $list->id_user; ?>]" <?php if($list->status=='1'){ ?>checked="checked"<?php } ?>>
+								Aktif
+							  </label>/
+							  <a href="#myModal" data-toggle="modal" data-target="#myModal">Detail</a>
+							</div>
+						</td>
 					  </tr>
 					  <?php } ?>
 					</tbody>
 				  </table>
+				  <input class="pull-right" type="submit" name="update"/>
+				 </form>
 				</div>
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog2">

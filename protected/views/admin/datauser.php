@@ -35,16 +35,16 @@
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
+				<?php echo Yii::app()->user->getFlash('status'); ?>
 				<div class="table-responsive">
+				<form role="form" method="post">
 				  <table class="table table-bordered table-hover tablesorter">
 					<thead>
 					  <tr>
 						<th>ID</th>
 						<th>Username</th>
-						<th>Password</th>
 						<th>Level</th>
 						<th>Status</th>
-						<th>Action</th>
 					  </tr>
 					</thead>
 					<tbody>
@@ -52,40 +52,22 @@
 						<tr>
 						<td><?php echo $list->id_user; ?></td>
 						<td><?php echo $list->username; ?></td>
-						<td><?php echo $list->password; ?></td>
 						<td><?php echo $list->Level; ?></td>
 						<td>
 							<div class="checkbox">
 							  <label>
-								<input type="checkbox" name="[status][<?php echo $list->id_user; ?>]" <?php if($list->status=='1'){ ?>checked="checked"<?php } ?>>
+								<input type="checkbox" name="status[<?php echo $list->id_user; ?>]" <?php if($list->status=='1'){ ?>checked="checked"<?php } ?>>
 								Aktif
 							  </label>
 							</div>
 						</td>
-						<td><a href="">Edit</a>
-						   <a href="#myModal2" data-toggle="modal" data-target="#myModal2">Delete</a>
 					  </tr>
 					  <?php } ?>
 					</tbody>
 				  </table>
+				  <input class="pull-right" type="submit" name="update"/>
+				</form> 
 				</div>
-                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Konfirmasi Delete </h4>
-                      </div>
-                      <div class="modal-body">
-                        Apakah Anda yakin ingin menghapus ini ?
-                      </div>
-                      <div class="modal-footer">
-                        <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
-                        <a href="" type="button" class="btn btn-primary">Delete</a>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
           </div>
           </div>
         </div>

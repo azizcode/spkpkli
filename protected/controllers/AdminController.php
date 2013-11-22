@@ -57,7 +57,8 @@ class AdminController extends Controller
 	
 	public function actionPengumuman()
 	{
-	 $this->render('pengumuman');
+		$umum = Pengumuman::model()->findAll();
+		$this->render('pengumuman',array('umum'=>$umum));
 	}
 
 	public function actionInput()
@@ -69,17 +70,8 @@ class AdminController extends Controller
 		}
 		if(isset($_POST['Pengumuman']))
 		{
-			$pengumuman->judul = $_POST['Pengumuman']['judul'];
-			$pengumuman->isi = $_POST['Pengumuman']['isi'];
-
-			$pengumuman->cover	=	CUploadedFile::getInstance($pengumuman,'cover');
-			if($pengumuman->cover){
-				$gambar		=	rand(10000000,100000000).'_'.$pengumuman->cover;
-				while(is_file($gambar)){
-					$gambar	=	rand(10000000,100000000).'_'.$pengumuman->cover;
-				}
-			}	
-			$pengumuman->cover->saveAs(Yii::getPathOfAlias('webroot') . '/gambar/'.$gambar);
+			$pengumuman->judul 	= $_POST['Pengumuman']['judul'];
+			$pengumuman->isi 	= $_POST['Pengumuman']['isi'];
 			if(isset($_POST['Pengumuman']['tanggal'])){
 				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
 			}else{

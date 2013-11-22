@@ -49,14 +49,7 @@
 			});</script>
 
 			    <?php echo $form->textArea($pengumuman,'isi',array('class'=>'form-control')); ?>
-
-			<div class="form-group">
-				<label class="control-label" for="userfile">Gambar Sampul</label>
-				  <div class="controls">
-					<?php echo $form->fileField($pengumuman,'cover', array('class'=>'form-control')); ?>
-				  </div>
-			</div>
-
+				
 			<div class="form-actions">
 			  <button type="submit" class="btn btn-primary">Tambah</button>
 			  <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input" class="btn">Cancel</a>

@@ -42,7 +42,8 @@ class FrontController extends Controller
 		$this->all();
 		$this->action					=	'pengumuman';
 		$this->setPageTitle(' - Pengumuman');
-		$this->render('pengumuman');
+		$umum = Pengumuman::model()->findAll();
+		$this->render('pengumuman',array('umum'=>$umum));
 	}
 	
 	public function actionLogout()

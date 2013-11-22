@@ -8,22 +8,46 @@ class AdminController extends Controller
 		$this->render('index');
 	}
 	
-	public function actionDataUser()
-	{
-		$user= User::model()->findAll();
-		$this->render('datauser',array('user'=>$user));
-	}
-	
 	public function actionDataMahasiswa()
 	{
-		$mahasiswa= Mahasiswa::model()->findAll();
-		$this->render('datamahasiswa',array('mahasiswa'=>$mahasiswa));
+		$user= User::model()->findAllByAttributes(array('Level'=>'mahasiswa'));
+		if(isset($_POST['status'])) {
+			foreach($_POST['status'] as $status => $value){
+				$konvirmasi=User::model()->findByPk($status);
+				if($value == 'on'){
+					$konvirmasi->status = '1';
+				}else {
+					$konvirmasi->status = '0';
+				}
+				if($konvirmasi->save()){
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
+				}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
+				}
+			}
+		}
+		$this->render('datamahasiswa',array('user'=>$user));
 	}
 	
 	public function actionDataInstansi()
 	{
-		$instansi= Instansi::model()->findAll();
-		$this->render('datainstansi',array('instansi'=>$instansi));
+		$user= User::model()->findAllByAttributes(array('Level'=>'instansi'));
+		if(isset($_POST['status'])) {
+			foreach($_POST['status'] as $status => $value){
+				$konvirmasi=User::model()->findByPk($status);
+				if($value == 'on'){
+					$konvirmasi->status = '1';
+				}else {
+					$konvirmasi->status = '0';
+				}
+				if($konvirmasi->save()){
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
+				}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
+				}
+			}
+		}
+		$this->render('datainstansi',array('user'=>$user));
 	}
 	
 	public function actionPengumuman()
@@ -43,7 +67,7 @@ class AdminController extends Controller
 			$pengumuman->judul = $_POST['Pengumuman']['judul'];
 			$pengumuman->isi = $_POST['Pengumuman']['isi'];
 			$pengumuman->cover = $_POST['Pengumuman']['cover'];
-			if(isset($_POST['Pengumuman']['tanggal']){
+			if(isset($_POST['Pengumuman']['tanggal'])){
 				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
 			}else{
 				$pengumuman->tanggal = '2013-11-17';

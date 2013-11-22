@@ -1375,3 +1375,244 @@ REQUEST_URI=/spkpkli/admin/input
 in C:\xampp\htdocs\spkpkli\protected\views\admin\input.php (16)
 in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (53)
 in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/20 17:15:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.pengumuman' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `pengumuman`.
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (36)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/20 17:15:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pengumuman" for active record class "Pengumuman" cannot be found in the database.' in D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Pengumuman))
+#1 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Pengumuman')
+#2 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(36): CActiveRecord->__construct()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionInput()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('input')
+#9 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/input')
+#10 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/spkpkli/admin/input
+HTTP_REFERER=http://localhost/spkpkli/admin
+---
+2013/11/21 16:12:23 [error] [php] Undefined variable: model (D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php:31)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(20): AdminController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataMahasiswa()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php (31)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/21 16:18:03 [error] [php] Undefined variable: model (D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php:31)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(20): AdminController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataMahasiswa()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php (31)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (20)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:05:14 [error] [exception.CException] exception 'CException' with message 'AdminController contains improperly nested widget tags in its view "D:\XAMPP\htdocs\spkpkli\protected\views\admin\datauser.php". A CActiveForm widget does not have an endWidget() call.' in D:\XAMPP\htdocs\spkpkli\framework\web\CBaseController.php:101
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('D:\XAMPP\htdocs...', Array, true)
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('datauser', Array, true)
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(30): CController->render('datauser', Array)
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataUser()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('datauser')
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/datauser')
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/admin/datauser?%5Bstatus%5D%5B0%5D=on&%5Bstatus%5D%5B7%5D=on&%5Bstatus%5D%5B8%5D=on&%5Bstatus%5D%5B9%5D=on&%5Bstatus%5D%5B10%5D=on&%5Bstatus%5D%5B11%5D=on&%5Bstatus%5D%5B12%5D=on&%5Bstatus%5D%5B13%5D=on&%5Bstatus%5D%5B14%5D=on&%5Bstatus%5D%5B15%5D=on&%5Bstatus%5D%5B16%5D=on&%5Bstatus%5D%5B17%5D=on&%5Bstatus%5D%5B18%5D=on&%5Bstatus%5D%5B19%5D=on&%5Bstatus%5D%5B20%5D=on&%5Bstatus%5D%5B21%5D=on&%5Bstatus%5D%5B22%5D=on&%5Bstatus%5D%5B23%5D=on&%5Bstatus%5D%5B24%5D=on&%5Bstatus%5D%5B25%5D=on&update=Submit
+HTTP_REFERER=http://localhost/spkpkli/admin/datauser?%5Bstatus%5D%5B0%5D=on&%5Bstatus%5D%5B7%5D=on&%5Bstatus%5D%5B8%5D=on&%5Bstatus%5D%5B9%5D=on&%5Bstatus%5D%5B10%5D=on&%5Bstatus%5D%5B11%5D=on&%5Bstatus%5D%5B12%5D=on&%5Bstatus%5D%5B13%5D=on&%5Bstatus%5D%5B14%5D=on&%5Bstatus%5D%5B15%5D=on&%5Bstatus%5D%5B16%5D=on&%5Bstatus%5D%5B17%5D=on&%5Bstatus%5D%5B18%5D=on&%5Bstatus%5D%5B19%5D=on&%5Bstatus%5D%5B20%5D=on&%5Bstatus%5D%5B21%5D=on&%5Bstatus%5D%5B22%5D=on&%5Bstatus%5D%5B23%5D=on&%5Bstatus%5D%5B24%5D=on&%5Bstatus%5D%5B25%5D=on&update=Submit
+---
+2013/11/22 00:14:37 [error] [php] Undefined variable: pengumuman (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:23)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datauser
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (23)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/admin/datauser
+---
+2013/11/22 00:27:17 [error] [php] Undefined variable: model (D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php:31)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(35): AdminController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataMahasiswa()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php (31)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (35)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in D:\XAMPP\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('user')
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('user')
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/user')
+#3 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/user
+---
+2013/11/22 00:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/user
+---
+2013/11/22 00:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/user
+---
+2013/11/22 00:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/user
+---
+2013/11/22 00:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/user
+---
+2013/11/22 00:51:04 [error] [exception.CDbException] exception 'CDbException' with message 'Table "user" does not have a column named "level".' in D:\XAMPP\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1481): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(34): CActiveRecord->findAllByAttributes(Array)
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataMahasiswa()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('datamahasiswa')
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/datamahas...')
+#8 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+HTTP_REFERER=http://localhost/spkpkli/admin/datauser
+---
+2013/11/22 00:53:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-2.0.3.min.map".' in D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-2.0.3...')
+#1 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\XAMPP\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/js/jquery-2.0.3.min.map
+HTTP_REFERER=http://localhost/spkpkli/admin/datamahasiswa
+---
+2013/11/22 00:55:45 [error] [php] Undefined variable: mahasiswa (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:29)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (29)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:57:23 [error] [php] Undefined variable: mahasiswa (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:29)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (29)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:58:44 [error] [php] Undefined variable: mahasiswa (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:29)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (29)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:58:49 [error] [php] Undefined variable: mahasiswa (D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php:29)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (29)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)
+2013/11/22 00:59:27 [error] [php] Undefined variable: mahasiswa (D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php:50)
+Stack trace:
+#0 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php(29): AdminController->render()
+#3 D:\XAMPP\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDataMahasiswa()
+#4 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\XAMPP\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\XAMPP\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\XAMPP\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\XAMPP\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in D:\XAMPP\htdocs\spkpkli\protected\views\admin\datamahasiswa.php (50)
+in D:\XAMPP\htdocs\spkpkli\protected\controllers\AdminController.php (29)
+in D:\XAMPP\htdocs\spkpkli\index.php (13)

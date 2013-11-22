@@ -8,6 +8,11 @@ class AdminController extends Controller
 		$this->render('index');
 	}
 	
+	public function actionLaporan()
+	{
+		$this->render('laporan');
+	}
+	
 	public function actionDataMahasiswa()
 	{
 		$user= User::model()->findAllByAttributes(array('Level'=>'mahasiswa'));

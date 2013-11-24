@@ -7,7 +7,6 @@
  * @property integer $id
  * @property string $judul
  * @property string $isi
- * @property string $cover
  * @property string $tanggal
  */
 class Pengumuman extends CActiveRecord
@@ -38,12 +37,11 @@ class Pengumuman extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('judul, isi, cover, tanggal', 'required'),
+			array('judul, isi, tanggal', 'required'),
 			array('judul', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, judul, isi, cover, tanggal', 'safe', 'on'=>'search'),
-			array('image', 'file', 'types'=>'jpg, gif, png','allowEmpty' => true, 'on'=>'update'),
+			array('id, judul, isi, tanggal', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,7 +65,6 @@ class Pengumuman extends CActiveRecord
 			'id' => 'ID',
 			'judul' => 'Judul',
 			'isi' => 'Isi',
-			'cover' => 'Cover',
 			'tanggal' => 'Tanggal',
 		);
 	}
@@ -86,7 +83,6 @@ class Pengumuman extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('judul',$this->judul,true);
 		$criteria->compare('isi',$this->isi,true);
-		$criteria->compare('cover',$this->cover,true);
 		$criteria->compare('tanggal',$this->tanggal,true);
 
 		return new CActiveDataProvider($this, array(

@@ -13,12 +13,15 @@
 					</tr>
 				</thead>
 				<tbody>
+					<?php $i=1; foreach($umum as $value){ ?>
 					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td><?php echo $i; ?></td>
+						<td><?php $date=date_create($value->tanggal);
+                        echo date_format($date, 'd-m-Y'); ?></td>
+						<td><?php echo $value->isi; ?></td>
+						<td><a href="" ></a><?php ?></td>
 					</tr>
+					<?php $i++; } ?>
 				</tbody>
 			</table>
 		</div>

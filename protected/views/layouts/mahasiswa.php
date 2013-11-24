@@ -15,7 +15,6 @@
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/modal.js"></script>
-		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/moment.js"></script>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap-datetimepicker.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/locales/bootstrap-datetimepicker.id.js"></script>
 	</head>

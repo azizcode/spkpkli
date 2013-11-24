@@ -68,30 +68,32 @@
 		</div>
 	  	<script>
 	  	$(function() {
-	  	$('.detail-instansi').click(function(e) {
-					e.preventDefault();
-					$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/instansi/profil", function(json) {
-		                $.each(json, function(k, v) {    
-							$('#nama-instansi').text(json.nama);
-							$('#jenis-instansi').text(json.jenis);
-							$('#alamat-instansi').text(json.alamat);
-							$('#telepon-instansi').text(json.telepon);
-							$('#email-instansi').text(json.email);
-		                });
-					});
+  			$('.detail-instansi').click(function(e) {
+				e.preventDefault();
+				var id = $(this).attr('detail-instansi');
+				$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/admin/profilinstansi/"+id, function(json) {
+	                $.each(json, function(k, v) {    
+						$('#nama-instansi').text(json.nama);
+						$('#jenis-instansi').text(json.jenis);
+						$('#alamat-instansi').text(json.alamat);
+						$('#telepon-instansi').text(json.telepon);
+						$('#email-instansi').text(json.email);
+	                });
 				});
-				$('.detail-mahasiswa').click(function(e) {
-					e.preventDefault();
-					$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/mahasiswa/profil", function(json) {
-		                $.each(json, function(k, v) {    
-							$('#nama-mahasiswa').text(json.nama);
-							$('#nim-mahasiswa').text(json.nim);
-							$('#alamat-mahasiswa').text(json.alamat);
-							$('#telepon-mahasiswa').text(json.telepon);
-							$('#email-mahasiswa').text(json.email);
-		                });
-					});
+			});
+			$('.detail-mahasiswa').click(function(e) {
+				e.preventDefault();
+				var id = $(this).attr('detail-mahasiswa');
+				$.getJSON("<?php echo Yii::app()->request->baseUrl; ?>/admin/profilmahasiswa/"+id, function(json) {
+	                $.each(json, function(k, v) {    
+						$('#nama-mahasiswa').text(json.nama);
+						$('#nim-mahasiswa').text(json.nim);
+						$('#alamat-mahasiswa').text(json.alamat);
+						$('#telepon-mahasiswa').text(json.telepon);
+						$('#email-mahasiswa').text(json.email);
+	                });
 				});
+			});
 			  $('.dropdown-toggle').dropdown();
 			  $('.dropdown input, .dropdown label').click(function(e) {
 			    e.stopPropagation();

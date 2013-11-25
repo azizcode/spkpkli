@@ -74,7 +74,8 @@ class AdminController extends Controller
 			$pengumuman->judul 	= $_POST['Pengumuman']['judul'];
 			$pengumuman->isi 	= $_POST['Pengumuman']['isi'];
 			if(isset($_POST['Pengumuman']['tanggal'])){
-				$pengumuman->tanggal = $_POST['Pengumuman']['tanggal'];
+				$date 				= date_create($_POST['Pengumuman']['tanggal']);  
+            $pengumuman->tanggal = date_format($date, 'Y-m-d');
 			}else{
 				$pengumuman->tanggal = date("Y/m/d");
 			}

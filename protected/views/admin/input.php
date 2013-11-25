@@ -11,9 +11,9 @@
 		<h3 align="center">Input Pengumuman</h3>
 		<!-- Place inside the <head> of your HTML -->
 		<div class="form-group">
-						<label class="control-label" for="typeahead">Judul</label>
+						<label class="control-label" class="col-2" for="typeahead">Judul</label>
 						  <div class="controls">
-								<?php echo $form->textField($pengumuman,'judul',array('class'=>'form-control')); ?>
+								<?php echo $form->textField($pengumuman,'judul',array('class'=>'form-control col-10')); ?>
 						  </div>
 					</div>
 		<script type="text/javascript">
@@ -49,7 +49,24 @@
 			});</script>
 
 			    <?php echo $form->textArea($pengumuman,'isi',array('class'=>'form-control')); ?>
-				
+				<div class="form-group">
+					<label for="inputEmail" class="col-lg-2 control-label"> Tanggal</label>
+                          <div class="col-lg-10">
+                          <div class='input-group date' id='datetimepicker6'>
+                          <?php $pengumuman->tanggal = date("d-m-Y",strtotime($pengumuman->tanggal)); ?>
+                          <?php echo $form->textField($pengumuman,'tanggal',array('class'=>'form-control','data-format'=>"DD-MM-YYYY")); ?>
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                          </span>
+                          </div>
+                          <script type="text/javascript">
+                          $(function () {
+                          $('#datetimepicker6').datetimepicker({
+                          pickTime: false
+                          });
+                          });
+                          </script>
+                    </div>
+				</div>
 			<div class="form-actions">
 			  <button type="submit" class="btn btn-primary">Tambah</button>
 			  <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input" class="btn">Cancel</a>

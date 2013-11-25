@@ -12,6 +12,7 @@
       <div id="page-wrapper">
 
         <div class="row">
+		<?php if($aktif=='1'){ ?>
           <div class="col-lg-12">
             <h1>Input<small>Kebutuhan</small></h1>
 <!-- Forms
@@ -135,5 +136,8 @@
         </div>
       </div>
           </div>
+		<?php } else { ?>
+		Anda belum diverifikasi oleh Admin. Silakan Hubungi Admin atau menunggu verivikasi.
+			<?php } ?>
           </div>
         </div><!-- /.row -->

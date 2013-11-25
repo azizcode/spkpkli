@@ -89,17 +89,16 @@ class MahasiswaController extends Controller
 		if(isset($_GET['id'])){
 			$pkli		=	ProgramPkli::model()->findAllByAttributes(array('Bidang_Keahlian'=>$_GET['id']));
 		}
-		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
-		if(!$tempatpkli){ $tempatpkli = "Anda Belum Mendaftar Silakan Mendaftar"; $idx = ('-1'); }else{
-			$id = ProgramPkli::model()->findByPk(PesertaPkli::model()->findByAttributes(array('NIM'=>$this->identitas->NIM))->Id_program);
-			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
-			$idx		=	$id->Id_program_pkli;
-		}
 		$av=false;
 		$i=1; 
 		foreach($pkli as $value){ 
 			$instansi   = Instansi::model()->findByPk($value->Id_instansi);
-			$terdaftar	=  count(PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$value->Id_program_pkli))); 
+			$pes		=	PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$value->Id_program_pkli));
+			if($pes){
+				$terdaftar	=  count($pes);
+			}else{
+				$terdaftar	=	0;
+			}
 			$tersedia	=	$value->Jumlah_peserta - $terdaftar;
 			$from = strtotime($value->awal);
 			$to = strtotime($value->akhir);
@@ -107,7 +106,12 @@ class MahasiswaController extends Controller
 			if($tersedia>0 && $now < $from){ $av=true; } 
 			$i++; 
 		}
-		if($av==false){ $tempatpkli = 'Semua Program Sudah Terisi Silakan Mendaftar Lewat <a href="'.Yii::app()->request->baseUrl.'/mahasiswa/mandiri">Jalur Mandiri'; $idx = ('-1'); }
+		$tempatpkli	=	PesertaPkli::model()->findByAttributes(array('NIM' => $this->identitas->NIM));
+		if(!$tempatpkli){ if($av==false){ $tempatpkli = 'Semua Program Sudah Terisi Silakan Mendaftar Lewat <a class="linktabel" href="'.Yii::app()->request->baseUrl.'/mahasiswa/mandiri">Jalur Mandiri'; } else { $tempatpkli = 'Anda Belum Mendaftar Silakan Mendaftar atau lewat jalur <a class="linktabel" href="'.Yii::app()->request->baseUrl.'/mahasiswa/mandiri">Jalur Mandiri'; } $idx = ('-1'); }else{
+			$id = ProgramPkli::model()->findByPk(PesertaPkli::model()->findByAttributes(array('NIM'=>$this->identitas->NIM))->Id_program);
+			$tempatpkli	=	Instansi::model()->findByPk($id->Id_instansi)->Nama_instansi;
+			$idx		=	$id->Id_program_pkli;
+		}
 		$this->render('pkli',array('pkli' => $pkli, 'tempatpkli' => $tempatpkli, 'id_tempat_pkli' => $idx));
 	}
 	

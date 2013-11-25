@@ -96,14 +96,16 @@ class InstansiController extends Controller
 				Yii::app()->user->setFlash('status','<div class="alert alert-danger">Error! silahkan cek form login Anda lagi </div>');
 			}
 		}
-		$this->render('input',array('program_pkli'=>$program_pkli, 'b_keahlian'=>$b_keahlian));
+		$aktif					=	User::model()->findByPk($this->identitas->Id_instansi)->status;
+		$this->render('input',array('program_pkli'=>$program_pkli, 'b_keahlian'=>$b_keahlian, 'aktif'=>$aktif));
 	}	
 
 	public function actionView()
 	{
 		$this->load();
 		$program= ProgramPkli::model()->findAllByAttributes(array('Id_instansi'=>$this->identitas->Id_instansi));
-		$this->render('view',array('program'=>$program));
+		$aktif					=	User::model()->findByPk($this->identitas->Id_instansi)->status;
+		$this->render('view',array('program'=>$program,'aktif'=>$aktif));
 	}
 
 	// Uncomment the following methods and override them if needed

@@ -19,7 +19,7 @@
 						<td><?php $date=date_create($value->tanggal);
                         echo date_format($date, 'd-m-Y'); ?></td>
 						<td><?php echo $value->isi; ?></td>
-						<td><a href="" ></a><?php ?></td>
+						<td><a class="linktabel" href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input/edit/<?php echo $value->id; ?>">Edit</a> | <a class="linktabel" href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input/delete/.<?php echo $value->id; ?>" >Hapus</a></td>
 					</tr>
 					<?php $i++; } ?>
 				</tbody>

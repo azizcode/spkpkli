@@ -12,6 +12,7 @@
 <!-- Forms
       ================================================== -->
      <div class="row">
+	 <?php if($aktif=='1'){ ?>
 		<?php if($program) { ?>
           <div class="col-lg-12">
             <h2>View Peserta Program PLKI</h2>
@@ -115,6 +116,9 @@
             <?php $this->endWidget(); ?>  
           </div>
 		  <?php } ?>
+		  <?php } else { ?>
+		Anda belum diverifikasi oleh Admin. Silakan Hubungi Admin atau menunggu verivikasi.
+			<?php } ?>
           </div>
           </div>
         </div><!-- /.row -->

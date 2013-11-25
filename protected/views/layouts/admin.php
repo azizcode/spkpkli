@@ -94,11 +94,11 @@
 	                });
 				});
 			});
-			  $('.dropdown-toggle').dropdown();
-			  $('.dropdown input, .dropdown label').click(function(e) {
-			    e.stopPropagation();
-			  });
-			});
+		  $('.dropdown-toggle').dropdown();
+		  $('.dropdown input, .dropdown label').click(function(e) {
+		    e.stopPropagation();
+		  });
+		});
 	  	</script>
 	</body>
 </html>

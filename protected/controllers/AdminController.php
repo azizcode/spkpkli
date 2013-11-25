@@ -112,6 +112,21 @@ class AdminController extends Controller
 			echo json_encode($result);
 		}
 	}
+	public function actionPrint()
+	{
+		$peserta	=	PesertaPkli::model()->findAllByAttributes(array('Id_program'=>$_GET['id']));
+		$i			=	0;
+		foreach($peserta as $mahasiswa){
+			$value	=	Mahasiswa::model()->findByAttributes(array('NIM' => $mahasiswa->NIM));
+			$result[$i]['nim']		=	$value->NIM;
+			$result[$i]['nama']		=	$value->Nama_lengkap;
+			$result[$i]['alamat']	=	$value->Alamat_dmalang;
+			$result[$i]['telp']		=	$value->No_tlp;
+			$result[$i]['email']	=	$value->Email;
+			$i++;
+		}
+		echo json_encode($result);
+	}
 
 	// Uncomment the following methods and override them if needed
 	/*

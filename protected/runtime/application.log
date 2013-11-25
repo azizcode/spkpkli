@@ -2617,3 +2617,72 @@ Stack trace:
 REQUEST_URI=/spkpkli/admin/profilinstansi/10
 in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (102)
 in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/25 09:58:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "printPage;".' in C:\xampp\htdocs\spkpkli\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(270): CController->missingAction('printPage;')
+#1 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('printPage;')
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/printPage...')
+#3 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/spkpkli/admin/printPage;
+HTTP_REFERER=http://localhost/spkpkli/admin/laporan
+---
+2013/11/25 09:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/print.css
+HTTP_REFERER=http://localhost/spkpkli/admin/printPage;
+---
+2013/11/25 09:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/screen.css
+HTTP_REFERER=http://localhost/spkpkli/admin/printPage;
+---
+2013/11/25 09:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/form.css
+HTTP_REFERER=http://localhost/spkpkli/admin/printPage;
+---
+2013/11/25 09:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/spkpkli/css/main.css
+HTTP_REFERER=http://localhost/spkpkli/admin/printPage;
+---
+2013/11/25 15:04:38 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:119)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/print
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/11/25 15:08:46 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:119)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/print
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (119)
+in C:\xampp\htdocs\spkpkli\index.php (13)

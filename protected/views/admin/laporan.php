@@ -9,11 +9,11 @@
         </div><!-- /.row -->
 <div id="page-wrapper">
      <div class="row">
-          <div class="col-lg-12">
-          	<form> 
-            <h2>Laporan Program PKLI</h2>
+          <div class="col-lg-12"> 
+			<form>
 				<div class="table-responsive">
-					<table class="table table-bordered table-hover tablesorter">
+					<table class="table table-bordered table-hover tablesorter ">
+						<h2>Laporan Program PKLI</h2>
 						<thead>
 						  <tr>
 							<th>NIM</th>
@@ -26,39 +26,32 @@
 						  </tr>
 						</thead>
 						<tbody>
-							<tr>
 							<?php foreach ($laporan as $list) {?>
+						<tr>
 							<td><?php echo $list->NIM ?></td>
-							
-							<td>
-							<?php $mahasiswa	=	Mahasiswa::model()->findByAttributes(array('NIM'=>$list->NIM));
-								echo $mahasiswa->Nama_lengkap; 
-							?></a></td>
+							<td><?php $mahasiswa	=	Mahasiswa::model()->findByAttributes(array('NIM'=>$list->NIM));
+								echo $mahasiswa->Nama_lengkap; ?></td>
 							<td><?php $programpkli	=	ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>$list->Id_program));
 								$instansi = Instansi::model()->findByAttributes(array('Id_instansi'=>$programpkli->Id_instansi));
-								echo $instansi->Nama_instansi; 
-							?></a></td>
+								echo $instansi->Nama_instansi; ?></td>
 							<td><?php $programpkli	=	ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>$list->Id_program));
-								echo $ahli[ $programpkli->Bidang_Keahlian]; 
-							?></td>
+								echo $ahli[ $programpkli->Bidang_Keahlian]; ?></td>
 							<td><?php $programpkli	=	ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>$list->Id_program));
-								echo $programpkli->awal; 
-							?></td>
+								echo $programpkli->awal; ?></td>
 							<td><?php $programpkli	=	ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>$list->Id_program));
-								echo  $programpkli->akhir; 
-							?></td>
+								echo  $programpkli->akhir; ?></td>
 							<td><?php $programpkli	=	ProgramPkli::model()->findByAttributes(array('Id_program_pkli'=>$list->Id_program));
-								echo  $programpkli->keterangan; 
-							?></td>
+								echo  $programpkli->keterangan; ?></td>
 							<?php }?>
-						  </tr>
+						</tr>
 						</tbody>
 					</table>
-					 </form>
+				</form>
 					<input type="button" class="btn btn-primary pull-right" value=" Cetak Laporan " onclick="window.print();return false;" />
 				</div>
           </div>
           </div>
         </div>
     </div><!-- /.row -->
+
    

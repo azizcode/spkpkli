@@ -87,7 +87,7 @@
 					  <?php } ?>
 					</tbody>
 				  </table>
-				  <input class="pull-right" type="submit" name="update"/>
+				  <input class="pull-right btn btn-primary pull-right" type="submit" name="update"/>
 				 </form>
 				</div>
         </div>

@@ -14,8 +14,45 @@ class AdminController extends Controller
 		$this->render('laporan',array('laporan'=>$laporan));
 	}
 	
-	public function actionDataMahasiswa()
+	public function actionDatamahasiswa()
 	{
+
+		$mahasiswa = new Mahasiswa;
+		if(isset($_POST['Mahasiswa'])){
+			$mahasiswa->NIM = $_POST['Mahasiswa']['NIM'];
+			$mahasiswa->Nama_lengkap 		= $_POST['Mahasiswa']['Nama_lengkap'];
+			$mahasiswa->Jenis_kelamin 		= $_POST['Mahasiswa']['Jenis_kelamin'];
+			$mahasiswa->Tempat_lahir 		= $_POST['Mahasiswa']['Tempat_lahir'];
+			$date 							= date_create($_POST['Mahasiswa']['Tanggal_lahir']);
+			$mahasiswa->Tanggal_lahir 		= date_format($date, 'Y-m-d');
+			$mahasiswa->Nama_orangtua 		= $_POST['Mahasiswa']['Nama_orangtua'];
+			$mahasiswa->Pekerjaan_orangtua 	= $_POST['Mahasiswa']['Pekerjaan_orangtua'];
+			$mahasiswa->Alamat_orangtua 	= $_POST['Mahasiswa']['Alamat_orangtua'];
+			$mahasiswa->Kota_orangtua 		= $_POST['Mahasiswa']['Kota_orangtua'];
+			$mahasiswa->Profinsi_orangtua 	= $_POST['Mahasiswa']['Profinsi_orangtua'];
+			$mahasiswa->Tahun_masuk 		= $_POST['Mahasiswa']['Tahun_masuk'];
+			$mahasiswa->Jurusan 			= "Teknik Informatika";
+			$mahasiswa->Pendidikan_terakhir = $_POST['Mahasiswa']['Pendidikan_terakhir'];
+			$mahasiswa->Alamat_dmalang 		= $_POST['Mahasiswa']['Alamat_dmalang'];
+			$mahasiswa->Alamat_asal 		= $_POST['Mahasiswa']['Alamat_asal'];
+			$mahasiswa->No_tlp 				= $_POST['Mahasiswa']['No_tlp'];
+			$mahasiswa->Email 				= $_POST['Mahasiswa']['Email'];
+			if($mahasiswa->save()){
+				$user = new User;
+				$user->username = $mahasiswa->NIM;
+				$user->password = md5($mahasiswa->NIM);
+				$user->Level = 'mahasiswa';
+				$user->status = '1';
+				$user->id_user=$mahasiswa->id_mahasiswa;
+				if($user->save()){
+					Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
+				}else{
+					Yii::app()->user->setFlash('status','<div class="alert alert-danger">gagal jadi mahasiswa </div>');
+				}				
+			}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-danger">gagal jadi mahasiswa </div>');
+			}
+		}
 		$user= User::model()->findAllByAttributes(array('Level'=>'mahasiswa'));
 		if(isset($_POST['status'])) {
 			foreach($_POST['status'] as $status => $value){
@@ -32,7 +69,7 @@ class AdminController extends Controller
 				}
 			}
 		}
-		$this->render('datamahasiswa',array('user'=>$user));
+		$this->render('datamahasiswa',array('user'=>$user,'mahasiswa'=>$mahasiswa));
 	}
 	
 	public function actionDataInstansi()
@@ -68,6 +105,11 @@ class AdminController extends Controller
 		if(isset($_GET['id']))
 		{
 			$pengumuman= $pengumuman->findByPk($_GET['id']);
+			if($_GET['fungsi']=='delete'){
+				$pengumuman->delete();
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah dihapus</div>');
+				$this->redirect(Yii::app()->request->baseUrl.'/admin/pengumuman');
+			}
 		}
 		if(isset($_POST['Pengumuman']))
 		{
@@ -127,6 +169,9 @@ class AdminController extends Controller
 			$i++;
 		}
 		echo json_encode($result);
+	}
+	public function actionNilai(){
+		$this->render('nilai');
 	}
 
 	// Uncomment the following methods and override them if needed

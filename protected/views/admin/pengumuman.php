@@ -13,6 +13,7 @@
 					</tr>
 				</thead>
 				<tbody>
+					<?php if ($umum){ ?>
 					<?php $i=1; foreach($umum as $value){ ?>
 					<tr>
 						<td><?php echo $i; ?></td>
@@ -22,9 +23,8 @@
 						<td><a class="linktabel" href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input/edit/<?php echo $value->id; ?>">Edit</a> | <a href="#hapus" data-toggle="modal" data-target="#hapus" class="linktabel">Hapus</a></td>
 					</tr>
 					<?php $i++; } ?>
-				</tbody>
-			</table>
-			<div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+					<div class="modal fade" id="hapus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -36,10 +36,13 @@
                       </div>
                       <div class="modal-footer">
                         <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
-                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input/delete/.<?php echo $value->id; ?>" type="button" class="btn btn-primary">Delete</a>
+                        <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/input/delete/<?php echo $value->id; ?>" type="button" class="btn btn-primary">Delete</a>
                       </div>
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
+					<?php } ?>
+				</tbody>
+			</table>
 		</div>
 </div>

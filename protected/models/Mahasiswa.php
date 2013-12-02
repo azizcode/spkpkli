@@ -51,8 +51,8 @@ class Mahasiswa extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_mahasiswa, NIM, Nama_lengkap, Jenis_kelamin, Tempat_lahir, Tanggal_lahir, Nama_orangtua, Pekerjaan_orangtua, Alamat_orangtua, Kota_orangtua, Profinsi_orangtua, Tahun_masuk, Jurusan, Pendidikan_terakhir, Alamat_dmalang, Alamat_asal, No_tlp, Email', 'required'),
-			array('id_mahasiswa, NIM, Tahun_masuk, No_tlp', 'numerical', 'integerOnly'=>true),
+			array('NIM, Nama_lengkap, Jenis_kelamin, Tempat_lahir, Tanggal_lahir, Nama_orangtua, Pekerjaan_orangtua, Alamat_orangtua, Kota_orangtua, Profinsi_orangtua, Tahun_masuk, Jurusan, Pendidikan_terakhir, Alamat_dmalang, Alamat_asal, No_tlp, Email', 'required'),
+			array('NIM, Tahun_masuk, No_tlp', 'numerical', 'integerOnly'=>true),
 			array('Nama_lengkap', 'length', 'max'=>1000),
 			array('Jenis_kelamin, Tempat_lahir, Nama_orangtua, Pekerjaan_orangtua, Kota_orangtua, Profinsi_orangtua, Jurusan', 'length', 'max'=>100),
 			// The following rule is used by search().

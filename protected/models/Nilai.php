@@ -4,6 +4,7 @@
  * This is the model class for table "nilai".
  *
  * The followings are the available columns in table 'nilai':
+ * @property integer $id_nilai
  * @property integer $NIM
  * @property integer $kode_mk
  * @property double $Nilai
@@ -41,7 +42,7 @@ class Nilai extends CActiveRecord
 			array('Nilai', 'numerical'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('NIM, kode_mk, Nilai', 'safe', 'on'=>'search'),
+			array('id_nilai, NIM, kode_mk, Nilai', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,6 +63,7 @@ class Nilai extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'id_nilai' => 'Id Nilai',
 			'NIM' => 'Nim',
 			'kode_mk' => 'Kode Mk',
 			'Nilai' => 'Nilai',
@@ -79,6 +81,7 @@ class Nilai extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id_nilai',$this->id_nilai);
 		$criteria->compare('NIM',$this->NIM);
 		$criteria->compare('kode_mk',$this->kode_mk);
 		$criteria->compare('Nilai',$this->Nilai);
@@ -87,7 +90,7 @@ class Nilai extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-	
+
 	public function hardware($nilai){
 		$cocok		=	false;
 		if($nilai['20']>=3.5){
@@ -191,5 +194,4 @@ class Nilai extends CActiveRecord
 		}
 		return $cocok;
 	}
-	
 }

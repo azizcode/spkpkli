@@ -3198,3 +3198,670 @@ REQUEST_URI=/spkpkli/mahasiswa/kuisioner
 in C:\xampp\htdocs\spkpkli\protected\models\Nilai.php (125)
 in C:\xampp\htdocs\spkpkli\protected\controllers\MahasiswaController.php (194)
 in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 20:13:35 [error] [php] Undefined index: import (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:74)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (74)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 20:25:36 [error] [php] Undefined index: import (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (72)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:40:03 [error] [php] include(Item.php): failed to open stream: No such file or directory (C:\xampp\htdocs\spkpkli\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(72): spl_autoload_call()
+#1 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDatamahasiswa()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (72)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:46:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_spk_pkli.item' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Item`.
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (72)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:46:13 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Item" for active record class "Item" cannot be found in the database.' in C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Item))
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Item')
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(72): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDatamahasiswa()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('datamahasiswa')
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/datamahas...')
+#10 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+---
+2013/12/02 21:48:14 [warning] [application] Failed to set unsafe attribute "file" of "Item".
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (74)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:48:14 [error] [exception.CException] exception 'CException' with message 'Property "Item.file" is not defined.' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(75): CComponent->__set('file', Object(CUploadedFile))
+#1 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDatamahasiswa()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('datamahasiswa')
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/datamahas...')
+#7 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+HTTP_REFERER=http://localhost/spkpkli/admin/datamahasiswa
+---
+2013/12/02 21:49:03 [warning] [application] Failed to set unsafe attribute "file" of "Item".
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (74)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:51:12 [warning] [application] Failed to set unsafe attribute "file" of "Item".
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (74)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:51:12 [error] [php] move_uploaded_file(): The second argument to copy() function cannot be a directory (C:\xampp\htdocs\spkpkli\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionDatamahasiswa()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/datamahasiswa
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (76)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 21:59:47 [warning] [application] Failed to set unsafe attribute "file" of "Item".
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (74)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/02 22:01:12 [warning] [application] Failed to set unsafe attribute "file" of "Item".
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (74)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 01:36:29 [error] [php] Undefined variable: Mahasiswa (C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(185): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php (40)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (185)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 01:36:45 [error] [php] Undefined variable: mahasiswa (C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(185): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php (40)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (185)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 01:55:57 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(186): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php (44)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (186)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 01:57:21 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(186): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php (44)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (186)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 01:58:11 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(186): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php (44)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (186)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 01:59:12 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): AdminController->renderFile()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): AdminController->renderPartial()
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(186): AdminController->render()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php (40)
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (186)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:23:20 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(200): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:25:05 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(200): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:26:42 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(200): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:27:54 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(196): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:31:00 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(196): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:39:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (197)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:39:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(197): CActiveRecord->save()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:41:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (197)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:41:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(197): CActiveRecord->save()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:43:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (198)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:43:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(198): CActiveRecord->save()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:44:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (198)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:44:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(198): CActiveRecord->save()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:45:36 [error] [php] Undefined variable: mk (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:192)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (192)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:46:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (194)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 02:46:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `nilai` (`id_nilai`, `NIM`, `kode_mk`, `Nilai`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\spkpkli\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(194): CActiveRecord->save()
+#3 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#8 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#9 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:54:23 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(199): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 02:57:17 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php:722
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\schema\CDbCommandBuilder.php(519): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1689): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(1070): CActiveRecord->updateByPk(NULL, Array)
+#3 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(795): CActiveRecord->update(NULL)
+#4 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(199): CActiveRecord->save()
+#5 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#10 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#11 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+HTTP_REFERER=http://localhost/spkpkli/admin/nilai
+---
+2013/12/03 03:14:54 [error] [php] Undefined offset: 10650090 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:15:42 [error] [php] Undefined offset: 10650090 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:16:58 [error] [php] Undefined offset: 10650090 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:17:27 [error] [php] Undefined offset: 10650090 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:24:45 [error] [php] Undefined offset: 10650090 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:29:19 [error] [php] Undefined index: Mahasiswa (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:29:30 [error] [php] Undefined index: Mahasiswa (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:188)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (188)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:31:14 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:190)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (190)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:33:04 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:190)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (190)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:35:07 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:190)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (190)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:36:16 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:200)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (200)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:38:36 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:190)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (190)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 03:54:56 [error] [php] Undefined variable: value (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:199)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (199)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 04:07:52 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:198)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (198)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 04:08:35 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php:198)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#1 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (198)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 04:10:14 [error] [php] Array to string conversion (C:\xampp\htdocs\spkpkli\framework\validators\CNumberValidator.php:91)
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(794): Nilai->validate()
+#1 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(199): Nilai->save()
+#2 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#3 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): AdminController->runAction()
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#6 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): AdminController->run()
+#7 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\spkpkli\index.php(13): CWebApplication->run()
+REQUEST_URI=/spkpkli/admin/nilai
+in C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php (199)
+in C:\xampp\htdocs\spkpkli\index.php (13)
+2013/12/03 04:19:31 [error] [exception.CException] exception 'CException' with message 'Nilai and its behaviors do not have a method or closure named "findByAtrributes".' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(225): CComponent->__call('findByAtrribute...', Array)
+#1 C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php(40): CActiveRecord->__call('findByAtrribute...', Array)
+#2 C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php(40): Nilai->findByAtrributes(Array)
+#3 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('nilai', Array, true)
+#7 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(212): CController->render('nilai', Array)
+#8 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#13 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#14 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+---
+2013/12/03 04:20:28 [error] [exception.CException] exception 'CException' with message 'Nilai and its behaviors do not have a method or closure named "findByAtrributes".' in C:\xampp\htdocs\spkpkli\framework\base\CComponent.php:265
+Stack trace:
+#0 C:\xampp\htdocs\spkpkli\framework\db\ar\CActiveRecord.php(225): CComponent->__call('findByAtrribute...', Array)
+#1 C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php(40): CActiveRecord->__call('findByAtrribute...', Array)
+#2 C:\xampp\htdocs\spkpkli\protected\views\admin\nilai.php(40): Nilai->findByAtrributes(Array)
+#3 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\spkpkli\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\spkpkli\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\spkpkli\framework\web\CController.php(782): CController->renderPartial('nilai', Array, true)
+#7 C:\xampp\htdocs\spkpkli\protected\controllers\AdminController.php(212): CController->render('nilai', Array)
+#8 C:\xampp\htdocs\spkpkli\framework\web\actions\CInlineAction.php(49): AdminController->actionNilai()
+#9 C:\xampp\htdocs\spkpkli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\spkpkli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\spkpkli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(282): CController->run('nilai')
+#13 C:\xampp\htdocs\spkpkli\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/nilai')
+#14 C:\xampp\htdocs\spkpkli\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\spkpkli\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/spkpkli/admin/nilai
+---

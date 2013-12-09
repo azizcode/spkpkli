@@ -14,14 +14,14 @@
                         <h4 class="modal-title" id="myModalLabel">Import Data Mahasiswa </h4>
                       </div>
                       <div class="modal-body">
-        						  <form role="form">
+        						  <?php echo CHtml::form('','post',array('enctype'=>'multipart/form-data','role'=>'form')); ?>
         							  <div class="row">
         								<label for="exampleInputFile">File input</label>
-        								<input type="file" id="exampleInputFile">
+        								<?php echo CHtml::activeFileField($upload, 'file'); ?>
         								<p class="help-block">tipe file sql.</p>
         							  </div>
         							  <button type="submit" class="btn btn-default">Submit</button>
-        							</form>
+        							<?php echo CHtml::endForm(); ?>
                       </div>
                       <div class="modal-footer">
                         <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>

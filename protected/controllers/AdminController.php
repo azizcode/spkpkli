@@ -69,7 +69,18 @@ class AdminController extends Controller
 				}
 			}
 		}
-		$this->render('datamahasiswa',array('user'=>$user,'mahasiswa'=>$mahasiswa));
+		$upload=new Item;
+		if(isset($_POST['Item'])){
+			$upload->attributes=$_POST['Item'];
+            $upload->sql=CUploadedFile::getInstance($upload,'file');
+			$upload->sql->saveAs('D:/'.$upload->sql);
+			if(DLDatabaseHelper::import('D:/'.$upload->sql)){
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
+			}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
+			}
+		}
+		$this->render('datamahasiswa',array('user'=>$user,'mahasiswa'=>$mahasiswa,'upload'=>$upload));
 	}
 	
 	public function actionDataInstansi()
@@ -171,7 +182,34 @@ class AdminController extends Controller
 		echo json_encode($result);
 	}
 	public function actionNilai(){
-		$this->render('nilai');
+		$mahasiswa = Mahasiswa::model()->findAll();
+		$error		= false;
+		foreach ($mahasiswa as $mhs) {
+			if(isset($_POST[$mhs->NIM])){
+				foreach ($_POST[$mhs->NIM] as $mk => $value) {
+					$nilai = Nilai::model()->findByAttributes(array('NIM'=>$mhs->NIM,'kode_mk'=>$mk));
+					if($nilai){ 
+						$input = $nilai; 
+					}else { 
+						$input = new Nilai; 
+						$input->NIM = $mhs->NIM; 
+						$input->kode_mk = $mk;
+					}
+			          	
+		          	$input->Nilai = $value;
+		          	if(!$input->save()){
+		          		$error=true;
+		          	}
+			    } 
+			}
+	        if(!$error){
+	        	Yii::app()->user->setFlash('status','<div class="alert alert-success">Data telah Tersimpan</div>');
+			}else{
+				Yii::app()->user->setFlash('status','<div class="alert alert-success">Data Gagal Tersimpan</div>');
+			}
+		}
+		
+		$this->render('nilai', array('mahasiswa'=>$mahasiswa));
 	}
 
 	// Uncomment the following methods and override them if needed
